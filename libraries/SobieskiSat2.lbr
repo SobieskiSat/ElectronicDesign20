@@ -363,6 +363,98 @@
 <wire x1="13.97" y1="-8.89" x2="-13.97" y2="-8.89" width="0.127" layer="21"/>
 <wire x1="-13.97" y1="-8.89" x2="-13.97" y2="8.89" width="0.127" layer="21"/>
 </package>
+<package name="MODULE_PYBOARD">
+<pad name="Y1" x="-6.35" y="7.62" drill="1.016" diameter="1.6764"/>
+<pad name="Y2" x="-6.35" y="5.08" drill="1.016" diameter="1.6764"/>
+<pad name="Y3" x="-6.35" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="Y4" x="-6.35" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="Y5" x="-6.35" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="Y6" x="-6.35" y="-5.08" drill="1.016" diameter="1.6764"/>
+<pad name="Y7" x="-6.35" y="-7.62" drill="1.016" diameter="1.6764"/>
+<pad name="Y8" x="-6.35" y="-10.16" drill="1.016" diameter="1.6764"/>
+<wire x1="-7.62" y1="8.89" x2="-5.08" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="8.89" x2="-5.08" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-11.43" x2="-7.62" y2="8.89" width="0.127" layer="21"/>
+<wire x1="20.32" y1="8.89" x2="22.86" y2="8.89" width="0.127" layer="21"/>
+<wire x1="22.86" y1="8.89" x2="22.86" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-11.43" x2="20.32" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-11.43" x2="-5.08" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-11.43" x2="-5.08" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-31.75" x2="-7.62" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-31.75" x2="-7.62" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-31.75" x2="-5.08" y2="-29.21" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-29.21" x2="15.24" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-31.75" x2="-5.08" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-29.21" x2="-5.08" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-26.67" x2="10.16" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-26.67" x2="15.24" y2="-29.21" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-29.21" x2="-5.08" y2="-29.21" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-21.59" x2="17.78" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-31.75" x2="15.24" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-24.13" x2="15.24" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-21.59" x2="20.32" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-21.59" x2="20.32" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-31.75" x2="17.78" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-31.75" x2="17.78" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-26.67" x2="10.16" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-24.13" x2="15.24" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-24.13" x2="15.24" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-26.67" x2="10.16" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-11.43" x2="22.86" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="22.86" y1="-11.43" x2="22.86" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="22.86" y1="-31.75" x2="20.32" y2="-31.75" width="0.127" layer="21"/>
+<wire x1="20.32" y1="-21.59" x2="20.32" y2="-11.43" width="0.127" layer="21"/>
+<pad name="Y9" x="21.59" y="-10.16" drill="1.016" diameter="1.6764"/>
+<pad name="Y10" x="21.59" y="-7.62" drill="1.016" diameter="1.6764"/>
+<pad name="Y11" x="21.59" y="-5.08" drill="1.016" diameter="1.6764"/>
+<pad name="Y12" x="21.59" y="-2.54" drill="1.016" diameter="1.6764"/>
+<pad name="RST1" x="21.59" y="0" drill="1.016" diameter="1.6764"/>
+<pad name="RST" x="-6.35" y="-22.86" drill="1.016" diameter="1.6764"/>
+<pad name="BOOT0" x="-3.81" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="X1" x="21.59" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="VBACK" x="8.89" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="P2" x="-1.27" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="P3" x="1.27" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="P4" x="3.81" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="P5" x="6.35" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="X2" x="21.59" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="X3" x="21.59" y="-25.4" drill="1.016" diameter="1.6764"/>
+<pad name="X4" x="21.59" y="-22.86" drill="1.016" diameter="1.6764"/>
+<pad name="X5" x="21.59" y="-20.32" drill="1.016" diameter="1.6764"/>
+<pad name="X6" x="21.59" y="-17.78" drill="1.016" diameter="1.6764"/>
+<pad name="X7" x="21.59" y="-15.24" drill="1.016" diameter="1.6764"/>
+<pad name="X8" x="21.59" y="-12.7" drill="1.016" diameter="1.6764"/>
+<pad name="X9" x="-6.35" y="-12.7" drill="1.016" diameter="1.6764"/>
+<pad name="X10" x="-6.35" y="-15.24" drill="1.016" diameter="1.6764"/>
+<pad name="X11" x="-6.35" y="-17.78" drill="1.016" diameter="1.6764"/>
+<pad name="X12" x="-6.35" y="-20.32" drill="1.016" diameter="1.6764"/>
+<pad name="A3V3" x="11.43" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="AGND" x="13.97" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="GND0" x="13.97" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="VBAT" x="11.43" y="-25.4" drill="1.016" diameter="1.6764"/>
+<pad name="X17" x="-3.81" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="X18" x="-1.27" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="X19" x="1.27" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="X20" x="3.81" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="X21" x="6.35" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="X22" x="8.89" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="GND1" x="16.51" y="-22.86" drill="1.016" diameter="1.6764"/>
+<pad name="GND2" x="16.51" y="-25.4" drill="1.016" diameter="1.6764"/>
+<pad name="GND3" x="16.51" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="GND4" x="16.51" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="GND5" x="-6.35" y="-25.4" drill="1.016" diameter="1.6764"/>
+<pad name="GND6" x="21.59" y="2.54" drill="1.016" diameter="1.6764"/>
+<pad name="V+" x="21.59" y="7.62" drill="1.016" diameter="1.6764"/>
+<pad name="V+1" x="-6.35" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="V+2" x="11.43" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="V+3" x="19.05" y="-22.86" drill="1.016" diameter="1.6764"/>
+<pad name="V+4" x="19.05" y="-25.4" drill="1.016" diameter="1.6764"/>
+<pad name="V+5" x="19.05" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="V+6" x="19.05" y="-30.48" drill="1.016" diameter="1.6764"/>
+<pad name="GND" x="13.97" y="-25.4" drill="1.016" diameter="1.6764"/>
+<pad name="3V3-1" x="-6.35" y="-27.94" drill="1.016" diameter="1.6764"/>
+<pad name="3V3" x="21.59" y="5.08" drill="1.016" diameter="1.6764"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P1200X1200X160-64N" urn="urn:adsk.eagle:package:15005550/1" type="model">
@@ -590,6 +682,55 @@ UART</text>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="0" y="6.35" size="1.27" layer="95" align="bottom-center">BMP280_MODULE</text>
 </symbol>
+<symbol name="PYBOARD1.1">
+<wire x1="-25.4" y1="17.78" x2="25.4" y2="17.78" width="0.254" layer="94"/>
+<wire x1="25.4" y1="17.78" x2="25.4" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-17.78" x2="-25.4" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-17.78" x2="-25.4" y2="17.78" width="0.254" layer="94"/>
+<pin name="Y1" x="-30.48" y="15.24" length="middle"/>
+<pin name="Y2" x="-30.48" y="12.7" length="middle"/>
+<pin name="Y3" x="-30.48" y="10.16" length="middle"/>
+<pin name="Y4" x="-30.48" y="7.62" length="middle"/>
+<pin name="Y5" x="-30.48" y="5.08" length="middle"/>
+<pin name="Y6" x="-30.48" y="2.54" length="middle"/>
+<pin name="Y7" x="-30.48" y="0" length="middle"/>
+<pin name="Y8" x="-30.48" y="-2.54" length="middle"/>
+<pin name="Y9" x="30.48" y="7.62" length="middle" rot="R180"/>
+<pin name="Y10" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="Y11" x="30.48" y="12.7" length="middle" rot="R180"/>
+<pin name="Y12" x="30.48" y="15.24" length="middle" rot="R180"/>
+<pin name="X1" x="30.48" y="-12.7" length="middle" rot="R180"/>
+<pin name="X2" x="30.48" y="-10.16" length="middle" rot="R180"/>
+<pin name="X3" x="30.48" y="-7.62" length="middle" rot="R180"/>
+<pin name="X4" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="X5" x="30.48" y="-2.54" length="middle" rot="R180"/>
+<pin name="X6" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="X7" x="30.48" y="2.54" length="middle" rot="R180"/>
+<pin name="X8" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="X9" x="-30.48" y="-5.08" length="middle"/>
+<pin name="X10" x="-30.48" y="-7.62" length="middle"/>
+<pin name="X11" x="-30.48" y="-10.16" length="middle"/>
+<pin name="X12" x="-30.48" y="-12.7" length="middle"/>
+<pin name="RST" x="-17.78" y="-22.86" length="middle" rot="R90"/>
+<pin name="X17" x="-12.7" y="-22.86" length="middle" rot="R90"/>
+<pin name="P2" x="-7.62" y="22.86" length="middle" rot="R270"/>
+<pin name="BOOT0" x="-10.16" y="22.86" length="middle" rot="R270"/>
+<pin name="VBACK" x="7.62" y="-22.86" length="middle" rot="R90"/>
+<pin name="X18" x="-7.62" y="-22.86" length="middle" rot="R90"/>
+<pin name="X19" x="-5.08" y="-22.86" length="middle" rot="R90"/>
+<pin name="X20" x="-2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="X21" x="0" y="-22.86" length="middle" rot="R90"/>
+<pin name="X22" x="2.54" y="-22.86" length="middle" rot="R90"/>
+<pin name="A3V3" x="12.7" y="22.86" length="middle" rot="R270"/>
+<pin name="P3" x="-5.08" y="22.86" length="middle" rot="R270"/>
+<pin name="P4" x="-2.54" y="22.86" length="middle" rot="R270"/>
+<pin name="P5" x="0" y="22.86" length="middle" rot="R270"/>
+<pin name="V+" x="15.24" y="22.86" length="middle" rot="R270"/>
+<pin name="AGND" x="12.7" y="-22.86" length="middle" rot="R90"/>
+<pin name="VBAT" x="7.62" y="22.86" length="middle" rot="R270"/>
+<pin name="GND" x="17.78" y="-22.86" length="middle" rot="R90"/>
+<pin name="3V3" x="17.78" y="22.86" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F405RGT6">
@@ -813,6 +954,63 @@ UART</text>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="SDO" pad="SDO"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PYBOARD1.1">
+<gates>
+<gate name="G$1" symbol="PYBOARD1.1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MODULE_PYBOARD">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3V3 3V3-1"/>
+<connect gate="G$1" pin="A3V3" pad="A3V3"/>
+<connect gate="G$1" pin="AGND" pad="AGND"/>
+<connect gate="G$1" pin="BOOT0" pad="BOOT0"/>
+<connect gate="G$1" pin="GND" pad="GND GND0 GND1 GND2 GND3 GND4 GND5 GND6"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
+<connect gate="G$1" pin="P5" pad="P5"/>
+<connect gate="G$1" pin="RST" pad="RST RST1"/>
+<connect gate="G$1" pin="V+" pad="V+ V+1 V+2 V+3 V+4 V+5 V+6"/>
+<connect gate="G$1" pin="VBACK" pad="VBACK"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="X1" pad="X1"/>
+<connect gate="G$1" pin="X10" pad="X10"/>
+<connect gate="G$1" pin="X11" pad="X11"/>
+<connect gate="G$1" pin="X12" pad="X12"/>
+<connect gate="G$1" pin="X17" pad="X17"/>
+<connect gate="G$1" pin="X18" pad="X18"/>
+<connect gate="G$1" pin="X19" pad="X19"/>
+<connect gate="G$1" pin="X2" pad="X2"/>
+<connect gate="G$1" pin="X20" pad="X20"/>
+<connect gate="G$1" pin="X21" pad="X21"/>
+<connect gate="G$1" pin="X22" pad="X22"/>
+<connect gate="G$1" pin="X3" pad="X3"/>
+<connect gate="G$1" pin="X4" pad="X4"/>
+<connect gate="G$1" pin="X5" pad="X5"/>
+<connect gate="G$1" pin="X6" pad="X6"/>
+<connect gate="G$1" pin="X7" pad="X7"/>
+<connect gate="G$1" pin="X8" pad="X8"/>
+<connect gate="G$1" pin="X9" pad="X9"/>
+<connect gate="G$1" pin="Y1" pad="Y1"/>
+<connect gate="G$1" pin="Y10" pad="Y10"/>
+<connect gate="G$1" pin="Y11" pad="Y11"/>
+<connect gate="G$1" pin="Y12" pad="Y12"/>
+<connect gate="G$1" pin="Y2" pad="Y2"/>
+<connect gate="G$1" pin="Y3" pad="Y3"/>
+<connect gate="G$1" pin="Y4" pad="Y4"/>
+<connect gate="G$1" pin="Y5" pad="Y5"/>
+<connect gate="G$1" pin="Y6" pad="Y6"/>
+<connect gate="G$1" pin="Y7" pad="Y7"/>
+<connect gate="G$1" pin="Y8" pad="Y8"/>
+<connect gate="G$1" pin="Y9" pad="Y9"/>
 </connects>
 <technologies>
 <technology name=""/>
