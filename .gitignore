@@ -1,11 +1,15 @@
-/**
+/*
 !/.gitignore
 
 !/libraries/
-/libraries/**
+/libraries/*
 !/libraries/SobieskiSat2.lbr
 !/libraries/Unified.lbr
 
 !/projects/
 /projects/*
 !/projects/CanSat/
+
+**.s#*
+**.b#*
+**.l#*
