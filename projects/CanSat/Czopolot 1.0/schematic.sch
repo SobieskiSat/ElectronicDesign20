@@ -898,7 +898,7 @@
 <parts>
 <part name="U$1" library="SobieskiSat2" deviceset="PYBOARD1.1" device=""/>
 <part name="ULTIMATE_GPS" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
-<part name="U$2" library="SobieskiSat2" deviceset="SX1280" device="EXT" value="SX1280EXT"/>
+<part name="U$2" library="SobieskiSat2" deviceset="SX1280" device="" value="SX1280"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="SobieskiSat2" deviceset="SMACONNECTOR" device="" package3d_urn="urn:adsk.eagle:package:6240946/1"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -911,6 +911,7 @@
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -955,6 +956,9 @@
 </instance>
 <instance part="P+5" gate="VCC" x="-30.48" y="17.78" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-27.94" y="15.24" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND5" gate="1" x="-50.8" y="7.62" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-53.34" y="10.16" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -1126,6 +1130,32 @@
 <pinref part="U$1" gate="G$1" pin="X10"/>
 <pinref part="U$4" gate="G$1" pin="SDA"/>
 <wire x1="7.62" y1="-30.48" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BAT+" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VBAT"/>
+<wire x1="-22.86" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<label x="-25.4" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BAT-" class="0">
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="-48.26" y1="7.62" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
+<label x="-45.72" y="7.62" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DIO1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="DIO1"/>
+<wire x1="5.08" y1="78.74" x2="5.08" y2="81.28" width="0.1524" layer="91"/>
+<label x="5.08" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="X3"/>
+<wire x1="7.62" y1="30.48" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
+<label x="7.62" y="33.02" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
