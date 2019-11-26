@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -248,7 +248,7 @@
 <smd name="P$10" x="1.27" y="5.08" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <text x="0" y="0" size="1.27" layer="21">inv</text>
 </package>
-<package name="MODULE_SX1280">
+<package name="MODULE_SX1280_THT">
 <wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
@@ -273,6 +273,7 @@
 <wire x1="-6" y1="-7.5" x2="6" y2="-7.5" width="0.127" layer="21"/>
 <wire x1="6" y1="-7.5" x2="6" y2="7.5" width="0.127" layer="21"/>
 <wire x1="6" y1="7.5" x2="-6" y2="7.5" width="0.127" layer="21"/>
+<circle x="-4.58" y="6.35" radius="0.6" width="0.2" layer="21"/>
 </package>
 <package name="SMA_DIP" urn="urn:adsk.eagle:footprint:6240303/1" locally_modified="yes">
 <description>SMA DIP Connector 90° 50 Ohm</description>
@@ -320,7 +321,7 @@
 <wire x1="-6.73" y1="-7.62" x2="5.73" y2="-7.62" width="0.127" layer="21"/>
 <wire x1="5.73" y1="7.62" x2="5.73" y2="-7.62" width="0.127" layer="21"/>
 </package>
-<package name="MODULE_SX1280_EXT">
+<package name="MODULE_SX1280_THT_EXT">
 <wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
@@ -363,6 +364,7 @@
 <wire x1="13.97" y1="8.89" x2="13.97" y2="-8.89" width="0.127" layer="21"/>
 <wire x1="13.97" y1="-8.89" x2="-13.97" y2="-8.89" width="0.127" layer="21"/>
 <wire x1="-13.97" y1="-8.89" x2="-13.97" y2="8.89" width="0.127" layer="21"/>
+<circle x="-4.58" y="6.35" radius="0.6" width="0.2" layer="21"/>
 </package>
 <package name="MODULE_PYBOARD">
 <pad name="Y1" x="-6.35" y="7.62" drill="1.016" diameter="1.6764"/>
@@ -493,6 +495,86 @@
 <smd name="P$23" x="5.715" y="3.81" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <smd name="P$24" x="6.985" y="3.81" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <text x="0" y="1.905" size="1.27" layer="25" align="center">inv</text>
+</package>
+<package name="PA6H">
+<smd name="P$1" x="-8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="-8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$3" x="-8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$4" x="-8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$5" x="-8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$6" x="-8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$7" x="-8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$8" x="-8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$9" x="-8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$10" x="-8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$11" x="8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$12" x="8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$13" x="8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$14" x="8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$15" x="8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$16" x="8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$17" x="8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$18" x="8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$19" x="8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="P$20" x="8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
+<wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
+<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
+<wire x1="-8" y1="-8" x2="-8" y2="8" width="0.127" layer="21"/>
+<hole x="-0.2" y="0.8" drill="1.2"/>
+<circle x="-5.25" y="6.75" radius="0.4" width="0.127" layer="21"/>
+<text x="0" y="6.35" size="1.27" layer="25" align="center">PA6H</text>
+</package>
+<package name="INV_BAT">
+<smd name="P$1" x="-3.81" y="0" dx="1.778" dy="1.778" layer="1"/>
+<smd name="P$2" x="0" y="0" dx="1.778" dy="1.778" layer="1"/>
+<circle x="0" y="0" radius="1.27" width="0" layer="1"/>
+<smd name="P$3" x="3.81" y="0" dx="1.778" dy="1.778" layer="1"/>
+<text x="0" y="2.54" size="1.27" layer="21" align="center">inv</text>
+</package>
+<package name="MODULE_SX1280">
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
+<wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
+<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
+<wire x1="-8" y1="-8" x2="-8" y2="8" width="0.127" layer="21"/>
+<wire x1="-6" y1="7.5" x2="-6" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-6" y1="-7.5" x2="6" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="6" y1="-7.5" x2="6" y2="7.5" width="0.127" layer="21"/>
+<wire x1="6" y1="7.5" x2="-6" y2="7.5" width="0.127" layer="21"/>
+<smd name="1" x="-8" y="7" dx="3" dy="1.5" layer="1"/>
+<circle x="-4.5" y="6" radius="0.6" width="0.2" layer="21"/>
+<smd name="2" x="-8" y="5" dx="3" dy="1.5" layer="1"/>
+<smd name="3" x="-8" y="3" dx="3" dy="1.5" layer="1"/>
+<smd name="4" x="-8" y="1" dx="3" dy="1.5" layer="1"/>
+<smd name="5" x="-8" y="-1" dx="3" dy="1.5" layer="1"/>
+<smd name="6" x="-8" y="-3" dx="3" dy="1.5" layer="1"/>
+<smd name="7" x="-8" y="-5" dx="3" dy="1.5" layer="1"/>
+<smd name="8" x="-8" y="-7" dx="3" dy="1.5" layer="1"/>
+<smd name="9" x="8" y="-7" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="10" x="8" y="-5" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="11" x="8" y="-3" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="12" x="8" y="-1" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="13" x="8" y="1" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="14" x="8" y="3" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="15" x="8" y="5" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="16" x="8" y="7" dx="3" dy="1.5" layer="1" rot="R180"/>
+<text x="0" y="6" size="1.27" layer="25" align="center">SX1280</text>
+</package>
+<package name="BMP280">
+<wire x1="-1" y1="1.25" x2="1" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1" y1="1.25" x2="1" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1" y1="-1.25" x2="-1" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.25" x2="-1" y2="1.25" width="0.127" layer="21"/>
+<smd name="1" x="-1.05" y="0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="2" x="-1.05" y="0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="3" x="-1.05" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="4" x="-1.05" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="5" x="1.05" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="6" x="1.05" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="7" x="1.05" y="0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="8" x="1.05" y="0.975" dx="0.5" dy="0.35" layer="1"/>
+<circle x="-0.5" y="0.75" radius="0.1" width="0.1" layer="21"/>
+<text x="0" y="2.54" size="1.27" layer="21" align="center">BMP280</text>
 </package>
 </packages>
 <packages3d>
@@ -778,6 +860,7 @@ UART</text>
 <pin name="P$2" x="5.08" y="0" visible="off" length="point"/>
 <circle x="-2.54" y="0" radius="0.508" width="0" layer="94"/>
 <circle x="2.54" y="0" radius="0.508" width="0" layer="94"/>
+<text x="0" y="-2.54" size="1.778" layer="95" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="OSCILLATOR_GND">
 <wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
@@ -830,6 +913,59 @@ UART</text>
 <wire x1="-22.86" y1="3.81" x2="-22.86" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="22.86" y1="3.81" x2="22.86" y2="-5.08" width="0.254" layer="94"/>
 <text x="-17.78" y="0" size="2.1844" layer="95" rot="R90" align="center">USB-C</text>
+</symbol>
+<symbol name="PA6H">
+<pin name="VCC" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="NRST" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="GND" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VBACK" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="3D-FIX" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="GND@1" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="TX" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="RX" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="GND@2" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="1PPS" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND@3" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="ANT" x="0" y="-10.16" visible="pin" length="short" rot="R90"/>
+<pin name="RTCM" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="12.7" size="1.778" layer="95" align="center">PA6H</text>
+</symbol>
+<symbol name="BATTERY">
+<wire x1="0.635" y1="2.54" x2="0.635" y2="0" width="0.254" layer="94"/>
+<pin name="+" x="-3.81" y="0" visible="off" length="short"/>
+<pin name="-" x="3.81" y="0" visible="off" length="short" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="1.27"/>
+<vertex x="-0.635" y="1.27"/>
+<vertex x="-0.635" y="-1.27"/>
+<vertex x="-1.27" y="-1.27"/>
+</polygon>
+<wire x1="0.635" y1="0" x2="0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="3.175" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="0" y="4.445" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.778" layer="96" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="BMP280">
+<pin name="SCL" x="-15.24" y="3.81" length="middle"/>
+<pin name="SDA" x="-15.24" y="1.27" length="middle"/>
+<pin name="SDO" x="-15.24" y="-1.27" length="middle"/>
+<pin name="CSB" x="-15.24" y="-3.81" length="middle"/>
+<pin name="VDD" x="15.24" y="3.81" length="middle" rot="R180"/>
+<pin name="VDDIO" x="15.24" y="1.27" length="middle" rot="R180"/>
+<pin name="GND@1" x="15.24" y="-1.27" length="middle" rot="R180"/>
+<pin name="GND@2" x="15.24" y="-3.81" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="6.35" x2="10.16" y2="6.35" width="0.254" layer="94"/>
+<wire x1="10.16" y1="6.35" x2="10.16" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-6.35" x2="-10.16" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-6.35" x2="-10.16" y2="6.35" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.778" layer="95" align="center">BMP280</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -945,7 +1081,7 @@ UART</text>
 <gate name="G$1" symbol="MODULE_SX1280" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MODULE_SX1280">
+<device name="THT" package="MODULE_SX1280_THT">
 <connects>
 <connect gate="G$1" pin="ANT" pad="ANT"/>
 <connect gate="G$1" pin="BUSY" pad="BUSY"/>
@@ -968,7 +1104,7 @@ UART</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="EXT" package="MODULE_SX1280_EXT">
+<device name="EXT" package="MODULE_SX1280_THT_EXT">
 <connects>
 <connect gate="G$1" pin="ANT" pad="ANT"/>
 <connect gate="G$1" pin="BUSY" pad="BUSY"/>
@@ -986,6 +1122,29 @@ UART</text>
 <connect gate="G$1" pin="NSS" pad="NSS"/>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="MODULE_SX1280">
+<connects>
+<connect gate="G$1" pin="ANT" pad="9"/>
+<connect gate="G$1" pin="BUSY" pad="15"/>
+<connect gate="G$1" pin="DIO1" pad="16"/>
+<connect gate="G$1" pin="DIO2" pad="1"/>
+<connect gate="G$1" pin="DIO3" pad="2"/>
+<connect gate="G$1" pin="GND@1" pad="4"/>
+<connect gate="G$1" pin="GND@2" pad="10"/>
+<connect gate="G$1" pin="GND@3" pad="11"/>
+<connect gate="G$1" pin="GND@4" pad="12"/>
+<connect gate="G$1" pin="GND@5" pad="14"/>
+<connect gate="G$1" pin="MISO" pad="5"/>
+<connect gate="G$1" pin="MOSI" pad="6"/>
+<connect gate="G$1" pin="NRESET" pad="13"/>
+<connect gate="G$1" pin="NSS" pad="8"/>
+<connect gate="G$1" pin="SCK" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1041,7 +1200,7 @@ UART</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BMP280">
+<deviceset name="MODULE_BMP280">
 <gates>
 <gate name="G$1" symbol="MODULE_BMP280" x="0" y="0"/>
 </gates>
@@ -1183,6 +1342,71 @@ UART</text>
 <connect gate="G$1" pin="VBUS@1" pad="P$22"/>
 <connect gate="G$1" pin="VBUS@2" pad="P$23"/>
 <connect gate="G$1" pin="VBUS@3" pad="P$24"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PA6H">
+<gates>
+<gate name="G$1" symbol="PA6H" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PA6H">
+<connects>
+<connect gate="G$1" pin="1PPS" pad="P$13"/>
+<connect gate="G$1" pin="3D-FIX" pad="P$5"/>
+<connect gate="G$1" pin="ANT" pad="P$11"/>
+<connect gate="G$1" pin="GND" pad="P$3"/>
+<connect gate="G$1" pin="GND@1" pad="P$8"/>
+<connect gate="G$1" pin="GND@2" pad="P$12"/>
+<connect gate="G$1" pin="GND@3" pad="P$19"/>
+<connect gate="G$1" pin="NRST" pad="P$2"/>
+<connect gate="G$1" pin="RTCM" pad="P$14"/>
+<connect gate="G$1" pin="RX" pad="P$10"/>
+<connect gate="G$1" pin="TX" pad="P$9"/>
+<connect gate="G$1" pin="VBACK" pad="P$4"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATTERY" prefix="B" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INV_BAT">
+<connects>
+<connect gate="G$1" pin="+" pad="P$1"/>
+<connect gate="G$1" pin="-" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BMP280">
+<gates>
+<gate name="G$1" symbol="BMP280" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BMP280">
+<connects>
+<connect gate="G$1" pin="CSB" pad="2"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
