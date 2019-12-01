@@ -620,6 +620,50 @@
 <text x="0" y="2.4996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.4996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="QFN50P400X400X100-25T250N" urn="urn:adsk.eagle:footprint:15532346/1">
+<description>24-QFN, 0.50 mm pitch, 4.00 X 4.00 X 1.00 mm body, 2.50 X 2.50 mm thermal pad
+&lt;p&gt;24-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 1.00 mm and thermal pad size 2.50 X 2.50 mm&lt;/p&gt;</description>
+<circle x="-2.554" y="1.886" radius="0.25" width="0" layer="21"/>
+<wire x1="-2.05" y1="1.636" x2="-2.05" y2="2.05" width="0.12" layer="21"/>
+<wire x1="-2.05" y1="2.05" x2="-1.636" y2="2.05" width="0.12" layer="21"/>
+<wire x1="2.05" y1="1.636" x2="2.05" y2="2.05" width="0.12" layer="21"/>
+<wire x1="2.05" y1="2.05" x2="1.636" y2="2.05" width="0.12" layer="21"/>
+<wire x1="2.05" y1="-1.636" x2="2.05" y2="-2.05" width="0.12" layer="21"/>
+<wire x1="2.05" y1="-2.05" x2="1.636" y2="-2.05" width="0.12" layer="21"/>
+<wire x1="-2.05" y1="-1.636" x2="-2.05" y2="-2.05" width="0.12" layer="21"/>
+<wire x1="-2.05" y1="-2.05" x2="-1.636" y2="-2.05" width="0.12" layer="21"/>
+<wire x1="2.05" y1="-2.05" x2="-2.05" y2="-2.05" width="0.12" layer="51"/>
+<wire x1="-2.05" y1="-2.05" x2="-2.05" y2="2.05" width="0.12" layer="51"/>
+<wire x1="-2.05" y1="2.05" x2="2.05" y2="2.05" width="0.12" layer="51"/>
+<wire x1="2.05" y1="2.05" x2="2.05" y2="-2.05" width="0.12" layer="51"/>
+<smd name="1" x="-1.9446" y="1.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="2" x="-1.9446" y="0.75" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="3" x="-1.9446" y="0.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="4" x="-1.9446" y="-0.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="5" x="-1.9446" y="-0.75" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="6" x="-1.9446" y="-1.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="7" x="-1.25" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="-0.75" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="-0.25" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="0.25" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="11" x="0.75" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="12" x="1.25" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="1.9446" y="-1.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="14" x="1.9446" y="-0.75" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="15" x="1.9446" y="-0.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="16" x="1.9446" y="0.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="17" x="1.9446" y="0.75" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="18" x="1.9446" y="1.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
+<smd name="19" x="1.25" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="20" x="0.75" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="21" x="0.25" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="22" x="-0.25" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="23" x="-0.75" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="24" x="-1.25" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
+<smd name="25" x="0" y="0" dx="2.5" dy="2.5" layer="1" thermals="no"/>
+<text x="0" y="2.9996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.9996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P1200X1200X160-64N" urn="urn:adsk.eagle:package:15005550/1" type="model">
@@ -640,6 +684,13 @@
 &lt;p&gt;24-pin QFN package with 0.40 mm pitch with body size 3.00 X 3.00 X 1.05 mm and thermal pad size 1.70 X 1.54 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="QFN40P300X300X105-25T170X154N"/>
+</packageinstances>
+</package3d>
+<package3d name="QFN50P400X400X100-25T250N" urn="urn:adsk.eagle:package:15532342/1" type="model">
+<description>24-QFN, 0.50 mm pitch, 4.00 X 4.00 X 1.00 mm body, 2.50 X 2.50 mm thermal pad
+&lt;p&gt;24-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 1.00 mm and thermal pad size 2.50 X 2.50 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="QFN50P400X400X100-25T250N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1038,6 +1089,33 @@ UART</text>
 <wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
 <text x="0" y="12.7" size="1.778" layer="95" align="bottom-center">MPU9250</text>
+</symbol>
+<symbol name="BQ25606">
+<pin name="VBUS" x="-15.24" y="12.7" length="middle"/>
+<pin name="PMID" x="-15.24" y="7.62" length="middle"/>
+<pin name="ACDRV" x="-15.24" y="5.08" length="middle"/>
+<pin name="VAC" x="-15.24" y="10.16" length="middle"/>
+<pin name="OTG" x="-15.24" y="2.54" length="middle"/>
+<pin name="ICHG" x="-15.24" y="0" length="middle"/>
+<pin name="NCE" x="-15.24" y="-2.54" length="middle"/>
+<pin name="D+" x="-15.24" y="-5.08" length="middle"/>
+<pin name="D-" x="-15.24" y="-7.62" length="middle"/>
+<pin name="VSET" x="-15.24" y="-10.16" length="middle"/>
+<pin name="SW" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="BTST" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="REGN" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="SYS" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="BAT" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="TS" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="ILIM" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="NPG" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="STAT" x="15.24" y="10.16" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="0" y="17.78" size="1.778" layer="95" align="bottom-center">BQ25606</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1510,6 +1588,43 @@ UART</text>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15487640/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BQ25606">
+<gates>
+<gate name="G$1" symbol="BQ25606" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN50P400X400X100-25T250N">
+<connects>
+<connect gate="G$1" pin="ACDRV" pad="2"/>
+<connect gate="G$1" pin="BAT" pad="13 14"/>
+<connect gate="G$1" pin="BTST" pad="21"/>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="4"/>
+<connect gate="G$1" pin="GND" pad="17 18 25"/>
+<connect gate="G$1" pin="ICHG" pad="10"/>
+<connect gate="G$1" pin="ILIM" pad="8"/>
+<connect gate="G$1" pin="NCE" pad="9"/>
+<connect gate="G$1" pin="NPG" pad="7"/>
+<connect gate="G$1" pin="OTG" pad="6"/>
+<connect gate="G$1" pin="PMID" pad="23"/>
+<connect gate="G$1" pin="REGN" pad="22"/>
+<connect gate="G$1" pin="STAT" pad="5"/>
+<connect gate="G$1" pin="SW" pad="19 20"/>
+<connect gate="G$1" pin="SYS" pad="15 16"/>
+<connect gate="G$1" pin="TS" pad="11"/>
+<connect gate="G$1" pin="VAC" pad="1"/>
+<connect gate="G$1" pin="VBUS" pad="24"/>
+<connect gate="G$1" pin="VSET" pad="12"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15532342/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
