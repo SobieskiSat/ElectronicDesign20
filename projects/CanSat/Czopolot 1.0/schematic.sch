@@ -5714,7 +5714,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2"/>
@@ -5762,11 +5761,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="P+3" gate="VCC" x="5.08" y="-60.96" smashed="yes" rot="R180">
 <attribute name="VALUE" x="7.62" y="-58.42" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="P+4" gate="VCC" x="-5.08" y="-40.64" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-7.62" y="-40.64" size="1.778" layer="96"/>
-</instance>
 <instance part="P+5" gate="VCC" x="-30.48" y="17.78" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-27.94" y="15.24" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="-33.02" y="20.32" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND5" gate="1" x="-50.8" y="7.62" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-53.34" y="10.16" size="1.778" layer="96" rot="R270"/>
@@ -5918,12 +5914,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="ULTIMATE_GPS" gate="A" pin="1"/>
-<wire x1="-7.62" y1="-50.8" x2="-7.62" y2="-40.64" width="0.1524" layer="91"/>
-<label x="-7.62" y="-45.72" size="1.778" layer="95" rot="R90"/>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="3V3"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <wire x1="-27.94" y1="17.78" x2="-22.86" y2="17.78" width="0.1524" layer="91"/>
@@ -5991,6 +5981,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U$1" gate="G$1" pin="X3"/>
 <wire x1="7.62" y1="30.48" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 <label x="7.62" y="33.02" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="V+" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="V+"/>
+<wire x1="-22.86" y1="15.24" x2="-27.94" y2="15.24" width="0.1524" layer="91"/>
+<label x="-27.94" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ULTIMATE_GPS" gate="A" pin="1"/>
+<wire x1="-7.62" y1="-50.8" x2="-7.62" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-7.62" y="-45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
