@@ -2458,12 +2458,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <attribute name="VALUE" x="48.26" y="55.88" size="1.27" layer="96" align="center"/>
 </instance>
 <instance part="U$7" gate="G$1" x="-69.85" y="-11.43" smashed="yes"/>
-<instance part="R4" gate="R$1" x="43.18" y="-19.05" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.005" y="-17.145" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="40.64" y="-19.05" size="1.778" layer="96" rot="R180"/>
+<instance part="R4" gate="R$1" x="54.61" y="-16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.435" y="-14.605" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="52.07" y="-16.51" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND12" gate="1" x="64.77" y="-19.05" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="-19.05" size="1.778" layer="96" align="center"/>
+<instance part="GND12" gate="1" x="76.2" y="-16.51" smashed="yes" rot="R90">
+<attribute name="VALUE" x="78.74" y="-16.51" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="U$3" gate="G$1" x="163.83" y="67.31" smashed="yes"/>
 <instance part="GND13" gate="1" x="189.23" y="85.09" smashed="yes" rot="R90">
@@ -2500,8 +2500,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <instance part="BTN_RST" gate="G$1" x="-43.18" y="62.23" smashed="yes">
 <attribute name="NAME" x="-29.21" y="63.5" size="1.778" layer="95" align="center"/>
 </instance>
-<instance part="BTN_USR" gate="G$1" x="54.61" y="-19.05" smashed="yes">
-<attribute name="NAME" x="54.61" y="-15.24" size="1.778" layer="95" align="center"/>
+<instance part="BTN_USR" gate="G$1" x="66.04" y="-16.51" smashed="yes">
+<attribute name="NAME" x="66.04" y="-12.7" size="1.778" layer="95" align="center"/>
 </instance>
 <instance part="U$4" gate="G$1" x="160.02" y="29.21" smashed="yes"/>
 <instance part="GND14" gate="1" x="180.34" y="30.48" smashed="yes" rot="R90">
@@ -2752,45 +2752,45 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <attribute name="NAME" x="-44.45" y="74.295" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-44.45" y="72.39" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D6" gate="G$1" x="-27.94" y="-29.21" smashed="yes" rot="R90">
-<attribute name="NAME" x="-29.21" y="-26.67" size="1.778" layer="95" rot="R180"/>
+<instance part="D6" gate="G$1" x="-38.1" y="-29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.37" y="-26.67" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="D7" gate="G$1" x="-27.94" y="-34.29" smashed="yes" rot="R90">
-<attribute name="NAME" x="-29.21" y="-31.75" size="1.778" layer="95" rot="R180"/>
+<instance part="D7" gate="G$1" x="-38.1" y="-34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.37" y="-31.75" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="D8" gate="G$1" x="-27.94" y="-39.37" smashed="yes" rot="R90">
-<attribute name="NAME" x="-29.21" y="-36.83" size="1.778" layer="95" rot="R180"/>
+<instance part="D8" gate="G$1" x="-38.1" y="-39.37" smashed="yes" rot="R90">
+<attribute name="NAME" x="-39.37" y="-36.83" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="D9" gate="G$1" x="58.42" y="-22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="59.69" y="-24.13" size="1.778" layer="95" rot="R270"/>
+<instance part="D9" gate="G$1" x="69.85" y="-20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="71.12" y="-21.59" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="R26" gate="R$1" x="-12.7" y="-29.21" smashed="yes" rot="R90">
-<attribute name="NAME" x="-15.875" y="-27.305" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-15.24" y="-29.21" size="1.778" layer="96" rot="R180"/>
+<instance part="R26" gate="R$1" x="-22.86" y="-29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="-26.035" y="-27.305" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-25.4" y="-29.21" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R27" gate="R$1" x="-12.7" y="-34.29" smashed="yes" rot="R90">
-<attribute name="NAME" x="-15.875" y="-32.385" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-15.24" y="-34.29" size="1.778" layer="96" rot="R180"/>
+<instance part="R27" gate="R$1" x="-22.86" y="-34.29" smashed="yes" rot="R90">
+<attribute name="NAME" x="-26.035" y="-32.385" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-25.4" y="-34.29" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R28" gate="R$1" x="-12.7" y="-39.37" smashed="yes" rot="R90">
-<attribute name="NAME" x="-15.875" y="-37.465" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-15.24" y="-39.37" size="1.778" layer="96" rot="R180"/>
+<instance part="R28" gate="R$1" x="-22.86" y="-39.37" smashed="yes" rot="R90">
+<attribute name="NAME" x="-26.035" y="-37.465" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-25.4" y="-39.37" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND27" gate="1" x="-34.29" y="-29.21" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-34.29" y="-29.21" size="1.778" layer="96" rot="R180" align="center-left"/>
+<instance part="GND27" gate="1" x="-44.45" y="-29.21" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-44.45" y="-29.21" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
-<instance part="GND28" gate="1" x="-34.29" y="-34.29" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-34.29" y="-34.29" size="1.778" layer="96" rot="R180" align="center-left"/>
+<instance part="GND28" gate="1" x="-44.45" y="-34.29" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-44.45" y="-34.29" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
-<instance part="GND29" gate="1" x="-34.29" y="-39.37" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-34.29" y="-39.37" size="1.778" layer="96" rot="R180" align="center-left"/>
+<instance part="GND29" gate="1" x="-44.45" y="-39.37" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-44.45" y="-39.37" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
-<instance part="R29" gate="R$1" x="43.18" y="-22.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.005" y="-20.955" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="40.64" y="-22.86" size="1.778" layer="96" rot="R180"/>
+<instance part="R29" gate="R$1" x="54.61" y="-20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.435" y="-18.415" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="52.07" y="-20.32" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND30" gate="1" x="64.77" y="-22.86" smashed="yes" rot="R90">
-<attribute name="VALUE" x="67.31" y="-22.86" size="1.778" layer="96" align="center"/>
+<instance part="GND30" gate="1" x="76.2" y="-20.32" smashed="yes" rot="R90">
+<attribute name="VALUE" x="78.74" y="-20.32" size="1.778" layer="96" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -3111,7 +3111,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="62.23" y1="-19.05" x2="59.69" y2="-19.05" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-16.51" x2="71.12" y2="-16.51" width="0.1524" layer="91"/>
 <pinref part="BTN_USR" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
@@ -3522,14 +3522,16 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <segment>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB3"/>
 <pinref part="R4" gate="R$1" pin="2"/>
-<wire x1="30.48" y1="-19.05" x2="38.1" y2="-19.05" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-19.05" x2="45.72" y2="-19.05" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-19.05" x2="45.72" y2="-16.51" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-16.51" x2="49.53" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R4" gate="R$1" pin="1"/>
 <pinref part="BTN_USR" gate="G$1" pin="P$1"/>
-<wire x1="48.26" y1="-19.05" x2="49.53" y2="-19.05" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="-16.51" x2="60.96" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -3555,6 +3557,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="146.05" y1="69.85" x2="137.16" y2="69.85" width="0.1524" layer="91"/>
 <label x="146.05" y="69.85" size="1.778" layer="95" rot="R180" align="top-left"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PA3"/>
+<wire x1="0" y1="-19.05" x2="-11.43" y2="-19.05" width="0.1524" layer="91"/>
+<label x="-10.16" y="-19.05" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -3574,6 +3581,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="132.08" y1="67.31" x2="120.65" y2="67.31" width="0.1524" layer="91"/>
 <label x="120.65" y="67.31" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PA2"/>
+<wire x1="0" y1="-16.51" x2="-11.43" y2="-16.51" width="0.1524" layer="91"/>
+<label x="-10.16" y="-16.51" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$19" class="0">
 <segment>
@@ -3589,12 +3601,22 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="144.78" y1="36.83" x2="133.35" y2="36.83" width="0.1524" layer="91"/>
 <label x="144.78" y="36.83" size="1.778" layer="95" align="bottom-right"/>
 </segment>
+<segment>
+<wire x1="41.91" y1="-49.53" x2="30.48" y2="-49.53" width="0.1524" layer="91"/>
+<label x="41.91" y="-49.53" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB15"/>
+</segment>
 </net>
 <net name="LR_MISO" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="MISO"/>
 <wire x1="144.78" y1="34.29" x2="133.35" y2="34.29" width="0.1524" layer="91"/>
 <label x="144.78" y="34.29" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<wire x1="41.91" y1="-46.99" x2="30.48" y2="-46.99" width="0.1524" layer="91"/>
+<label x="41.91" y="-46.99" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB14"/>
 </segment>
 </net>
 <net name="LR_SCK" class="0">
@@ -3603,12 +3625,22 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="144.78" y1="31.75" x2="133.35" y2="31.75" width="0.1524" layer="91"/>
 <label x="144.78" y="31.75" size="1.778" layer="95" align="bottom-right"/>
 </segment>
+<segment>
+<wire x1="41.91" y1="-44.45" x2="30.48" y2="-44.45" width="0.1524" layer="91"/>
+<label x="41.91" y="-44.45" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB13"/>
+</segment>
 </net>
 <net name="LR_NSS" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="NSS"/>
 <wire x1="144.78" y1="29.21" x2="133.35" y2="29.21" width="0.1524" layer="91"/>
 <label x="144.78" y="29.21" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<wire x1="41.91" y1="-41.91" x2="30.48" y2="-41.91" width="0.1524" layer="91"/>
+<label x="41.91" y="-41.91" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB12"/>
 </segment>
 </net>
 <net name="LR_BUSY" class="0">
@@ -3617,12 +3649,22 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="144.78" y1="26.67" x2="133.35" y2="26.67" width="0.1524" layer="91"/>
 <label x="144.78" y="26.67" size="1.778" layer="95" align="bottom-right"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PC6"/>
+<wire x1="30.48" y1="-52.07" x2="41.91" y2="-52.07" width="0.1524" layer="91"/>
+<label x="31.75" y="-52.07" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LR_NRST" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="NRESET"/>
 <wire x1="144.78" y1="24.13" x2="133.35" y2="24.13" width="0.1524" layer="91"/>
 <label x="144.78" y="24.13" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PC7"/>
+<wire x1="30.48" y1="-54.61" x2="41.91" y2="-54.61" width="0.1524" layer="91"/>
+<label x="31.75" y="-54.61" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LR_ANT" class="0">
@@ -3638,6 +3680,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="175.26" y1="24.13" x2="185.42" y2="24.13" width="0.1524" layer="91"/>
 <label x="175.26" y="24.13" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB2"/>
+<wire x1="30.48" y1="-16.51" x2="41.91" y2="-16.51" width="0.1524" layer="91"/>
+<label x="31.75" y="-16.51" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BMP_SDA" class="0">
 <segment>
@@ -3645,6 +3692,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="U$8" gate="G$1" pin="SDA"/>
 <wire x1="231.14" y1="82.55" x2="243.84" y2="82.55" width="0.1524" layer="91"/>
 <label x="243.84" y="82.55" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB11"/>
+<wire x1="30.48" y1="-39.37" x2="41.91" y2="-39.37" width="0.1524" layer="91"/>
+<label x="31.75" y="-39.37" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BMP_SDI" class="0">
@@ -3665,6 +3717,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="U$8" gate="G$1" pin="SCL"/>
 <wire x1="232.41" y1="85.09" x2="243.84" y2="85.09" width="0.1524" layer="91"/>
 <label x="243.84" y="85.09" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB10"/>
+<wire x1="30.48" y1="-36.83" x2="41.91" y2="-36.83" width="0.1524" layer="91"/>
+<label x="31.75" y="-36.83" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BMP_SDO" class="0">
@@ -3691,6 +3748,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="288.29" y1="39.37" x2="288.29" y2="52.07" width="0.1524" layer="91"/>
 <label x="288.29" y="41.91" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB5"/>
+<wire x1="30.48" y1="-24.13" x2="41.91" y2="-24.13" width="0.1524" layer="91"/>
+<label x="31.75" y="-24.13" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MPU_SDA" class="0">
 <segment>
@@ -3701,6 +3763,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="232.41" y1="41.91" x2="234.95" y2="41.91" width="0.1524" layer="91"/>
 <wire x1="234.95" y1="41.91" x2="234.95" y2="39.37" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB7"/>
+<wire x1="30.48" y1="-29.21" x2="41.91" y2="-29.21" width="0.1524" layer="91"/>
+<label x="31.75" y="-29.21" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MPU_SCL" class="0">
 <segment>
@@ -3708,6 +3775,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="250.19" y1="36.83" x2="232.41" y2="36.83" width="0.1524" layer="91"/>
 <label x="250.19" y="36.83" size="1.778" layer="95" align="bottom-right"/>
 <pinref part="R11" gate="R$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB6"/>
+<wire x1="30.48" y1="-26.67" x2="41.91" y2="-26.67" width="0.1524" layer="91"/>
+<label x="31.75" y="-26.67" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MPU_NCS" class="0">
@@ -4055,62 +4127,62 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <segment>
 <pinref part="D6" gate="G$1" pin="P$1"/>
 <pinref part="R26" gate="R$1" pin="2"/>
-<wire x1="-24.13" y1="-29.21" x2="-17.78" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="-34.29" y1="-29.21" x2="-27.94" y2="-29.21" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="D7" gate="G$1" pin="P$1"/>
 <pinref part="R27" gate="R$1" pin="2"/>
-<wire x1="-24.13" y1="-34.29" x2="-17.78" y2="-34.29" width="0.1524" layer="91"/>
+<wire x1="-34.29" y1="-34.29" x2="-27.94" y2="-34.29" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
 <pinref part="D8" gate="G$1" pin="P$1"/>
 <pinref part="R28" gate="R$1" pin="2"/>
-<wire x1="-24.13" y1="-39.37" x2="-17.78" y2="-39.37" width="0.1524" layer="91"/>
+<wire x1="-34.29" y1="-39.37" x2="-27.94" y2="-39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="R27" gate="R$1" pin="1"/>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PA14"/>
-<wire x1="-7.62" y1="-34.29" x2="0" y2="-34.29" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-34.29" x2="0" y2="-34.29" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
 <pinref part="R26" gate="R$1" pin="1"/>
-<wire x1="-7.62" y1="-29.21" x2="-3.81" y2="-29.21" width="0.1524" layer="91"/>
-<wire x1="-3.81" y1="-29.21" x2="-3.81" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-29.21" x2="-13.97" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="-29.21" x2="-13.97" y2="-31.75" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PA13"/>
-<wire x1="-3.81" y1="-31.75" x2="0" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="-31.75" x2="0" y2="-31.75" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="R28" gate="R$1" pin="1"/>
-<wire x1="-7.62" y1="-39.37" x2="-3.81" y2="-39.37" width="0.1524" layer="91"/>
-<wire x1="-3.81" y1="-39.37" x2="-3.81" y2="-36.83" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-39.37" x2="-13.97" y2="-39.37" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="-39.37" x2="-13.97" y2="-36.83" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PA15"/>
-<wire x1="-3.81" y1="-36.83" x2="0" y2="-36.83" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="-36.83" x2="0" y2="-36.83" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
 <pinref part="R29" gate="R$1" pin="1"/>
 <pinref part="D9" gate="G$1" pin="P$1"/>
-<wire x1="54.61" y1="-22.86" x2="48.26" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-20.32" x2="59.69" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$50" class="0">
 <segment>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB4"/>
-<wire x1="30.48" y1="-21.59" x2="34.29" y2="-21.59" width="0.1524" layer="91"/>
-<wire x1="34.29" y1="-21.59" x2="34.29" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-21.59" x2="45.72" y2="-21.59" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-21.59" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="R29" gate="R$1" pin="2"/>
-<wire x1="34.29" y1="-22.86" x2="38.1" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-20.32" x2="49.53" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
