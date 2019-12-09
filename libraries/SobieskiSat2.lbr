@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -483,36 +483,84 @@
 <smd name="GND@2" x="-1.27" y="-1.27" dx="1.27" dy="0.635" layer="1"/>
 <smd name="P$4" x="1.27" y="-1.27" dx="1.27" dy="0.635" layer="1"/>
 </package>
-<package name="INV_USBC">
-<pad name="P$1" x="-3.6" y="-0.02" drill="0.4" diameter="0.6"/>
-<pad name="P$2" x="-3.2" y="-0.85" drill="0.4" diameter="0.6"/>
-<pad name="P$3" x="-2.4" y="-0.87" drill="0.4" diameter="0.6"/>
-<pad name="P$4" x="-1.6" y="-0.85" drill="0.4" diameter="0.6"/>
-<pad name="P$5" x="-1.2" y="-0.02" drill="0.4" diameter="0.6"/>
-<pad name="P$6" x="-0.4" y="0" drill="0.4" diameter="0.6"/>
-<pad name="P$7" x="0.4" y="-0.02" drill="0.4" diameter="0.6"/>
-<pad name="P$8" x="1.2" y="0" drill="0.4" diameter="0.6"/>
-<pad name="P$9" x="1.6" y="-0.87" drill="0.4" diameter="0.6"/>
-<pad name="P$10" x="2.4" y="-0.85" drill="0.4" diameter="0.6"/>
-<pad name="P$11" x="3.2" y="-0.87" drill="0.4" diameter="0.6"/>
-<pad name="P$12" x="3.6" y="0" drill="0.4" diameter="0.6"/>
-<smd name="P$13" x="-2.75" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$14" x="-2.25" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$15" x="-1.75" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$16" x="-1.25" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$17" x="-0.75" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$18" x="-0.25" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$19" x="0.25" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$20" x="0.75" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$21" x="1.25" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$22" x="1.75" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$23" x="2.25" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$24" x="2.75" y="3.81" dx="0.65" dy="0.3" layer="1" rot="R90"/>
-<text x="0" y="1.905" size="1.27" layer="25" align="center">inv</text>
-<wire x1="-4.5" y1="-8.5" x2="4.5" y2="-8.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-8.5" x2="4.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="1.5" x2="-4.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="1.5" x2="-4.5" y2="-8.5" width="0.127" layer="21"/>
+<package name="USB-C">
+<wire x1="-4.75" y1="-0.65" x2="4.75" y2="-0.65" width="0" layer="20"/>
+<wire x1="-4.75" y1="-0.95" x2="-4.75" y2="-5.75" width="0" layer="20"/>
+<wire x1="-4.75" y1="-5.75" x2="-7" y2="-5.75" width="0" layer="20"/>
+<wire x1="4.75" y1="-0.95" x2="4.75" y2="-5.75" width="0" layer="20"/>
+<wire x1="4.75" y1="-5.75" x2="7" y2="-5.75" width="0" layer="20"/>
+<wire x1="-4.75" y1="-0.65" x2="-4.75" y2="-0.95" width="0" layer="20" curve="180"/>
+<wire x1="4.75" y1="-0.65" x2="4.75" y2="-0.95" width="0" layer="20" curve="-180"/>
+<pad name="B$1" x="3.12" y="0.9" drill="0.3" diameter="0.65" shape="long"/>
+<wire x1="2.77" y1="1.05" x2="3.47" y2="1.05" width="0" layer="20"/>
+<wire x1="2.77" y1="0.75" x2="3.47" y2="0.75" width="0" layer="20"/>
+<wire x1="2.77" y1="1.05" x2="2.77" y2="0.75" width="0" layer="20" curve="180"/>
+<wire x1="3.47" y1="1.05" x2="3.47" y2="0.75" width="0" layer="20" curve="-180"/>
+<pad name="B$2" x="2.495" y="0" drill="0.35" diameter="0.7"/>
+<pad name="B$3" x="1.695" y="0" drill="0.35" diameter="0.7"/>
+<pad name="B$4" x="1.31" y="0.9" drill="0.35" diameter="0.7"/>
+<pad name="B$5" x="0.845" y="0" drill="0.35" diameter="0.7"/>
+<pad name="B$6" x="0.41" y="0.9" drill="0.35" diameter="0.7"/>
+<pad name="B$7" x="-0.41" y="0.9" drill="0.35" diameter="0.7"/>
+<pad name="B$8" x="-0.845" y="0" drill="0.35" diameter="0.7"/>
+<pad name="B$9" x="-1.31" y="0.9" drill="0.35" diameter="0.7"/>
+<pad name="B$10" x="-1.695" y="0" drill="0.35" diameter="0.7"/>
+<pad name="B$11" x="-2.495" y="0" drill="0.35" diameter="0.7"/>
+<wire x1="-2.77" y1="1.05" x2="-3.47" y2="1.05" width="0" layer="20"/>
+<wire x1="-2.77" y1="0.75" x2="-3.47" y2="0.75" width="0" layer="20"/>
+<wire x1="-2.77" y1="1.05" x2="-2.77" y2="0.75" width="0" layer="20" curve="-180"/>
+<wire x1="-3.47" y1="1.05" x2="-3.47" y2="0.75" width="0" layer="20" curve="180"/>
+<pad name="B$12" x="-3.12" y="0.9" drill="0.3" diameter="0.65" shape="long"/>
+<smd name="A$1" x="-2.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<wire x1="-6.325" y1="-3.35" x2="-6.325" y2="-4.35" width="0" layer="20"/>
+<wire x1="-5.825" y1="-3.35" x2="-5.825" y2="-4.35" width="0" layer="20"/>
+<wire x1="-6.325" y1="-4.35" x2="-5.825" y2="-4.35" width="0" layer="20" curve="180"/>
+<wire x1="-6.325" y1="-3.35" x2="-5.825" y2="-3.35" width="0" layer="20" curve="-180"/>
+<wire x1="5.825" y1="-3.35" x2="5.825" y2="-4.35" width="0" layer="20"/>
+<wire x1="6.325" y1="-3.35" x2="6.325" y2="-4.35" width="0" layer="20"/>
+<wire x1="5.825" y1="-4.35" x2="6.325" y2="-4.35" width="0" layer="20" curve="180"/>
+<wire x1="5.825" y1="-3.35" x2="6.325" y2="-3.35" width="0" layer="20" curve="-180"/>
+<pad name="N$1" x="-6.075" y="-3.85" drill="0.5" diameter="0.95" shape="long" rot="R90"/>
+<pad name="N$2" x="6.075" y="-3.85" drill="0.5" diameter="0.95" shape="long" rot="R90"/>
+<wire x1="-6.325" y1="0.6" x2="-6.325" y2="-0.4" width="0" layer="20"/>
+<wire x1="-5.825" y1="0.6" x2="-5.825" y2="-0.4" width="0" layer="20"/>
+<wire x1="-6.325" y1="-0.4" x2="-5.825" y2="-0.4" width="0" layer="20" curve="180"/>
+<wire x1="-6.325" y1="0.6" x2="-5.825" y2="0.6" width="0" layer="20" curve="-180"/>
+<pad name="N$3" x="-6.075" y="0.1" drill="0.5" diameter="0.95" shape="long" rot="R90"/>
+<wire x1="5.825" y1="0.6" x2="5.825" y2="-0.4" width="0" layer="20"/>
+<wire x1="6.325" y1="0.6" x2="6.325" y2="-0.4" width="0" layer="20"/>
+<wire x1="5.825" y1="-0.4" x2="6.325" y2="-0.4" width="0" layer="20" curve="180"/>
+<wire x1="5.825" y1="0.6" x2="6.325" y2="0.6" width="0" layer="20" curve="-180"/>
+<pad name="N$4" x="6.075" y="0.1" drill="0.5" diameter="0.95" shape="long" rot="R90"/>
+<wire x1="-3.45" y1="2.425" x2="-3.45" y2="1.675" width="0" layer="20" curve="-180"/>
+<smd name="A$2" x="-2.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$3" x="-1.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$4" x="-1.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$5" x="-0.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$6" x="-0.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$7" x="0.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$8" x="0.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$9" x="1.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$10" x="1.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$11" x="2.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<smd name="A$12" x="2.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
+<wire x1="-3.45" y1="2.425" x2="-3.45" y2="1.675" width="0" layer="20" curve="180"/>
+<wire x1="3.45" y1="2.425" x2="3.45" y2="1.675" width="0" layer="20" curve="-180"/>
+<wire x1="3.45" y1="2.425" x2="3.45" y2="1.675" width="0" layer="20" curve="180"/>
+<wire x1="-4.725" y1="2.75" x2="-4.725" y2="2.15" width="0" layer="20"/>
+<wire x1="-4.225" y1="2.75" x2="-4.225" y2="2.15" width="0" layer="20"/>
+<wire x1="-4.725" y1="2.15" x2="-4.225" y2="2.15" width="0" layer="20" curve="180"/>
+<wire x1="-4.725" y1="2.75" x2="-4.225" y2="2.75" width="0" layer="20" curve="-180"/>
+<pad name="N$5" x="-4.475" y="2.45" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<wire x1="4.225" y1="2.75" x2="4.225" y2="2.15" width="0" layer="20"/>
+<wire x1="4.725" y1="2.75" x2="4.725" y2="2.15" width="0" layer="20"/>
+<wire x1="4.225" y1="2.15" x2="4.725" y2="2.15" width="0" layer="20" curve="180"/>
+<wire x1="4.225" y1="2.75" x2="4.725" y2="2.75" width="0" layer="20" curve="-180"/>
+<pad name="N$6" x="4.475" y="2.45" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<text x="0" y="3.2" size="1.27" layer="21" align="bottom-center">USB-C</text>
+<wire x1="-7" y1="-5.5" x2="-7" y2="5" width="0.15" layer="51"/>
+<wire x1="-7" y1="5" x2="7" y2="5" width="0.15" layer="51"/>
+<wire x1="7" y1="5" x2="7" y2="-5.5" width="0.15" layer="51"/>
 </package>
 <package name="PA6H">
 <smd name="P$1" x="-8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
@@ -1010,28 +1058,28 @@ UART</text>
 </symbol>
 <symbol name="USB-C">
 <pin name="GND@1" x="-13.97" y="12.7" length="short" rot="R270"/>
-<pin name="TX1+" x="-11.43" y="12.7" length="short" rot="R270"/>
-<pin name="TX1-" x="-8.89" y="12.7" length="short" rot="R270"/>
-<pin name="VBUS@0" x="-6.35" y="12.7" length="short" rot="R270"/>
+<pin name="SSTX+1" x="-11.43" y="12.7" length="short" rot="R270"/>
+<pin name="SSTX-1" x="-8.89" y="12.7" length="short" rot="R270"/>
+<pin name="VBUS@1" x="-6.35" y="12.7" length="short" rot="R270"/>
 <pin name="CC1" x="-3.81" y="12.7" length="short" rot="R270"/>
-<pin name="D+" x="-1.27" y="12.7" length="short" rot="R270"/>
-<pin name="D-" x="1.27" y="12.7" length="short" rot="R270"/>
+<pin name="D+1" x="-1.27" y="12.7" length="short" rot="R270"/>
+<pin name="D-1" x="1.27" y="12.7" length="short" rot="R270"/>
 <pin name="SBU1" x="3.81" y="12.7" length="short" rot="R270"/>
-<pin name="VBUS@1" x="6.35" y="12.7" length="short" rot="R270"/>
-<pin name="RX2-" x="8.89" y="12.7" length="short" rot="R270"/>
-<pin name="RX2+" x="11.43" y="12.7" length="short" rot="R270"/>
+<pin name="VBUS@2" x="6.35" y="12.7" length="short" rot="R270"/>
+<pin name="SSRX-2" x="8.89" y="12.7" length="short" rot="R270"/>
+<pin name="SSRX+2" x="11.43" y="12.7" length="short" rot="R270"/>
 <pin name="GND@2" x="13.97" y="12.7" length="short" rot="R270"/>
 <pin name="GND@3" x="13.97" y="-13.97" length="short" rot="R90"/>
-<pin name="TX2+" x="11.43" y="-13.97" length="short" rot="R90"/>
-<pin name="TX2-" x="8.89" y="-13.97" length="short" rot="R90"/>
-<pin name="VBUS@3" x="6.35" y="-13.97" length="short" rot="R90"/>
+<pin name="SSTX+2" x="11.43" y="-13.97" length="short" rot="R90"/>
+<pin name="SSTX-2" x="8.89" y="-13.97" length="short" rot="R90"/>
+<pin name="VBUS@4" x="6.35" y="-13.97" length="short" rot="R90"/>
 <pin name="CC2" x="3.81" y="-13.97" length="short" rot="R90"/>
-<pin name="D+@1" x="1.27" y="-13.97" length="short" rot="R90"/>
-<pin name="D-@1" x="-1.27" y="-13.97" length="short" rot="R90"/>
+<pin name="D+2" x="1.27" y="-13.97" length="short" rot="R90"/>
+<pin name="D-2" x="-1.27" y="-13.97" length="short" rot="R90"/>
 <pin name="SBU2" x="-3.81" y="-13.97" length="short" rot="R90"/>
-<pin name="VBUS@2" x="-6.35" y="-13.97" length="short" rot="R90"/>
-<pin name="RX1-" x="-8.89" y="-13.97" length="short" rot="R90"/>
-<pin name="RX1+" x="-11.43" y="-13.97" length="short" rot="R90"/>
+<pin name="VBUS@3" x="-6.35" y="-13.97" length="short" rot="R90"/>
+<pin name="SSRX-1" x="-8.89" y="-13.97" length="short" rot="R90"/>
+<pin name="SSRX+1" x="-11.43" y="-13.97" length="short" rot="R90"/>
 <pin name="GND@4" x="-13.97" y="-13.97" length="short" rot="R90"/>
 <wire x1="-16.51" y1="10.16" x2="16.51" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-16.51" y1="-11.43" x2="16.51" y2="-11.43" width="0.254" layer="94"/>
@@ -1493,32 +1541,32 @@ UART</text>
 <gate name="G$1" symbol="USB-C" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="INV_USBC">
+<device name="" package="USB-C">
 <connects>
-<connect gate="G$1" pin="CC1" pad="P$1"/>
-<connect gate="G$1" pin="CC2" pad="P$2"/>
-<connect gate="G$1" pin="D+" pad="P$3"/>
-<connect gate="G$1" pin="D+@1" pad="P$4"/>
-<connect gate="G$1" pin="D-" pad="P$5"/>
-<connect gate="G$1" pin="D-@1" pad="P$6"/>
-<connect gate="G$1" pin="GND@1" pad="P$7"/>
-<connect gate="G$1" pin="GND@2" pad="P$8"/>
-<connect gate="G$1" pin="GND@3" pad="P$9"/>
-<connect gate="G$1" pin="GND@4" pad="P$10"/>
-<connect gate="G$1" pin="RX1+" pad="P$11"/>
-<connect gate="G$1" pin="RX1-" pad="P$12"/>
-<connect gate="G$1" pin="RX2+" pad="P$13"/>
-<connect gate="G$1" pin="RX2-" pad="P$14"/>
-<connect gate="G$1" pin="SBU1" pad="P$15"/>
-<connect gate="G$1" pin="SBU2" pad="P$16"/>
-<connect gate="G$1" pin="TX1+" pad="P$17"/>
-<connect gate="G$1" pin="TX1-" pad="P$18"/>
-<connect gate="G$1" pin="TX2+" pad="P$19"/>
-<connect gate="G$1" pin="TX2-" pad="P$20"/>
-<connect gate="G$1" pin="VBUS@0" pad="P$21"/>
-<connect gate="G$1" pin="VBUS@1" pad="P$22"/>
-<connect gate="G$1" pin="VBUS@2" pad="P$23"/>
-<connect gate="G$1" pin="VBUS@3" pad="P$24"/>
+<connect gate="G$1" pin="CC1" pad="A$5"/>
+<connect gate="G$1" pin="CC2" pad="B$5"/>
+<connect gate="G$1" pin="D+1" pad="A$6"/>
+<connect gate="G$1" pin="D+2" pad="B$6"/>
+<connect gate="G$1" pin="D-1" pad="A$7"/>
+<connect gate="G$1" pin="D-2" pad="B$7"/>
+<connect gate="G$1" pin="GND@1" pad="A$1"/>
+<connect gate="G$1" pin="GND@2" pad="A$12"/>
+<connect gate="G$1" pin="GND@3" pad="B$1"/>
+<connect gate="G$1" pin="GND@4" pad="B$12"/>
+<connect gate="G$1" pin="SBU1" pad="A$8"/>
+<connect gate="G$1" pin="SBU2" pad="B$8"/>
+<connect gate="G$1" pin="SSRX+1" pad="B$11"/>
+<connect gate="G$1" pin="SSRX+2" pad="A$11"/>
+<connect gate="G$1" pin="SSRX-1" pad="B$10"/>
+<connect gate="G$1" pin="SSRX-2" pad="A$10"/>
+<connect gate="G$1" pin="SSTX+1" pad="A$2"/>
+<connect gate="G$1" pin="SSTX+2" pad="B$2"/>
+<connect gate="G$1" pin="SSTX-1" pad="A$3"/>
+<connect gate="G$1" pin="SSTX-2" pad="B$3"/>
+<connect gate="G$1" pin="VBUS@1" pad="A$4"/>
+<connect gate="G$1" pin="VBUS@2" pad="A$9"/>
+<connect gate="G$1" pin="VBUS@3" pad="B$9"/>
+<connect gate="G$1" pin="VBUS@4" pad="B$4"/>
 </connects>
 <technologies>
 <technology name=""/>
