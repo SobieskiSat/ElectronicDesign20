@@ -1905,6 +1905,8 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="GND@5"/>
 <contactref element="U$4" pad="GND"/>
 <contactref element="U$3" pad="GND"/>
+<contactref element="U$5" pad="1"/>
+<contactref element="U$5" pad="2"/>
 <wire x1="25.13" y1="-9.51" x2="29.21" y2="-1.271" width="0" layer="19" extent="1-1"/>
 <wire x1="27.13" y1="-23.51" x2="25.13" y2="-9.51" width="0" layer="19" extent="1-1"/>
 <wire x1="23.13" y1="-23.51" x2="27.13" y2="-23.51" width="0" layer="19" extent="1-1"/>
@@ -1912,6 +1914,8 @@ design rules under a new name.</description>
 <wire x1="19.13" y1="-23.51" x2="21.13" y2="-23.51" width="0" layer="19" extent="1-1"/>
 <wire x1="11.43" y1="-34.289" x2="19.13" y2="-23.51" width="0" layer="19" extent="1-1"/>
 <wire x1="3.81" y1="-6.35" x2="25.13" y2="-9.51" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="-46.99" x2="27.13" y2="-23.51" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="-49.53" x2="36.83" y2="-46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U$2" pad="MOSI"/>
