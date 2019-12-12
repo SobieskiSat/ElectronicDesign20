@@ -242,6 +242,30 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <pad name="P$1" x="-1.27" y="0" drill="0.6"/>
 <pad name="P$2" x="1.27" y="0" drill="0.6"/>
 </package>
+<package name="CHIPLED_0603" urn="urn:adsk.eagle:footprint:15676/1">
+<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<wire x1="-0.3" y1="0.8" x2="0.3" y2="0.8" width="0.1016" layer="51" curve="170.055574"/>
+<wire x1="-0.275" y1="-0.825" x2="0.275" y2="-0.825" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-0.4" y1="0.375" x2="-0.4" y2="-0.35" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.35" x2="0.4" y2="-0.35" width="0.1016" layer="51"/>
+<circle x="-0.35" y="0.625" radius="0.075" width="0.0508" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.635" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.7" x2="-0.25" y2="0.85" layer="51"/>
+<rectangle x1="-0.275" y1="0.55" x2="-0.225" y2="0.6" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="-0.4" y2="0.725" layer="51"/>
+<rectangle x1="0.25" y1="0.55" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="0.35" x2="0.45" y2="0.575" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="-0.25" y2="-0.35" layer="51"/>
+<rectangle x1="0.25" y1="-0.85" x2="0.45" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.575" x2="0.275" y2="-0.35" layer="51"/>
+<rectangle x1="-0.275" y1="-0.65" x2="-0.175" y2="-0.55" layer="51"/>
+<rectangle x1="0.175" y1="-0.65" x2="0.275" y2="-0.55" layer="51"/>
+<rectangle x1="-0.125" y1="0" x2="0.125" y2="0.25" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0603" urn="urn:adsk.eagle:package:23616/2" type="model">
@@ -261,6 +285,13 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <packageinstances>
 <packageinstance name="CHIPLED_0805"/>
+</packageinstances>
+</package3d>
+<package3d name="CHIPLED_0603" urn="urn:adsk.eagle:package:15822/2" type="model">
+<description>CHIPLED
+Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
+<packageinstances>
+<packageinstance name="CHIPLED_0603"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -631,50 +662,6 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <wire x1="-7" y1="5" x2="7" y2="5" width="0.15" layer="51"/>
 <wire x1="7" y1="5" x2="7" y2="-5.5" width="0.15" layer="51"/>
 </package>
-<package name="QFN50P400X400X100-25T270N" urn="urn:adsk.eagle:footprint:15841628/1">
-<description>24-QFN, 0.50 mm pitch, 4.00 X 4.00 X 1.00 mm body, 2.70 X 2.70 mm thermal pad
-&lt;p&gt;24-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 1.00 mm and thermal pad size 2.70 X 2.70 mm&lt;/p&gt;</description>
-<circle x="-2.554" y="1.886" radius="0.25" width="0" layer="21"/>
-<wire x1="-2.05" y1="1.636" x2="-2.05" y2="2.05" width="0.12" layer="21"/>
-<wire x1="-2.05" y1="2.05" x2="-1.636" y2="2.05" width="0.12" layer="21"/>
-<wire x1="2.05" y1="1.636" x2="2.05" y2="2.05" width="0.12" layer="21"/>
-<wire x1="2.05" y1="2.05" x2="1.636" y2="2.05" width="0.12" layer="21"/>
-<wire x1="2.05" y1="-1.636" x2="2.05" y2="-2.05" width="0.12" layer="21"/>
-<wire x1="2.05" y1="-2.05" x2="1.636" y2="-2.05" width="0.12" layer="21"/>
-<wire x1="-2.05" y1="-1.636" x2="-2.05" y2="-2.05" width="0.12" layer="21"/>
-<wire x1="-2.05" y1="-2.05" x2="-1.636" y2="-2.05" width="0.12" layer="21"/>
-<wire x1="2.05" y1="-2.05" x2="-2.05" y2="-2.05" width="0.12" layer="51"/>
-<wire x1="-2.05" y1="-2.05" x2="-2.05" y2="2.05" width="0.12" layer="51"/>
-<wire x1="-2.05" y1="2.05" x2="2.05" y2="2.05" width="0.12" layer="51"/>
-<wire x1="2.05" y1="2.05" x2="2.05" y2="-2.05" width="0.12" layer="51"/>
-<smd name="1" x="-1.9446" y="1.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="2" x="-1.9446" y="0.75" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="3" x="-1.9446" y="0.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="4" x="-1.9446" y="-0.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="5" x="-1.9446" y="-0.75" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="6" x="-1.9446" y="-1.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="7" x="-1.25" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="8" x="-0.75" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="9" x="-0.25" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="10" x="0.25" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="11" x="0.75" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="12" x="1.25" y="-1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="13" x="1.9446" y="-1.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="14" x="1.9446" y="-0.75" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="15" x="1.9446" y="-0.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="16" x="1.9446" y="0.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="17" x="1.9446" y="0.75" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="18" x="1.9446" y="1.25" dx="0.84" dy="0.264" layer="1" roundness="100"/>
-<smd name="19" x="1.25" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="20" x="0.75" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="21" x="0.25" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="22" x="-0.25" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="23" x="-0.75" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="24" x="-1.25" y="1.9446" dx="0.84" dy="0.264" layer="1" roundness="100" rot="R90"/>
-<smd name="25" x="0" y="0" dx="2.7" dy="2.7" layer="1" thermals="no"/>
-<text x="0" y="2.9996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.9996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P1200X1200X160-64N" urn="urn:adsk.eagle:package:15005550/1" type="model">
@@ -689,13 +676,6 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 &lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 0.80 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="OSCCC320X250X80N"/>
-</packageinstances>
-</package3d>
-<package3d name="QFN50P400X400X100-25T270N" urn="urn:adsk.eagle:package:15841520/1" type="model">
-<description>24-QFN, 0.50 mm pitch, 4.00 X 4.00 X 1.00 mm body, 2.70 X 2.70 mm thermal pad
-&lt;p&gt;24-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 1.00 mm and thermal pad size 2.70 X 2.70 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="QFN50P400X400X100-25T270N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1165,9 +1145,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="3.25" y="11.7009" size="1.27" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="3.25" y="7.2991" size="1.27" layer="27" align="top-center"/>
 </element>
-<element name="D61" library="Unified" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="DIODE" x="2.5" y="-3" smashed="yes">
-<attribute name="NAME" x="1.865" y="-2.365" size="1.27" layer="25"/>
-<attribute name="VALUE" x="1.865" y="-4.905" size="1.27" layer="27"/>
+<element name="D61" library="Unified" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="DIODE" x="2.5" y="-2.75" smashed="yes">
+<attribute name="NAME" x="1.865" y="-2.115" size="1.27" layer="25"/>
+<attribute name="VALUE" x="1.865" y="-4.655" size="1.27" layer="27"/>
 </element>
 <element name="R63" library="Unified" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="2.5" y="-5" smashed="yes">
 <attribute name="NAME" x="1.865" y="-4.365" size="1.27" layer="25"/>
@@ -1221,10 +1201,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="41.615" y="24.845" size="1.27" layer="27"/>
 </element>
 <element name="U$7" library="SobieskiSat2" package="USB-C" value="USB-C" x="53.5" y="40" smashed="yes"/>
-<element name="U$10" library="SobieskiSat2" package="QFN50P400X400X100-25T270N" package3d_urn="urn:adsk.eagle:package:15841520/1" value="BQ24270" x="49.5" y="15" smashed="yes">
-<attribute name="NAME" x="49.5" y="17.9996" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="VALUE" x="49.5" y="12.0004" size="1.27" layer="27" align="top-center"/>
-</element>
 <element name="C16" library="Unified" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="50.25" y="22.25" smashed="yes">
 <attribute name="NAME" x="49.615" y="22.885" size="1.27" layer="25"/>
 <attribute name="VALUE" x="49.615" y="20.345" size="1.27" layer="27"/>
@@ -1252,6 +1228,10 @@ design rules under a new name.</description>
 <element name="C33" library="Unified" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="" x="53.75" y="16.25" smashed="yes">
 <attribute name="NAME" x="53.115" y="16.885" size="1.27" layer="25"/>
 <attribute name="VALUE" x="53.115" y="14.345" size="1.27" layer="27"/>
+</element>
+<element name="D1" library="Unified" package="CHIPLED_0603" package3d_urn="urn:adsk.eagle:package:15822/2" value="" x="-4.25" y="19.5" smashed="yes">
+<attribute name="NAME" x="-4.885" y="18.23" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="-2.345" y="18.23" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>
