@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -4841,19 +4841,17 @@ configuration</text>
 <label x="138.43" y="-60.96" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-124.46" y1="60.96" x2="-127" y2="60.96" width="0.1524" layer="91"/>
-<label x="-127" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="R16" gate="R$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="-175.26" y1="60.96" x2="-177.8" y2="60.96" width="0.1524" layer="91"/>
-<label x="-180.34" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<wire x1="-177.8" y1="60.96" x2="-180.34" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="60.96" x2="-177.8" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="55.88" x2="-180.34" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-177.8" y="60.96"/>
-<pinref part="U$10" gate="G$1" pin="LDO"/>
-<pinref part="C37" gate="C$1" pin="2"/>
+<wire x1="-127" y1="63.5" x2="-127" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-127" y1="66.04" x2="-116.84" y2="66.04" width="0.1524" layer="91"/>
+<label x="-116.84" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="-144.78" y1="63.5" x2="-127" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-127" y1="63.5" x2="-119.38" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="63.5" x2="-119.38" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-127" y="63.5"/>
+<pinref part="U$10" gate="G$1" pin="SYS"/>
+<pinref part="C35" gate="C$1" pin="1"/>
+<pinref part="L2" gate="G$1" pin="P$1"/>
+<junction x="-127" y="66.04"/>
 </segment>
 </net>
 <net name="USB_D+" class="0">
@@ -5158,21 +5156,6 @@ configuration</text>
 <pinref part="C34" gate="C$1" pin="2"/>
 </segment>
 </net>
-<net name="N$22" class="0">
-<segment>
-<wire x1="-127" y1="63.5" x2="-127" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-127" y1="66.04" x2="-116.84" y2="66.04" width="0.1524" layer="91"/>
-<label x="-116.84" y="66.04" size="1.27" layer="95" xref="yes"/>
-<wire x1="-144.78" y1="63.5" x2="-127" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-127" y1="63.5" x2="-119.38" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="63.5" x2="-119.38" y2="50.8" width="0.1524" layer="91"/>
-<junction x="-127" y="63.5"/>
-<pinref part="U$10" gate="G$1" pin="SYS"/>
-<pinref part="C35" gate="C$1" pin="1"/>
-<pinref part="L2" gate="G$1" pin="P$1"/>
-<junction x="-127" y="66.04"/>
-</segment>
-</net>
 <net name="N$24" class="0">
 <segment>
 <wire x1="-144.78" y1="55.88" x2="-132.08" y2="55.88" width="0.1524" layer="91"/>
@@ -5211,11 +5194,21 @@ configuration</text>
 <pinref part="D2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="?USB_VBUS" class="0">
+<net name="LDO" class="0">
 <segment>
-<wire x1="-201.93" y1="69.85" x2="-199.39" y2="69.85" width="0.1524" layer="91"/>
-<wire x1="-201.93" y1="69.85" x2="-201.93" y2="78.74" width="0.1524" layer="91"/>
-<label x="-201.93" y="69.85" size="1.778" layer="95" rot="R90"/>
+<wire x1="-124.46" y1="60.96" x2="-127" y2="60.96" width="0.1524" layer="91"/>
+<label x="-127" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="R16" gate="R$1" pin="2"/>
+</segment>
+<segment>
+<wire x1="-175.26" y1="60.96" x2="-177.8" y2="60.96" width="0.1524" layer="91"/>
+<label x="-180.34" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="-177.8" y1="60.96" x2="-180.34" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="60.96" x2="-177.8" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="55.88" x2="-180.34" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-177.8" y="60.96"/>
+<pinref part="U$10" gate="G$1" pin="LDO"/>
+<pinref part="C37" gate="C$1" pin="2"/>
 </segment>
 </net>
 </nets>
