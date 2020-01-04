@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -158,7 +158,7 @@
 <libraries>
 <library name="SobieskiSat2">
 <packages>
-<package name="MICROSD_HOLDER">
+<package name="MICROSD_HOLDER" urn="urn:adsk.eagle:footprint:16206851/1">
 <smd name="D2" x="-2.38" y="6" dx="1.27" dy="0.7" layer="1" rot="R90"/>
 <smd name="D3" x="-1.28" y="6" dx="1.27" dy="0.7" layer="1" rot="R90"/>
 <smd name="CMD" x="-0.18" y="6" dx="1.27" dy="0.7" layer="1" rot="R90"/>
@@ -169,6 +169,10 @@
 <smd name="D1" x="5.32" y="6" dx="1.27" dy="0.7" layer="1" rot="R90"/>
 <smd name="SW1" x="0.095" y="-6.54" dx="1.05" dy="0.78" layer="1" rot="R180"/>
 <smd name="SHIELD@4" x="-6.26" y="6.015" dx="1.14" dy="1.83" layer="1" rot="R180"/>
+<smd name="SHIELD@1" x="6.48" y="-5.263340625" dx="0.7" dy="3.33" layer="1"/>
+<smd name="SHIELD@2" x="6.4" y="5.5" dx="0.86" dy="2.8" layer="1"/>
+<smd name="SHIELD@3" x="-6.48" y="-5.263340625" dx="0.7" dy="3.33" layer="1"/>
+<smd name="SW2" x="-4.17" y="-6.465" dx="0.9" dy="0.93" layer="1"/>
 <wire x1="6.05" y1="-4.8" x2="6.05" y2="10.2" width="0.127" layer="51"/>
 <wire x1="6.05" y1="10.2" x2="-4.95" y2="10.2" width="0.127" layer="51"/>
 <wire x1="-4.95" y1="10.2" x2="-4.95" y2="6.3" width="0.127" layer="51"/>
@@ -183,10 +187,6 @@
 <wire x1="6.55" y1="-6.65" x2="6.55" y2="7.4" width="0.127" layer="21"/>
 <wire x1="-6.55" y1="-6.65" x2="-6.55" y2="7.4" width="0.127" layer="21"/>
 <wire x1="6.55" y1="-6.65" x2="-6.55" y2="-6.65" width="0.127" layer="21"/>
-<smd name="SHIELD@1" x="6.48" y="-5.263340625" dx="0.7" dy="3.33" layer="1"/>
-<smd name="SHIELD@2" x="6.4" y="5.5" dx="0.86" dy="2.8" layer="1"/>
-<smd name="SHIELD@3" x="-6.48" y="-5.263340625" dx="0.7" dy="3.33" layer="1"/>
-<smd name="SW2" x="-4.17" y="-6.465" dx="0.9" dy="0.93" layer="1"/>
 </package>
 <package name="QFP50P1200X1200X160-64N" urn="urn:adsk.eagle:footprint:15005569/1" locally_modified="yes">
 <description>64-QFP, 0.50 mm pitch, 12.00 mm span, 10.00 X 10.00 X 1.60 mm body
@@ -266,35 +266,6 @@
 <text x="0" y="7.0409" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-7.0409" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <circle x="-3.81" y="3.81" radius="0.381" width="0" layer="21"/>
-</package>
-<package name="PA6H">
-<smd name="P$1" x="-8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$2" x="-8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$3" x="-8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$4" x="-8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$5" x="-8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$6" x="-8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$7" x="-8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$8" x="-8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$9" x="-8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$10" x="-8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$11" x="8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$12" x="8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$13" x="8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$14" x="8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$15" x="8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$16" x="8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$17" x="8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$18" x="8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$19" x="8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="P$20" x="8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
-<wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
-<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
-<wire x1="-8" y1="-8" x2="-8" y2="8" width="0.127" layer="21"/>
-<circle x="-5.25" y="6.75" radius="0.4" width="0.127" layer="21"/>
-<text x="0" y="6.35" size="1.27" layer="25" align="center">PA6H</text>
-<circle x="0.2" y="0.8" radius="1.2" width="0.127" layer="21"/>
 </package>
 <package name="INV_BAT">
 <smd name="P$1" x="-3.81" y="0" dx="1.778" dy="1.778" layer="1"/>
@@ -390,7 +361,7 @@
 <wire x1="-13.97" y1="-8.89" x2="-13.97" y2="8.89" width="0.127" layer="21"/>
 <circle x="-4.58" y="6.35" radius="0.6" width="0.2" layer="21"/>
 </package>
-<package name="MODULE_SX1280">
+<package name="MODULE_SX1280" urn="urn:adsk.eagle:footprint:16206888/1">
 <wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
@@ -400,7 +371,6 @@
 <wire x1="6" y1="-7.5" x2="6" y2="7.5" width="0.127" layer="21"/>
 <wire x1="6" y1="7.5" x2="-6" y2="7.5" width="0.127" layer="21"/>
 <smd name="1" x="-8" y="7" dx="3" dy="1.5" layer="1"/>
-<circle x="-4.5" y="6" radius="0.6" width="0.2" layer="21"/>
 <smd name="2" x="-8" y="5" dx="3" dy="1.5" layer="1"/>
 <smd name="3" x="-8" y="3" dx="3" dy="1.5" layer="1"/>
 <smd name="4" x="-8" y="1" dx="3" dy="1.5" layer="1"/>
@@ -416,9 +386,10 @@
 <smd name="14" x="8" y="3" dx="3" dy="1.5" layer="1" rot="R180"/>
 <smd name="15" x="8" y="5" dx="3" dy="1.5" layer="1" rot="R180"/>
 <smd name="16" x="8" y="7" dx="3" dy="1.5" layer="1" rot="R180"/>
+<circle x="-4.5" y="6" radius="0.6" width="0.2" layer="21"/>
 <text x="0" y="6" size="1.27" layer="25" align="center">SX1280</text>
 </package>
-<package name="BMP280">
+<package name="BMP280" urn="urn:adsk.eagle:footprint:16206889/1">
 <wire x1="-1" y1="1.25" x2="1" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1" y1="1.25" x2="1" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="1" y1="-1.25" x2="-1" y2="-1.25" width="0.127" layer="21"/>
@@ -487,7 +458,7 @@
 <smd name="-" x="41.5" y="0" dx="11" dy="11" layer="1"/>
 <text x="0" y="0" size="1.27" layer="25">inv</text>
 </package>
-<package name="OSC32X15">
+<package name="OSC32X15" urn="urn:adsk.eagle:footprint:16206891/1">
 <smd name="P$1" x="-1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
 <smd name="P$2" x="1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
 <wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.127" layer="21"/>
@@ -562,19 +533,54 @@
 <text x="0" y="2.4996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-0.9" y1="-0.9" x2="0.9" y2="0.9" layer="41"/>
 </package>
-<package name="USB-C">
-<wire x1="-4.75" y1="-0.65" x2="4.75" y2="-0.65" width="0" layer="21"/>
-<wire x1="-4.75" y1="-0.95" x2="-4.75" y2="-5.75" width="0" layer="21"/>
-<wire x1="-4.75" y1="-5.75" x2="-7" y2="-5.75" width="0" layer="21"/>
-<wire x1="4.75" y1="-0.95" x2="4.75" y2="-5.75" width="0" layer="21"/>
-<wire x1="4.75" y1="-5.75" x2="7" y2="-5.75" width="0" layer="21"/>
-<wire x1="-4.75" y1="-0.65" x2="-4.75" y2="-0.95" width="0" layer="21" curve="180"/>
-<wire x1="4.75" y1="-0.65" x2="4.75" y2="-0.95" width="0" layer="21" curve="-180"/>
-<pad name="B$1" x="3.12" y="0.9" drill="0.3" diameter="0.65" shape="long"/>
+<package name="USB-C" urn="urn:adsk.eagle:footprint:16206893/1">
+<wire x1="-4.75" y1="-0.65" x2="4.75" y2="-0.65" width="0" layer="20"/>
+<wire x1="-4.75" y1="-0.95" x2="-4.75" y2="-5.75" width="0" layer="20"/>
+<wire x1="-4.75" y1="-5.75" x2="-7" y2="-5.75" width="0" layer="20"/>
+<wire x1="4.75" y1="-0.95" x2="4.75" y2="-5.75" width="0" layer="20"/>
+<wire x1="4.75" y1="-5.75" x2="7" y2="-5.75" width="0" layer="20"/>
+<wire x1="-4.75" y1="-0.65" x2="-4.75" y2="-0.95" width="0" layer="20" curve="180"/>
+<wire x1="4.75" y1="-0.65" x2="4.75" y2="-0.95" width="0" layer="20" curve="-180"/>
 <wire x1="2.77" y1="1.05" x2="3.47" y2="1.05" width="0" layer="21"/>
 <wire x1="2.77" y1="0.75" x2="3.47" y2="0.75" width="0" layer="21"/>
 <wire x1="2.77" y1="1.05" x2="2.77" y2="0.75" width="0" layer="21" curve="180"/>
 <wire x1="3.47" y1="1.05" x2="3.47" y2="0.75" width="0" layer="21" curve="-180"/>
+<wire x1="-2.77" y1="1.05" x2="-3.47" y2="1.05" width="0" layer="21"/>
+<wire x1="-2.77" y1="0.75" x2="-3.47" y2="0.75" width="0" layer="21"/>
+<wire x1="-2.77" y1="1.05" x2="-2.77" y2="0.75" width="0" layer="21" curve="-180"/>
+<wire x1="-3.47" y1="1.05" x2="-3.47" y2="0.75" width="0" layer="21" curve="180"/>
+<wire x1="-6.325" y1="-3.35" x2="-6.325" y2="-4.35" width="0" layer="21"/>
+<wire x1="-5.825" y1="-3.35" x2="-5.825" y2="-4.35" width="0" layer="21"/>
+<wire x1="-6.325" y1="-4.35" x2="-5.825" y2="-4.35" width="0" layer="21" curve="180"/>
+<wire x1="-6.325" y1="-3.35" x2="-5.825" y2="-3.35" width="0" layer="21" curve="-180"/>
+<wire x1="5.825" y1="-3.35" x2="5.825" y2="-4.35" width="0" layer="21"/>
+<wire x1="6.325" y1="-3.35" x2="6.325" y2="-4.35" width="0" layer="21"/>
+<wire x1="5.825" y1="-4.35" x2="6.325" y2="-4.35" width="0" layer="21" curve="180"/>
+<wire x1="5.825" y1="-3.35" x2="6.325" y2="-3.35" width="0" layer="21" curve="-180"/>
+<wire x1="-6.325" y1="0.6" x2="-6.325" y2="-0.4" width="0" layer="21"/>
+<wire x1="-5.825" y1="0.6" x2="-5.825" y2="-0.4" width="0" layer="21"/>
+<wire x1="-6.325" y1="-0.4" x2="-5.825" y2="-0.4" width="0" layer="21" curve="180"/>
+<wire x1="-6.325" y1="0.6" x2="-5.825" y2="0.6" width="0" layer="21" curve="-180"/>
+<wire x1="5.825" y1="0.6" x2="5.825" y2="-0.4" width="0" layer="21"/>
+<wire x1="6.325" y1="0.6" x2="6.325" y2="-0.4" width="0" layer="21"/>
+<wire x1="5.825" y1="-0.4" x2="6.325" y2="-0.4" width="0" layer="21" curve="180"/>
+<wire x1="5.825" y1="0.6" x2="6.325" y2="0.6" width="0" layer="21" curve="-180"/>
+<wire x1="-3.45" y1="2.425" x2="-3.45" y2="1.675" width="0" layer="21" curve="-180"/>
+<wire x1="-3.45" y1="2.425" x2="-3.45" y2="1.675" width="0" layer="21" curve="180"/>
+<wire x1="3.45" y1="2.425" x2="3.45" y2="1.675" width="0" layer="21" curve="-180"/>
+<wire x1="3.45" y1="2.425" x2="3.45" y2="1.675" width="0" layer="21" curve="180"/>
+<wire x1="-4.725" y1="2.75" x2="-4.725" y2="2.15" width="0" layer="21"/>
+<wire x1="-4.225" y1="2.75" x2="-4.225" y2="2.15" width="0" layer="21"/>
+<wire x1="-4.725" y1="2.15" x2="-4.225" y2="2.15" width="0" layer="21" curve="180"/>
+<wire x1="-4.725" y1="2.75" x2="-4.225" y2="2.75" width="0" layer="21" curve="-180"/>
+<wire x1="4.225" y1="2.75" x2="4.225" y2="2.15" width="0" layer="21"/>
+<wire x1="4.725" y1="2.75" x2="4.725" y2="2.15" width="0" layer="21"/>
+<wire x1="4.225" y1="2.15" x2="4.725" y2="2.15" width="0" layer="21" curve="180"/>
+<wire x1="4.225" y1="2.75" x2="4.725" y2="2.75" width="0" layer="21" curve="-180"/>
+<wire x1="-7" y1="-5.5" x2="-7" y2="5" width="0.15" layer="51"/>
+<wire x1="-7" y1="5" x2="7" y2="5" width="0.15" layer="51"/>
+<wire x1="7" y1="5" x2="7" y2="-5.5" width="0.15" layer="51"/>
+<pad name="B$1" x="3.12" y="0.9" drill="0.3" diameter="0.65" shape="long"/>
 <pad name="B$2" x="2.495" y="0" drill="0.35" diameter="0.7"/>
 <pad name="B$3" x="1.695" y="0" drill="0.35" diameter="0.7"/>
 <pad name="B$4" x="1.31" y="0.9" drill="0.35" diameter="0.7"/>
@@ -585,33 +591,14 @@
 <pad name="B$9" x="-1.31" y="0.9" drill="0.35" diameter="0.7"/>
 <pad name="B$10" x="-1.695" y="0" drill="0.35" diameter="0.7"/>
 <pad name="B$11" x="-2.495" y="0" drill="0.35" diameter="0.7"/>
-<wire x1="-2.77" y1="1.05" x2="-3.47" y2="1.05" width="0" layer="21"/>
-<wire x1="-2.77" y1="0.75" x2="-3.47" y2="0.75" width="0" layer="21"/>
-<wire x1="-2.77" y1="1.05" x2="-2.77" y2="0.75" width="0" layer="21" curve="-180"/>
-<wire x1="-3.47" y1="1.05" x2="-3.47" y2="0.75" width="0" layer="21" curve="180"/>
 <pad name="B$12" x="-3.12" y="0.9" drill="0.3" diameter="0.65" shape="long"/>
-<smd name="A$1" x="-2.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
-<wire x1="-6.325" y1="-3.35" x2="-6.325" y2="-4.35" width="0" layer="21"/>
-<wire x1="-5.825" y1="-3.35" x2="-5.825" y2="-4.35" width="0" layer="21"/>
-<wire x1="-6.325" y1="-4.35" x2="-5.825" y2="-4.35" width="0" layer="21" curve="180"/>
-<wire x1="-6.325" y1="-3.35" x2="-5.825" y2="-3.35" width="0" layer="21" curve="-180"/>
-<wire x1="5.825" y1="-3.35" x2="5.825" y2="-4.35" width="0" layer="21"/>
-<wire x1="6.325" y1="-3.35" x2="6.325" y2="-4.35" width="0" layer="21"/>
-<wire x1="5.825" y1="-4.35" x2="6.325" y2="-4.35" width="0" layer="21" curve="180"/>
-<wire x1="5.825" y1="-3.35" x2="6.325" y2="-3.35" width="0" layer="21" curve="-180"/>
 <pad name="N$1" x="-6.075" y="-3.85" drill="0.5" diameter="0.95" shape="long" rot="R90"/>
 <pad name="N$2" x="6.075" y="-3.85" drill="0.5" diameter="0.95" shape="long" rot="R90"/>
-<wire x1="-6.325" y1="0.6" x2="-6.325" y2="-0.4" width="0" layer="21"/>
-<wire x1="-5.825" y1="0.6" x2="-5.825" y2="-0.4" width="0" layer="21"/>
-<wire x1="-6.325" y1="-0.4" x2="-5.825" y2="-0.4" width="0" layer="21" curve="180"/>
-<wire x1="-6.325" y1="0.6" x2="-5.825" y2="0.6" width="0" layer="21" curve="-180"/>
 <pad name="N$3" x="-6.075" y="0.1" drill="0.5" diameter="0.95" shape="long" rot="R90"/>
-<wire x1="5.825" y1="0.6" x2="5.825" y2="-0.4" width="0" layer="21"/>
-<wire x1="6.325" y1="0.6" x2="6.325" y2="-0.4" width="0" layer="21"/>
-<wire x1="5.825" y1="-0.4" x2="6.325" y2="-0.4" width="0" layer="21" curve="180"/>
-<wire x1="5.825" y1="0.6" x2="6.325" y2="0.6" width="0" layer="21" curve="-180"/>
 <pad name="N$4" x="6.075" y="0.1" drill="0.5" diameter="0.95" shape="long" rot="R90"/>
-<wire x1="-3.45" y1="2.425" x2="-3.45" y2="1.675" width="0" layer="21" curve="-180"/>
+<pad name="N$5" x="-4.475" y="2.45" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<pad name="N$6" x="4.475" y="2.45" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<smd name="A$1" x="-2.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
 <smd name="A$2" x="-2.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
 <smd name="A$3" x="-1.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
 <smd name="A$4" x="-1.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
@@ -623,23 +610,7 @@
 <smd name="A$10" x="1.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
 <smd name="A$11" x="2.25" y="1.96" dx="0.35" dy="0.92" layer="1"/>
 <smd name="A$12" x="2.75" y="1.96" dx="0.35" dy="0.92" layer="1"/>
-<wire x1="-3.45" y1="2.425" x2="-3.45" y2="1.675" width="0" layer="21" curve="180"/>
-<wire x1="3.45" y1="2.425" x2="3.45" y2="1.675" width="0" layer="21" curve="-180"/>
-<wire x1="3.45" y1="2.425" x2="3.45" y2="1.675" width="0" layer="21" curve="180"/>
-<wire x1="-4.725" y1="2.75" x2="-4.725" y2="2.15" width="0" layer="21"/>
-<wire x1="-4.225" y1="2.75" x2="-4.225" y2="2.15" width="0" layer="21"/>
-<wire x1="-4.725" y1="2.15" x2="-4.225" y2="2.15" width="0" layer="21" curve="180"/>
-<wire x1="-4.725" y1="2.75" x2="-4.225" y2="2.75" width="0" layer="21" curve="-180"/>
-<pad name="N$5" x="-4.475" y="2.45" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
-<wire x1="4.225" y1="2.75" x2="4.225" y2="2.15" width="0" layer="21"/>
-<wire x1="4.725" y1="2.75" x2="4.725" y2="2.15" width="0" layer="21"/>
-<wire x1="4.225" y1="2.15" x2="4.725" y2="2.15" width="0" layer="21" curve="180"/>
-<wire x1="4.225" y1="2.75" x2="4.725" y2="2.75" width="0" layer="21" curve="-180"/>
-<pad name="N$6" x="4.475" y="2.45" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
 <text x="0" y="3.2" size="1.27" layer="21" align="bottom-center">USB-C</text>
-<wire x1="-7" y1="-5.5" x2="-7" y2="5" width="0.15" layer="51"/>
-<wire x1="-7" y1="5" x2="7" y2="5" width="0.15" layer="51"/>
-<wire x1="7" y1="5" x2="7" y2="-5.5" width="0.15" layer="51"/>
 </package>
 <package name="QFN50P400X400X100-25T270N" urn="urn:adsk.eagle:footprint:15841628/1">
 <description>24-QFN, 0.50 mm pitch, 4.00 X 4.00 X 1.00 mm body, 2.70 X 2.70 mm thermal pad
@@ -720,24 +691,6 @@
 <wire x1="2.25" y1="-0.75" x2="2.75" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="2.75" y1="-0.75" x2="2.75" y2="0.75" width="0.127" layer="21"/>
 </package>
-<package name="SMA_DIP" urn="urn:adsk.eagle:footprint:6240303/1" locally_modified="yes">
-<description>SMA DIP Connector 90° 50 Ohm</description>
-<wire x1="-3.15" y1="2.52" x2="-2.52" y2="3.15" width="0.2032" layer="51" curve="-90"/>
-<wire x1="-2.52" y1="3.15" x2="2.52" y2="3.15" width="0.2032" layer="51"/>
-<wire x1="2.52" y1="3.15" x2="3.15" y2="2.52" width="0.2032" layer="51" curve="-90"/>
-<wire x1="3.15" y1="2.52" x2="3.15" y2="-2.52" width="0.2032" layer="51"/>
-<wire x1="3.15" y1="-2.52" x2="2.52" y2="-3.15" width="0.2032" layer="51" curve="-90"/>
-<wire x1="2.52" y1="-3.15" x2="-2.52" y2="-3.15" width="0.2032" layer="51"/>
-<wire x1="-2.52" y1="-3.15" x2="-3.15" y2="-2.52" width="0.2032" layer="51" curve="-90"/>
-<wire x1="-3.15" y1="-2.52" x2="-3.15" y2="2.52" width="0.2032" layer="51"/>
-<pad name="GND1" x="-2.54" y="2.54" drill="1.016" diameter="1.6764"/>
-<pad name="GND2" x="2.54" y="2.54" drill="1.016" diameter="1.6764"/>
-<pad name="GND4" x="2.54" y="-2.54" drill="1.016" diameter="1.6764"/>
-<pad name="GND3" x="-2.54" y="-2.54" drill="1.016" diameter="1.6764"/>
-<pad name="ANTENNA" x="0" y="0" drill="1.016" diameter="1.6764"/>
-<text x="-2.032" y="4.826" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.032" y="4.064" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="CON_U.FL">
 <smd name="GND" x="0" y="1.45" dx="2.2" dy="1.05" layer="1"/>
 <smd name="GND@1" x="0" y="-1.45" dx="2.2" dy="1.05" layer="1"/>
@@ -782,6 +735,53 @@
 <text x="0" y="2.2786" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.8386" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="GHI-CONNECTORS_U.FL-R-SMT-1" urn="urn:adsk.eagle:footprint:6644310/1">
+<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.127" layer="51"/>
+<wire x1="1.3" y1="1.3" x2="1.3" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="1.3" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-0.7" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-1.3" x2="1.3" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-1.3" x2="1.3" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.27" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.3" x2="1.3" y2="1.27" width="0.127" layer="21"/>
+<smd name="GND1" x="-1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
+<smd name="GND2" x="1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
+<smd name="SIG" x="0" y="-1.525" dx="1.05" dy="1" layer="1"/>
+<text x="-2.09" y="1.4" size="1.016" layer="25" ratio="12">&gt;NAME</text>
+<text x="-2.59" y="-3.25" size="1.016" layer="27" ratio="12">&gt;VALUE</text>
+</package>
+<package name="PA6H" urn="urn:adsk.eagle:footprint:16206886/2">
+<smd name="1" x="-8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="2" x="-8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="3" x="-8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="4" x="-8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="5" x="-8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="6" x="-8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="7" x="-8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="8" x="-8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="9" x="-8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="10" x="-8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="20" x="8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="19" x="8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="18" x="8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="17" x="8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="16" x="8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="15" x="8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="14" x="8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="13" x="8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="12" x="8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="11" x="8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
+<wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
+<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
+<wire x1="-8" y1="-8" x2="-8" y2="8" width="0.127" layer="21"/>
+<circle x="-5.25" y="6.75" radius="0.4" width="0.127" layer="21"/>
+<circle x="0.2" y="0.8" radius="1.2" width="0.127" layer="21"/>
+<text x="0" y="6.35" size="1.27" layer="25" align="center">PA6H</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P1200X1200X160-64N" urn="urn:adsk.eagle:package:15005550/1" type="model">
@@ -812,17 +812,46 @@
 <packageinstance name="QFN50P400X400X100-25T270N"/>
 </packageinstances>
 </package3d>
-<package3d name="SMA90_DIP" urn="urn:adsk.eagle:package:6240946/1" type="box">
-<description>SMA DIP Connector 90° 50 Ohm</description>
-<packageinstances>
-<packageinstance name="SMA_DIP"/>
-</packageinstances>
-</package3d>
 <package3d name="SON50P200X200X80-9T90X160N" urn="urn:adsk.eagle:package:16076057/1" type="model">
 <description>8-SON (DFN), 0.50 mm pitch, 2.00 X 2.00 X 0.80 mm body, 1.60 X 0.90 mm thermal pad
 &lt;p&gt;8-pin SON (DFN) package with 0.50 mm pitch with body size 2.00 X 2.00 X 0.80 mm and thermal pad size 1.60 X 0.90 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SON50P200X200X80-9T90X160N"/>
+</packageinstances>
+</package3d>
+<package3d name="GHI-CONNECTORS_U.FL-R-SMT-1" urn="urn:adsk.eagle:package:6644349/2" type="model">
+<packageinstances>
+<packageinstance name="GHI-CONNECTORS_U.FL-R-SMT-1"/>
+</packageinstances>
+</package3d>
+<package3d name="MICROSD_HOLDER" urn="urn:adsk.eagle:package:16206920/2" type="model">
+<packageinstances>
+<packageinstance name="MICROSD_HOLDER"/>
+</packageinstances>
+</package3d>
+<package3d name="_PA6H" urn="urn:adsk.eagle:package:16206913/3" type="model">
+<packageinstances>
+<packageinstance name="PA6H"/>
+</packageinstances>
+</package3d>
+<package3d name="BMP280" urn="urn:adsk.eagle:package:16206910/2" type="model">
+<packageinstances>
+<packageinstance name="BMP280"/>
+</packageinstances>
+</package3d>
+<package3d name="OSC32X15" urn="urn:adsk.eagle:package:16206908/2" type="model">
+<packageinstances>
+<packageinstance name="OSC32X15"/>
+</packageinstances>
+</package3d>
+<package3d name="USB-C" urn="urn:adsk.eagle:package:16206906/2" type="model">
+<packageinstances>
+<packageinstance name="USB-C"/>
+</packageinstances>
+</package3d>
+<package3d name="MODULE_SX1280" urn="urn:adsk.eagle:package:16206911/2" type="model">
+<packageinstances>
+<packageinstance name="MODULE_SX1280"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1181,11 +1210,14 @@
 <connect gate="G$1" pin="DAT2" pad="D2"/>
 <connect gate="G$1" pin="DAT3" pad="D3"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SHIELD" pad="SHIELD@1 SHIELD@2 SHIELD@3 SHIELD@4" route="any"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD@1 SHIELD@2 SHIELD@3 SHIELD@4"/>
 <connect gate="G$1" pin="SW1" pad="SW1"/>
 <connect gate="G$1" pin="SW2" pad="SW2"/>
 <connect gate="G$1" pin="VDD" pad="VCC"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206920/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1280,19 +1312,22 @@
 <gate name="G$1" symbol="PA6H" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PA6H">
+<device name="_" package="PA6H">
 <connects>
-<connect gate="G$1" pin="1PPS" pad="P$13"/>
-<connect gate="G$1" pin="3D-FIX" pad="P$5"/>
-<connect gate="G$1" pin="ANT" pad="P$11"/>
-<connect gate="G$1" pin="GND" pad="P$3 P$8 P$12 P$19" route="any"/>
-<connect gate="G$1" pin="NRST" pad="P$2"/>
-<connect gate="G$1" pin="RTCM" pad="P$14"/>
-<connect gate="G$1" pin="RX" pad="P$10"/>
-<connect gate="G$1" pin="TX" pad="P$9"/>
-<connect gate="G$1" pin="VBACK" pad="P$4"/>
-<connect gate="G$1" pin="VCC" pad="P$1"/>
+<connect gate="G$1" pin="1PPS" pad="18"/>
+<connect gate="G$1" pin="3D-FIX" pad="5"/>
+<connect gate="G$1" pin="ANT" pad="20"/>
+<connect gate="G$1" pin="GND" pad="3 8 12 19" route="any"/>
+<connect gate="G$1" pin="NRST" pad="2"/>
+<connect gate="G$1" pin="RTCM" pad="17"/>
+<connect gate="G$1" pin="RX" pad="10"/>
+<connect gate="G$1" pin="TX" pad="9"/>
+<connect gate="G$1" pin="VBACK" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206913/3"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1435,7 +1470,7 @@
 <connect gate="G$1" pin="DIO1" pad="16"/>
 <connect gate="G$1" pin="DIO2" pad="1"/>
 <connect gate="G$1" pin="DIO3" pad="2"/>
-<connect gate="G$1" pin="GND" pad="4 10 11 12 14" route="any"/>
+<connect gate="G$1" pin="GND" pad="4 10 11 12 14"/>
 <connect gate="G$1" pin="MISO" pad="5"/>
 <connect gate="G$1" pin="MOSI" pad="6"/>
 <connect gate="G$1" pin="NRESET" pad="13"/>
@@ -1443,6 +1478,9 @@
 <connect gate="G$1" pin="SCK" pad="7"/>
 <connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206911/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1465,6 +1503,9 @@
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="VDDIO" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206910/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1533,6 +1574,9 @@
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206908/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1572,6 +1616,9 @@
 <connect gate="G$1" pin="GND" pad="A$1 A$12 B$1 B$12"/>
 <connect gate="G$1" pin="VBUS" pad="A$4 A$9 B$4 B$9"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206906/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1621,23 +1668,23 @@
 <gate name="G$1" symbol="ANTENNA" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMA" package="SMA_DIP">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4" route="any"/>
-<connect gate="G$1" pin="SIG" pad="ANTENNA"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240946/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="U.FL" package="CON_U.FL">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND GND@1" route="any"/>
 <connect gate="G$1" pin="SIG" pad="SIG"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="GHI-CONNECTORS_U.FL-R-SMT-1">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND1 GND2"/>
+<connect gate="G$1" pin="SIG" pad="SIG"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6644349/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3316,7 +3363,7 @@ Source: RS Component / Phycomp</description>
 </class>
 </classes>
 <parts>
-<part name="U$2" library="SobieskiSat2" deviceset="MICROSD_HOLDER" device=""/>
+<part name="U$2" library="SobieskiSat2" deviceset="MICROSD_HOLDER" device="" package3d_urn="urn:adsk.eagle:package:16206920/2"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -3354,7 +3401,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R4" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$3" library="SobieskiSat2" deviceset="PA6H" device=""/>
+<part name="U$3" library="SobieskiSat2" deviceset="PA6H" device="_" package3d_urn="urn:adsk.eagle:package:16206913/3" value="PA6H_"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C61" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -3364,11 +3411,11 @@ Source: RS Component / Phycomp</description>
 <part name="BTN_DFU" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="DIP" value="PUSH-SWITCHDIP"/>
 <part name="BTN_RST" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="TACT_3X6" value="PUSH-SWITCHTACT_3X6"/>
 <part name="BTN_USR" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="TACT_3X6" value="PUSH-SWITCHTACT_3X6"/>
-<part name="U$4" library="SobieskiSat2" deviceset="SX1280" device=""/>
+<part name="U$4" library="SobieskiSat2" deviceset="SX1280" device="" package3d_urn="urn:adsk.eagle:package:16206911/2"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="F61" library="Unified" deviceset="FERRITE" device="" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="C18" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7u"/>
-<part name="U$8" library="SobieskiSat2" deviceset="BMP280" device=""/>
+<part name="U$8" library="SobieskiSat2" deviceset="BMP280" device="" package3d_urn="urn:adsk.eagle:package:16206910/2"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C19" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
@@ -3400,7 +3447,7 @@ Source: RS Component / Phycomp</description>
 <part name="R9" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R10" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R13" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
-<part name="U$5" library="SobieskiSat2" deviceset="OSCILLATOR_2PIN" device="32X15" value="32.768kHz"/>
+<part name="U$5" library="SobieskiSat2" deviceset="OSCILLATOR_2PIN" device="32X15" package3d_urn="urn:adsk.eagle:package:16206908/2" value="32.768kHz"/>
 <part name="U$6" library="SobieskiSat2" deviceset="OSCILLATOR_4PIN" device="32X25" package3d_urn="urn:adsk.eagle:package:15725817/1" value="12MHz"/>
 <part name="D61" library="Unified" deviceset="DIODE" device="" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="R63" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
@@ -3417,7 +3464,7 @@ Source: RS Component / Phycomp</description>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R33" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="U$7" library="SobieskiSat2" deviceset="USB" device="-C"/>
+<part name="U$7" library="SobieskiSat2" deviceset="USB" device="-C" package3d_urn="urn:adsk.eagle:package:16206906/2"/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -3444,7 +3491,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R11" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$12" library="SobieskiSat2" deviceset="ANTENNA" device="U.FL" value="50R"/>
+<part name="U$12" library="SobieskiSat2" deviceset="ANTENNA" device="" package3d_urn="urn:adsk.eagle:package:6644349/2" value="50R"/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="BAT_PACK" library="SobieskiSat2" deviceset="BATTERY" device="DIP"/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
