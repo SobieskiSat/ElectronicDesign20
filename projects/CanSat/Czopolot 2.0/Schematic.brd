@@ -3,12 +3,12 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -46,10 +46,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -155,7 +155,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDAwMTNi" projecturn="a.cGVyc29uYWw6dWUyZDAwMTNiIzIwMTgxMDE5MTU1NDQ3NTA2" f3durn="urn:adsk.wipprod:dm.lineage:XbOL6GYrSKWdjp3_FvwN2w" pcbguid="16f126d8-ed27-4e43-833e-e42b7b67c400" lastpulledtime="" lastsyncedchangeguid="121e581b-5cba-be65-b219-09bc9ee83e67"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyY2ExOGY4" projecturn="a.cGVyc29uYWw6dWUyY2ExOGY4IzIwMjAwMTA0MjUyMDc3NjAx" f3durn="urn:adsk.wipprod:dm.lineage:55vagHVSQ0y6lmEtnAk7mQ" pcbguid="c91be50d-e762-45eb-a2a5-7b0e3daa92fb" lastpulledtime="" lastsyncedchangeguid="8df9c6a7-f552-519c-7f8b-0ba906e61266"/>
 <plain>
 <wire x1="-2.25" y1="0" x2="42" y2="0" width="0" layer="20"/>
 <wire x1="42" y1="30.75" x2="-2.25" y2="30.75" width="0" layer="20"/>
@@ -224,22 +224,26 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.8" layer="51"/>
 <rectangle x1="-0.625" y1="0.925" x2="-0.3" y2="1" layer="51"/>
 </package>
-<package name="SOT223" urn="urn:adsk.eagle:footprint:4834/1">
-<description>&lt;b&gt;Smal Outline Transistor&lt;/b&gt;</description>
-<wire x1="-3.124" y1="1.731" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
-<wire x1="3.124" y1="-1.729" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
-<wire x1="-3.124" y1="1.731" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
-<wire x1="3.124" y1="-1.729" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
-<smd name="1" x="-2.2606" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="2" x="0.0254" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="3" x="2.3114" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="4" x="0" y="3.1496" dx="3.81" dy="2.0066" layer="1"/>
-<text x="-2.54" y="4.318" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.794" y="-5.842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="1.778" x2="1.524" y2="3.302" layer="51"/>
-<rectangle x1="-2.667" y1="-3.302" x2="-1.905" y2="-1.778" layer="51"/>
-<rectangle x1="1.905" y1="-3.302" x2="2.667" y2="-1.778" layer="51"/>
-<rectangle x1="-0.381" y1="-3.302" x2="0.381" y2="-1.778" layer="51"/>
+<package name="SOT230P700X180-4N" urn="urn:adsk.eagle:footprint:16207433/1">
+<description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
+&lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
+<circle x="-2.9276" y="3.2486" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.85" y1="2.9986" x2="-1.85" y2="3.35" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="3.35" x2="1.85" y2="3.35" width="0.12" layer="21"/>
+<wire x1="1.85" y1="3.35" x2="1.85" y2="1.8486" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="-2.9986" x2="-1.85" y2="-3.35" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="-3.35" x2="1.85" y2="-3.35" width="0.12" layer="21"/>
+<wire x1="1.85" y1="-3.35" x2="1.85" y2="-1.8486" width="0.12" layer="21"/>
+<wire x1="1.85" y1="-3.35" x2="-1.85" y2="-3.35" width="0.12" layer="51"/>
+<wire x1="-1.85" y1="-3.35" x2="-1.85" y2="3.35" width="0.12" layer="51"/>
+<wire x1="-1.85" y1="3.35" x2="1.85" y2="3.35" width="0.12" layer="51"/>
+<wire x1="1.85" y1="3.35" x2="1.85" y2="-3.35" width="0.12" layer="51"/>
+<smd name="1" x="-3.0226" y="2.3" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="2" x="-3.0226" y="0" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="3" x="-3.0226" y="-2.3" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="4" x="3.0226" y="0" dx="1.9651" dy="3.1891" layer="1"/>
+<text x="0" y="4.1336" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.985" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 <package name="CHIPLED_0603" urn="urn:adsk.eagle:footprint:15676/1">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
@@ -281,7 +285,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
 <rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
 </package>
-<package name="2X1_2.54">
+<package name="2X1_2.54" urn="urn:adsk.eagle:footprint:16206901/1">
 <pad name="P$1" x="-1.27" y="0" drill="1.016" diameter="1.6764"/>
 <pad name="P$2" x="1.27" y="0" drill="1.016" diameter="1.6764"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.127" layer="21" curve="-90"/>
@@ -323,6 +327,18 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <description>RESISTOR</description>
 <packageinstances>
 <packageinstance name="R1206"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT230P700X180-4N" urn="urn:adsk.eagle:package:16207430/1" type="model">
+<description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
+&lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT230P700X180-4N"/>
+</packageinstances>
+</package3d>
+<package3d name="2X1_2.54" urn="urn:adsk.eagle:package:16206924/2" type="model">
+<packageinstances>
+<packageinstance name="2X1_2.54"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -700,7 +716,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <text x="0" y="2.9996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.9996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="2X1_2.54">
+<package name="2X1_2.54" urn="urn:adsk.eagle:footprint:16206901/1">
 <pad name="P$1" x="-1.27" y="0" drill="1.016" diameter="1.6764"/>
 <pad name="P$2" x="1.27" y="0" drill="1.016" diameter="1.6764"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.127" layer="21" curve="-90"/>
@@ -846,6 +862,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <packageinstance name="MODULE_SX1280"/>
 </packageinstances>
 </package3d>
+<package3d name="2X1_2.54" urn="urn:adsk.eagle:package:16206924/2" type="model">
+<packageinstances>
+<packageinstance name="2X1_2.54"/>
+</packageinstances>
+</package3d>
 </packages3d>
 </library>
 <library name="resistor-dil" urn="urn:adsk.eagle:library:342">
@@ -914,7 +935,7 @@ Source: PANASONIC .. aoc0000ce1.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="jlcpcb_2layers">
+<designrules name="jlcpcb_2layers *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -931,7 +952,7 @@ necessary adjustments and save your customized
 design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.6mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mtIsolate" value="1.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="5mil"/>
 <param name="mdWirePad" value="5mil"/>
 <param name="mdWireVia" value="5mil"/>
@@ -1189,7 +1210,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="22.615" y="6.405" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="B6" library="SobieskiSat2" package="INV_BAT" value="3V" x="-20.49" y="17.242" smashed="yes" rot="R180"/>
-<element name="BTN_DFU" library="SobieskiSat2" package="2X1_2.54" value="PUSH-SWITCHDIP" x="5" y="28.25" smashed="yes" rot="R180"/>
+<element name="BTN_DFU" library="SobieskiSat2" package="2X1_2.54" package3d_urn="urn:adsk.eagle:package:16206924/2" value="PUSH-SWITCHDIP" x="5" y="28.25" smashed="yes" rot="R180"/>
 <element name="BTN_RST" library="SobieskiSat2" package="TACTHALF_SMD" value="PUSH-SWITCHTACT_3X6" x="33.5" y="18.75" smashed="yes" rot="MR270"/>
 <element name="BTN_USR" library="SobieskiSat2" package="TACTHALF_SMD" value="PUSH-SWITCHTACT_3X6" x="33.5" y="26.75" smashed="yes" rot="MR270"/>
 <element name="U$4" library="SobieskiSat2" package="MODULE_SX1280" package3d_urn="urn:adsk.eagle:package:16206911/2" value="SX1280" x="5.8" y="15" smashed="yes" rot="MR90"/>
@@ -1226,9 +1247,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="9.75" y="28.25" size="1.27" layer="26" rot="MR0" align="center"/>
 <attribute name="VALUE" x="10.135" y="28.095" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="U$11" library="Unified" package="SOT223" value="REGULATOR" x="11.75" y="5.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="11.25" y="5.75" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
-<attribute name="VALUE" x="17.592" y="2.956" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="U$11" library="Unified" package="SOT230P700X180-4N" package3d_urn="urn:adsk.eagle:package:16207430/1" value="REGULATOR" x="11.75" y="5.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.75" y="5.25" size="1.27" layer="25" ratio="10" rot="R270" align="center"/>
+<attribute name="VALUE" x="14.544" y="11.592" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C28" library="Unified" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="?10u" x="19" y="4" smashed="yes" rot="R90">
 <attribute name="NAME" x="20.75" y="3.25" size="1.27" layer="25" rot="R90" align="center"/>
@@ -1394,8 +1415,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="12.615" y="8.345" size="1.27" layer="27"/>
 </element>
 <element name="U$12" library="SobieskiSat2" package="GHI-CONNECTORS_U.FL-R-SMT-1" package3d_urn="urn:adsk.eagle:package:6644349/2" value="50R" x="0" y="28.25" smashed="yes" rot="MR0"/>
-<element name="BAT_PACK" library="SobieskiSat2" package="2X1_2.54" value="" x="24.75" y="2.5" smashed="yes"/>
-<element name="MOTL" library="Unified" package="2X1_2.54" value="MOTOR" x="0.75" y="2.5" smashed="yes" rot="R180"/>
+<element name="BAT_PACK" library="SobieskiSat2" package="2X1_2.54" package3d_urn="urn:adsk.eagle:package:16206924/2" value="" x="24.75" y="2.5" smashed="yes"/>
+<element name="MOTL" library="Unified" package="2X1_2.54" package3d_urn="urn:adsk.eagle:package:16206924/2" value="MOTOR" x="0.75" y="2.5" smashed="yes" rot="R180"/>
 <element name="U$14" library="SobieskiSat2" package="SON50P200X200X80-9T90X160N" package3d_urn="urn:adsk.eagle:package:16076057/1" value="DRV8838" x="1.5" y="5.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="-0.7786" y="5.75" size="1.27" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="3.3386" y="5.75" size="1.27" layer="27" rot="R90" align="top-center"/>
@@ -1416,7 +1437,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-6.385" y="12.615" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-3.845" y="12.615" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="MOTR" library="Unified" package="2X1_2.54" value="MOTOR" x="6.25" y="2.5" smashed="yes" rot="R180"/>
+<element name="MOTR" library="Unified" package="2X1_2.54" package3d_urn="urn:adsk.eagle:package:16206924/2" value="MOTOR" x="6.25" y="2.5" smashed="yes" rot="R180"/>
 <element name="U$15" library="SobieskiSat2" package="SON50P200X200X80-9T90X160N" package3d_urn="urn:adsk.eagle:package:16076057/1" value="DRV8838" x="6" y="5.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.7214" y="5.75" size="1.27" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="7.8386" y="5.75" size="1.27" layer="27" rot="R90" align="top-center"/>
@@ -1525,13 +1546,13 @@ design rules under a new name.</description>
 <contactref element="C31" pad="1"/>
 <contactref element="D10" pad="A"/>
 <wire x1="16.7114" y1="8.0614" x2="17" y2="8.35" width="0.4064" layer="1"/>
-<wire x1="14.8996" y1="8.0614" x2="15.1882" y2="8.35" width="0.4064" layer="1"/>
+<wire x1="14.7726" y1="8.05" x2="15.1882" y2="8.35" width="0.4064" layer="1"/>
 <wire x1="15.1882" y1="8.35" x2="17" y2="8.35" width="0.4064" layer="1"/>
 <wire x1="17" y1="8.35" x2="19" y2="8.35" width="0.4064" layer="1"/>
 <wire x1="19" y1="8.35" x2="19" y2="8" width="0.4064" layer="1"/>
 <contactref element="R12" pad="1"/>
 <contactref element="R63" pad="2"/>
-<wire x1="14.8996" y1="8.0614" x2="14.8996" y2="8.1004" width="0.3048" layer="1"/>
+<wire x1="14.7726" y1="8.05" x2="14.8996" y2="8.1004" width="0.3048" layer="1"/>
 <wire x1="14.8996" y1="8.1004" x2="13.75" y2="9.25" width="0.3048" layer="1"/>
 <wire x1="13.75" y1="9.25" x2="10.5" y2="9.25" width="0.3048" layer="1"/>
 <via x="10.5" y="9.25" extent="1-16" drill="0.3"/>
@@ -1636,8 +1657,8 @@ design rules under a new name.</description>
 <contactref element="C22" pad="2"/>
 <contactref element="C23" pad="2"/>
 <contactref element="C28" pad="2"/>
-<contactref element="U$11" pad="4"/>
-<contactref element="U$11" pad="2"/>
+<contactref element="U$11" pad="4" route="any" routetag="G$1.GND"/>
+<contactref element="U$11" pad="2" route="any" routetag="G$1.GND"/>
 <contactref element="C29" pad="2"/>
 <contactref element="C30" pad="2"/>
 <contactref element="C31" pad="2"/>
@@ -1678,7 +1699,7 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="14"/>
 <contactref element="U$4" pad="11"/>
 <wire x1="4.675" y1="16.4" x2="4.625" y2="16.35" width="0.4064" layer="1"/>
-<wire x1="8.75" y1="5.6004" x2="8.6004" y2="5.75" width="0.4064" layer="1"/>
+<wire x1="8.75" y1="5.6004" x2="8.7274" y2="5.75" width="0.4064" layer="1"/>
 <wire x1="2.25" y1="12.9" x2="4.5" y2="12.9" width="0.4064" layer="1"/>
 <wire x1="4.5" y1="12.9" x2="4.65" y2="12.75" width="0.4064" layer="1"/>
 <wire x1="2.375" y1="18.15" x2="2.225" y2="18" width="0.4064" layer="1"/>
@@ -1729,10 +1750,10 @@ design rules under a new name.</description>
 <wire x1="6.75" y1="5.5" x2="6.5" y2="5.75" width="0.3048" layer="1"/>
 <wire x1="6.5" y1="5.75" x2="6" y2="5.75" width="0.3048" layer="1"/>
 <wire x1="1.5" y1="5.75" x2="6.5" y2="5.75" width="0.8128" layer="1"/>
-<wire x1="6" y1="5.75" x2="8.6004" y2="5.75" width="0.8128" layer="1"/>
-<wire x1="8.6004" y1="5.75" x2="14.8742" y2="5.75" width="1.016" layer="1"/>
-<wire x1="14.8742" y1="5.75" x2="14.8996" y2="5.7754" width="1.016" layer="1"/>
-<wire x1="14.8996" y1="5.7754" x2="20" y2="5.7754" width="1.016" layer="1"/>
+<wire x1="6" y1="5.75" x2="8.7274" y2="5.75" width="0.8128" layer="1"/>
+<wire x1="8.7274" y1="5.75" x2="14.7726" y2="5.75" width="1.016" layer="1"/>
+<wire x1="14.8742" y1="5.75" x2="14.7726" y2="5.75" width="1.016" layer="1"/>
+<wire x1="14.7726" y1="5.75" x2="20" y2="5.7754" width="1.016" layer="1"/>
 <wire x1="20" y1="5.7754" x2="20.9746" y2="5.7754" width="1.016" layer="1"/>
 <wire x1="-1" y1="8.65" x2="-0.75" y2="8.4" width="0.4064" layer="1"/>
 <wire x1="-0.75" y1="8.4" x2="-0.75" y2="6.1" width="0.4064" layer="1"/>
@@ -1768,7 +1789,7 @@ design rules under a new name.</description>
 <wire x1="25" y1="7" x2="24.75" y2="7.25" width="0.254" layer="1"/>
 <wire x1="24.75" y1="7.25" x2="24.75" y2="8.9446" width="0.254" layer="1"/>
 <contactref element="R30" pad="2"/>
-<wire x1="8.6004" y1="5.75" x2="7.75" y2="6.6004" width="0.3048" layer="1"/>
+<wire x1="8.7274" y1="5.75" x2="7.75" y2="6.6004" width="0.3048" layer="1"/>
 <wire x1="7.75" y1="6.6004" x2="7.75" y2="9.25" width="0.3048" layer="1"/>
 <wire x1="7.75" y1="9.25" x2="7.7532" y2="9.25" width="0.3048" layer="1"/>
 <via x="7.7532" y="9.25" extent="1-16" drill="0.3"/>
@@ -2190,7 +2211,7 @@ design rules under a new name.</description>
 <wire x1="5.25" y1="4.7654" x2="3.5" y2="3.0154" width="0.4064" layer="1"/>
 <wire x1="3.5" y1="3.0154" x2="3.5" y2="0.6532" width="0.4064" layer="1"/>
 <wire x1="3.5" y1="0.6532" x2="12.0634" y2="0.6532" width="0.8128" layer="1"/>
-<wire x1="12.0634" y1="0.6532" x2="14.8996" y2="3.4894" width="0.8128" layer="1"/>
+<wire x1="12.0634" y1="0.6532" x2="14.7726" y2="3.45" width="0.8128" layer="1"/>
 <wire x1="23.75" y1="5.0554" x2="23.75" y2="4.75" width="0.254" layer="1"/>
 <wire x1="23.75" y1="4.75" x2="24" y2="4.5" width="0.254" layer="1"/>
 <wire x1="24.25" y1="4.75" x2="24" y2="4.5" width="0.254" layer="1"/>
@@ -2203,12 +2224,12 @@ design rules under a new name.</description>
 <wire x1="27.75" y1="0.9" x2="25.35" y2="0.9" width="0.8128" layer="1"/>
 <wire x1="28" y1="1.15" x2="30.428" y2="1.15" width="0.8128" layer="1"/>
 <wire x1="30.428" y1="1.15" x2="30.5" y2="1.078" width="0.8128" layer="1"/>
-<wire x1="14.8996" y1="3.4894" x2="17.389" y2="1" width="0.8128" layer="1"/>
+<wire x1="14.7726" y1="3.45" x2="17.389" y2="1" width="0.8128" layer="1"/>
 <wire x1="17.389" y1="1" x2="24.25" y2="1" width="0.8128" layer="1"/>
 <wire x1="24.25" y1="1" x2="24.75" y2="1.5" width="0.8128" layer="1"/>
 <wire x1="19" y1="3.15" x2="17" y2="3.15" width="0.8128" layer="1"/>
 <wire x1="17" y1="3.15" x2="15.239" y2="3.15" width="0.8128" layer="1"/>
-<wire x1="15.239" y1="3.15" x2="14.8996" y2="3.4894" width="0.8128" layer="1"/>
+<wire x1="15.239" y1="3.15" x2="14.7726" y2="3.45" width="0.8128" layer="1"/>
 <wire x1="5.25" y1="4.7654" x2="3.75" y2="4.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-0.75" y1="4.4" x2="0.75" y2="4.7654" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2731,10 +2752,10 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8FFE200"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFDADFD5"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 </board>

@@ -701,7 +701,7 @@
 <wire x1="1.3" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-1.3" y1="-1.3" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
 </package>
-<package name="2X1_2.54">
+<package name="2X1_2.54" urn="urn:adsk.eagle:footprint:16206901/1">
 <pad name="P$1" x="-1.27" y="0" drill="1.016" diameter="1.6764"/>
 <pad name="P$2" x="1.27" y="0" drill="1.016" diameter="1.6764"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.127" layer="21" curve="-90"/>
@@ -852,6 +852,11 @@
 <package3d name="MODULE_SX1280" urn="urn:adsk.eagle:package:16206911/2" type="model">
 <packageinstances>
 <packageinstance name="MODULE_SX1280"/>
+</packageinstances>
+</package3d>
+<package3d name="2X1_2.54" urn="urn:adsk.eagle:package:16206924/2" type="model">
+<packageinstances>
+<packageinstance name="2X1_2.54"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1371,6 +1376,9 @@
 <connect gate="G$1" pin="+" pad="P$1"/>
 <connect gate="G$1" pin="-" pad="P$2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206924/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1414,6 +1422,9 @@
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206924/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1989,24 +2000,28 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <rectangle x1="0.525" y1="0.35" x2="0.85" y2="0.775" layer="21"/>
 <rectangle x1="-0.175" y1="0" x2="0.175" y2="0.35" layer="21"/>
 </package>
-<package name="SOT223" urn="urn:adsk.eagle:footprint:4834/1">
-<description>&lt;b&gt;Smal Outline Transistor&lt;/b&gt;</description>
-<wire x1="-3.124" y1="1.731" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
-<wire x1="3.124" y1="-1.729" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
-<wire x1="-3.124" y1="1.731" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
-<wire x1="3.124" y1="-1.729" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
-<smd name="1" x="-2.2606" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="2" x="0.0254" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="3" x="2.3114" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="4" x="0" y="3.1496" dx="3.81" dy="2.0066" layer="1"/>
-<text x="-2.54" y="4.318" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.794" y="-5.842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="1.778" x2="1.524" y2="3.302" layer="51"/>
-<rectangle x1="-2.667" y1="-3.302" x2="-1.905" y2="-1.778" layer="51"/>
-<rectangle x1="1.905" y1="-3.302" x2="2.667" y2="-1.778" layer="51"/>
-<rectangle x1="-0.381" y1="-3.302" x2="0.381" y2="-1.778" layer="51"/>
+<package name="SOT230P700X180-4N" urn="urn:adsk.eagle:footprint:16207433/1">
+<description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
+&lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
+<circle x="-2.9276" y="3.2486" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.85" y1="2.9986" x2="-1.85" y2="3.35" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="3.35" x2="1.85" y2="3.35" width="0.12" layer="21"/>
+<wire x1="1.85" y1="3.35" x2="1.85" y2="1.8486" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="-2.9986" x2="-1.85" y2="-3.35" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="-3.35" x2="1.85" y2="-3.35" width="0.12" layer="21"/>
+<wire x1="1.85" y1="-3.35" x2="1.85" y2="-1.8486" width="0.12" layer="21"/>
+<wire x1="1.85" y1="-3.35" x2="-1.85" y2="-3.35" width="0.12" layer="51"/>
+<wire x1="-1.85" y1="-3.35" x2="-1.85" y2="3.35" width="0.12" layer="51"/>
+<wire x1="-1.85" y1="3.35" x2="1.85" y2="3.35" width="0.12" layer="51"/>
+<wire x1="1.85" y1="3.35" x2="1.85" y2="-3.35" width="0.12" layer="51"/>
+<smd name="1" x="-3.0226" y="2.3" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="2" x="-3.0226" y="0" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="3" x="-3.0226" y="-2.3" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="4" x="3.0226" y="0" dx="1.9651" dy="3.1891" layer="1"/>
+<text x="0" y="4.1336" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.985" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="2X1_2.54">
+<package name="2X1_2.54" urn="urn:adsk.eagle:footprint:16206901/1">
 <pad name="P$1" x="-1.27" y="0" drill="1.016" diameter="1.6764"/>
 <pad name="P$2" x="1.27" y="0" drill="1.016" diameter="1.6764"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.127" layer="21" curve="-90"/>
@@ -2100,6 +2115,18 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <packageinstances>
 <packageinstance name="CHIPLED_1206"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT230P700X180-4N" urn="urn:adsk.eagle:package:16207430/1" type="model">
+<description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
+&lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT230P700X180-4N"/>
+</packageinstances>
+</package3d>
+<package3d name="2X1_2.54" urn="urn:adsk.eagle:package:16206924/2" type="model">
+<packageinstances>
+<packageinstance name="2X1_2.54"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2464,12 +2491,15 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <gate name="G$1" symbol="REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT223">
+<device name="" package="SOT230P700X180-4N">
 <connects>
-<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="GND" pad="2 4" route="any"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16207430/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2505,6 +2535,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206924/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3408,7 +3441,7 @@ Source: RS Component / Phycomp</description>
 <part name="C62" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="B6" library="SobieskiSat2" deviceset="BATTERY" device="INV" value="3V"/>
-<part name="BTN_DFU" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="DIP" value="PUSH-SWITCHDIP"/>
+<part name="BTN_DFU" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="DIP" package3d_urn="urn:adsk.eagle:package:16206924/2" value="PUSH-SWITCHDIP"/>
 <part name="BTN_RST" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="TACT_3X6" value="PUSH-SWITCHTACT_3X6"/>
 <part name="BTN_USR" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="TACT_3X6" value="PUSH-SWITCHTACT_3X6"/>
 <part name="U$4" library="SobieskiSat2" deviceset="SX1280" device="" package3d_urn="urn:adsk.eagle:package:16206911/2"/>
@@ -3429,7 +3462,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$11" library="Unified" deviceset="REGULATOR" device=""/>
+<part name="U$11" library="Unified" deviceset="REGULATOR" device="" package3d_urn="urn:adsk.eagle:package:16207430/1"/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C28" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="?10u"/>
 <part name="C29" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="?100n"/>
@@ -3493,9 +3526,9 @@ Source: RS Component / Phycomp</description>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$12" library="SobieskiSat2" deviceset="ANTENNA" device="" package3d_urn="urn:adsk.eagle:package:6644349/2" value="50R"/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="BAT_PACK" library="SobieskiSat2" deviceset="BATTERY" device="DIP"/>
+<part name="BAT_PACK" library="SobieskiSat2" deviceset="BATTERY" device="DIP" package3d_urn="urn:adsk.eagle:package:16206924/2"/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="MOTL" library="Unified" deviceset="MOTOR" device=""/>
+<part name="MOTL" library="Unified" deviceset="MOTOR" device="" package3d_urn="urn:adsk.eagle:package:16206924/2"/>
 <part name="U$14" library="SobieskiSat2" deviceset="DRV8838" device="" package3d_urn="urn:adsk.eagle:package:16076057/1"/>
 <part name="C25" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C26" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
@@ -3504,7 +3537,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R18" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="MOTR" library="Unified" deviceset="MOTOR" device=""/>
+<part name="MOTR" library="Unified" deviceset="MOTOR" device="" package3d_urn="urn:adsk.eagle:package:16206924/2"/>
 <part name="U$15" library="SobieskiSat2" deviceset="DRV8838" device="" package3d_urn="urn:adsk.eagle:package:16076057/1"/>
 <part name="C17" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C24" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
