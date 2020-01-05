@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -782,6 +782,15 @@
 <text x="0" y="6.35" size="1.27" layer="25" align="center">PA6H</text>
 <hole x="0.2" y="0.8" drill="2.4"/>
 </package>
+<package name="NTC">
+<description>NTC Thermistor port</description>
+<pad name="P$1" x="0.85" y="0" drill="0.9" diameter="1.5"/>
+<pad name="P$2" x="-0.85" y="0" drill="0.9" diameter="1.5"/>
+<wire x1="-1.75" y1="0.9" x2="1.75" y2="0.9" width="0.15" layer="21"/>
+<wire x1="1.75" y1="0.9" x2="1.75" y2="-0.9" width="0.15" layer="21"/>
+<wire x1="1.75" y1="-0.9" x2="-1.75" y2="-0.9" width="0.15" layer="21"/>
+<wire x1="-1.75" y1="-0.9" x2="-1.75" y2="0.9" width="0.15" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P1200X1200X160-64N" urn="urn:adsk.eagle:package:15005550/1" type="model">
@@ -1197,6 +1206,18 @@
 <wire x1="8.89" y1="-6.35" x2="-8.89" y2="-6.35" width="0.254" layer="94"/>
 <wire x1="-8.89" y1="-6.35" x2="-8.89" y2="6.35" width="0.254" layer="94"/>
 <text x="0" y="7.62" size="1.778" layer="95" align="bottom-center">DRV8838</text>
+</symbol>
+<symbol name="THERMIST">
+<wire x1="2.54" y1="1.016" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="3.1496" y1="-2.032" x2="2.032" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-2.032" x2="-2.032" y2="2.032" width="0.254" layer="94"/>
+<text x="-2.54" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1721,6 +1742,23 @@
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:16076057/1"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NTC">
+<description>NTC</description>
+<gates>
+<gate name="R$1" symbol="THERMIST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NTC">
+<connects>
+<connect gate="R$1" pin="1" pad="P$1"/>
+<connect gate="R$1" pin="2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3663,6 +3701,7 @@ Source: RS Component / Phycomp</description>
 <part name="U$31" library="Unified" deviceset="PAD" device=""/>
 <part name="U$32" library="Unified" deviceset="PAD" device=""/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R20" library="SobieskiSat2" deviceset="NTC" device="" value="NTC"/>
 </parts>
 <sheets>
 <sheet>
@@ -4295,6 +4334,10 @@ differ from PYBV11 configuration</text>
 <instance part="GND44" gate="1" x="-5.08" y="-45.72" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="-2.54" y="-45.72" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
+<instance part="R20" gate="R$1" x="-86.36" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="-86.36" y="34.29" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-86.36" y="31.75" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4741,9 +4784,12 @@ differ from PYBV11 configuration</text>
 <pinref part="R17" gate="R$1" pin="1"/>
 <pinref part="C35" gate="C$1" pin="2"/>
 <pinref part="C36" gate="C$1" pin="2"/>
-<wire x1="-91.44" y1="35.56" x2="-81.28" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="35.56" x2="-86.36" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C16" gate="C$1" pin="2"/>
 <junction x="-81.28" y="35.56"/>
+<pinref part="R20" gate="R$1" pin="2"/>
+<wire x1="-86.36" y1="35.56" x2="-81.28" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-86.36" y="35.56"/>
 </segment>
 <segment>
 <wire x1="-109.22" y1="48.26" x2="-109.22" y2="40.64" width="0.1524" layer="91"/>
@@ -5501,6 +5547,8 @@ differ from PYBV11 configuration</text>
 <pinref part="U$10" gate="G$1" pin="TS"/>
 <wire x1="-91.44" y1="45.72" x2="-93.98" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-91.44" y="45.72"/>
+<pinref part="R20" gate="R$1" pin="1"/>
+<wire x1="-86.36" y1="45.72" x2="-91.44" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BAT" class="0">
