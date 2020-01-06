@@ -791,6 +791,17 @@
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
 <wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
 </package>
+<package name="BAT_THT">
+<pad name="P$1" x="2.54" y="0" drill="1.143" diameter="2.032" shape="octagon"/>
+<pad name="P$2" x="-2.54" y="0" drill="1.143" diameter="2.032"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21" curve="180"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.127" layer="21" curve="180"/>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-0.254" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.762" y1="0.508" x2="-0.762" y2="-0.508" width="0.254" layer="21"/>
+<wire x1="0.254" y1="0" x2="1.27" y2="0" width="0.254" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P1200X1200X160-64N" urn="urn:adsk.eagle:package:15005550/1" type="model">
@@ -1404,6 +1415,15 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="BIG" package="BAT_THT">
+<connects>
+<connect gate="G$1" pin="+" pad="P$2"/>
+<connect gate="G$1" pin="-" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="PUSH-SWITCH">
@@ -1508,6 +1528,28 @@
 <connect gate="G$1" pin="NRESET" pad="13"/>
 <connect gate="G$1" pin="NSS" pad="8"/>
 <connect gate="G$1" pin="SCK" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16206911/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="433" package="MODULE_SX1280">
+<connects>
+<connect gate="G$1" pin="ANT" pad="11"/>
+<connect gate="G$1" pin="BUSY" pad="10"/>
+<connect gate="G$1" pin="DIO1" pad="5 6"/>
+<connect gate="G$1" pin="DIO2" pad="7"/>
+<connect gate="G$1" pin="DIO3" pad="8"/>
+<connect gate="G$1" pin="GND" pad="1 2 9"/>
+<connect gate="G$1" pin="MISO" pad="13"/>
+<connect gate="G$1" pin="MOSI" pad="14"/>
+<connect gate="G$1" pin="NRESET" pad="4"/>
+<connect gate="G$1" pin="NSS" pad="15"/>
+<connect gate="G$1" pin="SCK" pad="12"/>
 <connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
 <package3dinstances>
@@ -2078,8 +2120,38 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 </package>
-<package name="PAD">
+<package name="PAD_REC">
 <smd name="1" x="0" y="0" dx="2" dy="1.2" layer="1"/>
+</package>
+<package name="PAD_OCT">
+<smd name="1" x="0" y="0" dx="1.2" dy="1.2" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="-0.6" y="0.6"/>
+<vertex x="-1" y="0.4"/>
+<vertex x="-1" y="-0.4"/>
+<vertex x="-0.6" y="-0.6"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="0.6" y="0.6"/>
+<vertex x="1" y="0.4"/>
+<vertex x="1" y="-0.4"/>
+<vertex x="0.6" y="-0.6"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-0.7" y="0.7"/>
+<vertex x="-1.2" y="0.5"/>
+<vertex x="-1.2" y="-0.5"/>
+<vertex x="-0.7" y="-0.7"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="0.7" y="0.7"/>
+<vertex x="1.2" y="0.4"/>
+<vertex x="1.2" y="-0.5"/>
+<vertex x="0.7" y="-0.7"/>
+</polygon>
+</package>
+<package name="PAD_RND">
+<smd name="1" x="0" y="0" dx="2" dy="1.2" layer="1" roundness="75"/>
 </package>
 </packages>
 <packages3d>
@@ -2659,7 +2731,23 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <gate name="G$1" symbol="PAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PAD">
+<device name="" package="PAD_REC">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OCT" package="PAD_OCT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RND" package="PAD_RND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -3531,7 +3619,6 @@ Source: RS Component / Phycomp</description>
 <part name="C2" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C3" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C4" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
-<part name="C5" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7u"/>
 <part name="C6" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7u"/>
 <part name="C7" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C8" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
@@ -3565,7 +3652,7 @@ Source: RS Component / Phycomp</description>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C62" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="BTN_DFU" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" value="PUSH-SWITCH"/>
+<part name="BTN_DFU" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="DIP" package3d_urn="urn:adsk.eagle:package:16206924/2" value="PUSH-SWITCHDIP"/>
 <part name="BTN_RST" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="TACT_3X6" value="PUSH-SWITCHTACT_3X6"/>
 <part name="BTN_USR" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="TACT_3X6" value="PUSH-SWITCHTACT_3X6"/>
 <part name="U$4" library="SobieskiSat2" deviceset="SX1280" device="" package3d_urn="urn:adsk.eagle:package:16206911/2"/>
@@ -3645,7 +3732,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$12" library="SobieskiSat2" deviceset="ANTENNA" device="" package3d_urn="urn:adsk.eagle:package:6644349/2" value="50R"/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="BAT_PACK" library="SobieskiSat2" deviceset="BATTERY" device="DIP" package3d_urn="urn:adsk.eagle:package:16206924/2"/>
+<part name="BAT_PACK" library="SobieskiSat2" deviceset="BATTERY" device="BIG"/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="MOTL" library="Unified" deviceset="MOTOR" device="" package3d_urn="urn:adsk.eagle:package:16206924/2"/>
 <part name="U$14" library="SobieskiSat2" deviceset="DRV8838" device="" package3d_urn="urn:adsk.eagle:package:16076057/1"/>
@@ -3671,14 +3758,12 @@ Source: RS Component / Phycomp</description>
 <part name="P+19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U$13" library="Unified" deviceset="SERVO" device=""/>
 <part name="U$16" library="Unified" deviceset="SERVO" device=""/>
-<part name="C38" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="big_pol"/>
-<part name="C39" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="big_pol"/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$17" library="Unified" deviceset="PAD" device=""/>
 <part name="U$18" library="Unified" deviceset="PAD" device=""/>
-<part name="U$19" library="Unified" deviceset="PAD" device=""/>
-<part name="U$20" library="Unified" deviceset="PAD" device=""/>
+<part name="U$19" library="Unified" deviceset="PAD" device="RND" value="PADRND"/>
+<part name="U$20" library="Unified" deviceset="PAD" device="OCT" value="PADOCT"/>
 <part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$21" library="Unified" deviceset="PAD" device=""/>
@@ -3689,16 +3774,20 @@ Source: RS Component / Phycomp</description>
 <part name="U$26" library="Unified" deviceset="PAD" device=""/>
 <part name="U$27" library="Unified" deviceset="PAD" device=""/>
 <part name="U$28" library="Unified" deviceset="PAD" device=""/>
-<part name="U$29" library="Unified" deviceset="PAD" device=""/>
-<part name="U$30" library="Unified" deviceset="PAD" device=""/>
+<part name="U$29" library="Unified" deviceset="PAD" device="RND" value="PADRND"/>
+<part name="U$30" library="Unified" deviceset="PAD" device="OCT" value="PADOCT"/>
 <part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$31" library="Unified" deviceset="PAD" device=""/>
-<part name="U$32" library="Unified" deviceset="PAD" device=""/>
-<part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$31" library="Unified" deviceset="PAD" device="RND" value="PADRND"/>
+<part name="U$32" library="Unified" deviceset="PAD" device="RND" value="PADRND"/>
 <part name="R20" library="SobieskiSat2" deviceset="NTC" device="" value="NTC"/>
 <part name="RN1" library="resistor-dil" library_urn="urn:adsk.eagle:library:342" deviceset="4R-N" device="EXB38V" package3d_urn="urn:adsk.eagle:package:24923/1" value="560R"/>
 <part name="RN2" library="resistor-dil" library_urn="urn:adsk.eagle:library:342" deviceset="4R-N" device="EXB38V" package3d_urn="urn:adsk.eagle:package:24923/1"/>
+<part name="P+20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="U$33" library="Unified" deviceset="PAD" device="OCT" value="PADOCT"/>
+<part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$34" library="Unified" deviceset="PAD" device="OCT" value="PADOCT"/>
+<part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3764,6 +3853,7 @@ differ from PYBV11 configuration</text>
 <wire x1="248.92" y1="-46.99" x2="111.76" y2="-46.99" width="0.508" layer="97" style="longdash"/>
 <wire x1="111.76" y1="-46.99" x2="111.76" y2="7.62" width="0.508" layer="97" style="longdash"/>
 <text x="114.3" y="0" size="5.08" layer="97" font="vector">MOTORS</text>
+<text x="-177.8" y="-60.96" size="1.778" layer="97">4.7u was there</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="85.09" y="71.12" smashed="yes"/>
@@ -3798,10 +3888,6 @@ differ from PYBV11 configuration</text>
 <instance part="C4" gate="C$1" x="-157.48" y="-59.69" smashed="yes">
 <attribute name="NAME" x="-154.94" y="-59.69" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-154.94" y="-62.23" size="1.778" layer="96"/>
-</instance>
-<instance part="C5" gate="C$1" x="-167.64" y="-59.69" smashed="yes">
-<attribute name="NAME" x="-165.1" y="-59.69" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-165.1" y="-62.23" size="1.778" layer="96"/>
 </instance>
 <instance part="C6" gate="C$1" x="-147.32" y="-77.47" smashed="yes">
 <attribute name="NAME" x="-144.78" y="-77.47" size="1.778" layer="95"/>
@@ -4254,14 +4340,6 @@ differ from PYBV11 configuration</text>
 </instance>
 <instance part="U$13" gate="G$1" x="-7.62" y="-86.36" smashed="yes"/>
 <instance part="U$16" gate="G$1" x="36.83" y="-86.36" smashed="yes"/>
-<instance part="C38" gate="C$1" x="-22.86" y="-81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="-22.86" y="-83.185" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-26.035" y="-81.28" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="C39" gate="C$1" x="21.59" y="-81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.59" y="-83.185" size="1.778" layer="95"/>
-<attribute name="VALUE" x="18.415" y="-81.28" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND40" gate="1" x="-19.05" y="-74.93" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-16.51" y="-72.39" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -4296,9 +4374,6 @@ differ from PYBV11 configuration</text>
 </instance>
 <instance part="U$31" gate="G$1" x="-11.43" y="-40.64" smashed="yes" rot="MR0"/>
 <instance part="U$32" gate="G$1" x="-11.43" y="-45.72" smashed="yes" rot="MR0"/>
-<instance part="GND44" gate="1" x="-5.08" y="-45.72" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="-2.54" y="-45.72" size="1.778" layer="96" rot="MR180" align="center"/>
-</instance>
 <instance part="R20" gate="R$1" x="-86.36" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="-86.36" y="34.29" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-86.36" y="31.75" size="1.778" layer="96" rot="R180"/>
@@ -4335,6 +4410,17 @@ differ from PYBV11 configuration</text>
 <attribute name="VALUE" x="243.84" y="49.022" size="1.778" layer="96"/>
 <attribute name="NAME" x="236.22" y="49.022" size="1.778" layer="95"/>
 </instance>
+<instance part="P+20" gate="VCC" x="-5.08" y="-45.72" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-3.81" y="-45.72" size="1.778" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="U$33" gate="G$1" x="-11.43" y="-50.8" smashed="yes" rot="MR0"/>
+<instance part="GND44" gate="1" x="-5.08" y="-50.8" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="-2.54" y="-50.8" size="1.778" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="U$34" gate="G$1" x="-11.43" y="-53.34" smashed="yes" rot="MR0"/>
+<instance part="GND45" gate="1" x="-5.08" y="-53.34" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="-2.54" y="-53.34" size="1.778" layer="96" rot="MR180" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4364,7 +4450,6 @@ differ from PYBV11 configuration</text>
 <pinref part="C2" gate="C$1" pin="1"/>
 <pinref part="C3" gate="C$1" pin="1"/>
 <pinref part="C4" gate="C$1" pin="1"/>
-<pinref part="C5" gate="C$1" pin="1"/>
 <wire x1="-127" y1="-54.61" x2="-119.38" y2="-54.61" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="-54.61" x2="-119.38" y2="-62.23" width="0.1524" layer="91"/>
 <junction x="-127" y="-54.61"/>
@@ -4546,6 +4631,10 @@ differ from PYBV11 configuration</text>
 <pinref part="P+23" gate="VCC" pin="VCC"/>
 <pinref part="U$29" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="P+20" gate="VCC" pin="VCC"/>
+<pinref part="U$32" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -4576,7 +4665,6 @@ differ from PYBV11 configuration</text>
 <pinref part="C2" gate="C$1" pin="2"/>
 <pinref part="C3" gate="C$1" pin="2"/>
 <pinref part="C4" gate="C$1" pin="2"/>
-<pinref part="C5" gate="C$1" pin="2"/>
 <wire x1="-137.16" y1="-67.31" x2="-127" y2="-67.31" width="0.1524" layer="91"/>
 <junction x="-137.16" y="-67.31"/>
 <pinref part="C1" gate="C$1" pin="2"/>
@@ -4893,7 +4981,6 @@ differ from PYBV11 configuration</text>
 <pinref part="R30" gate="R$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C38" gate="C$1" pin="1"/>
 <wire x1="-20.32" y1="-81.28" x2="-19.05" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="-19.05" y1="-81.28" x2="-19.05" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="U$13" gate="G$1" pin="GND"/>
@@ -4903,7 +4990,6 @@ differ from PYBV11 configuration</text>
 <pinref part="GND40" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C39" gate="C$1" pin="1"/>
 <wire x1="24.13" y1="-81.28" x2="25.4" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-81.28" x2="25.4" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="U$16" gate="G$1" pin="GND"/>
@@ -4923,7 +5009,11 @@ differ from PYBV11 configuration</text>
 </segment>
 <segment>
 <pinref part="GND44" gate="1" pin="GND"/>
-<pinref part="U$32" gate="G$1" pin="1"/>
+<pinref part="U$33" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="GND45" gate="1" pin="GND"/>
+<pinref part="U$34" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VBACKUP" class="0">
@@ -5325,7 +5415,6 @@ differ from PYBV11 configuration</text>
 <segment>
 <pinref part="U$13" gate="G$1" pin="VCC"/>
 <wire x1="-17.78" y1="-86.36" x2="-29.21" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="C38" gate="C$1" pin="2"/>
 <wire x1="-29.21" y1="-86.36" x2="-29.21" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="-81.28" x2="-27.94" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="-29.21" y1="-81.28" x2="-29.21" y2="-77.47" width="0.1524" layer="91"/>
@@ -5333,7 +5422,6 @@ differ from PYBV11 configuration</text>
 <label x="-29.21" y="-77.47" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C39" gate="C$1" pin="2"/>
 <wire x1="16.51" y1="-81.28" x2="15.24" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-81.28" x2="15.24" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="U$16" gate="G$1" pin="VCC"/>
