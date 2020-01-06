@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -361,7 +361,7 @@
 <wire x1="-13.97" y1="-8.89" x2="-13.97" y2="8.89" width="0.127" layer="21"/>
 <circle x="-4.58" y="6.35" radius="0.6" width="0.2" layer="21"/>
 </package>
-<package name="MODULE_SX1280" urn="urn:adsk.eagle:footprint:16206888/1">
+<package name="MODULE_SX1280" urn="urn:adsk.eagle:footprint:16206888/1" locally_modified="yes">
 <wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
@@ -387,9 +387,8 @@
 <smd name="15" x="8" y="5" dx="3" dy="1.5" layer="1" rot="R180"/>
 <smd name="16" x="8" y="7" dx="3" dy="1.5" layer="1" rot="R180"/>
 <circle x="-4.5" y="6" radius="0.6" width="0.2" layer="21"/>
-<text x="0" y="6" size="1.27" layer="25" align="center">SX1280</text>
 </package>
-<package name="BMP280" urn="urn:adsk.eagle:footprint:16206889/1">
+<package name="BMP280" urn="urn:adsk.eagle:footprint:16206889/1" locally_modified="yes">
 <wire x1="-1" y1="1.25" x2="1" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1" y1="1.25" x2="1" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="1" y1="-1.25" x2="-1" y2="-1.25" width="0.127" layer="21"/>
@@ -403,7 +402,6 @@
 <smd name="7" x="1.05" y="0.325" dx="0.5" dy="0.35" layer="1"/>
 <smd name="8" x="1.05" y="0.975" dx="0.5" dy="0.35" layer="1"/>
 <circle x="-0.5" y="0.75" radius="0.1" width="0.1" layer="21"/>
-<text x="0" y="2.54" size="1.27" layer="25" align="center">BMP280</text>
 </package>
 <package name="QFN40P300X300X105-25T170X154N" urn="urn:adsk.eagle:footprint:15487763/1">
 <description>24-QFN, 0.40 mm pitch, 3.00 X 3.00 X 1.05 mm body, 1.70 X 1.54 mm thermal pad
@@ -779,7 +777,6 @@
 <wire x1="-8" y1="-8" x2="-8" y2="8" width="0.127" layer="21"/>
 <circle x="-5.25" y="6.75" radius="0.4" width="0.127" layer="21"/>
 <circle x="0.2" y="0.8" radius="1.2" width="0.127" layer="21"/>
-<text x="0" y="6.35" size="1.27" layer="25" align="center">PA6H</text>
 <hole x="0.2" y="0.8" drill="2.4"/>
 </package>
 <package name="NTC">
@@ -1898,8 +1895,8 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="1.723" y1="0.97" x2="1.723" y2="-0.97" width="0.0508" layer="39"/>
 <wire x1="1.723" y1="-0.97" x2="-1.723" y2="-0.97" width="0.0508" layer="39"/>
 <wire x1="-1.723" y1="-0.97" x2="-1.723" y2="0.97" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1" roundness="35"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1" roundness="35"/>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
@@ -1958,8 +1955,8 @@ Metric Code Size 1005</description>
 <wire x1="-1.723" y1="-0.97" x2="-1.723" y2="0.97" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" rot="R90"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" rot="R90"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" roundness="35" rot="R90"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" roundness="35" rot="R90"/>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
@@ -3713,7 +3710,6 @@ Source: RS Component / Phycomp</description>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$10" library="SobieskiSat2" deviceset="BQ24253" device="" package3d_urn="urn:adsk.eagle:package:15841520/1"/>
-<part name="R5" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="R14" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R15" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="125R"/>
 <part name="R16" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="NTC/5k"/>
@@ -3788,6 +3784,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$34" library="Unified" deviceset="PAD" device="OCT" value="PADOCT"/>
 <part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R5" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -4192,10 +4189,6 @@ differ from PYBV11 configuration</text>
 <attribute name="VALUE" x="-157.48" y="58.42" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="U$10" gate="G$1" x="-124.46" y="58.42" smashed="yes"/>
-<instance part="R5" gate="R$1" x="-162.56" y="57.15" smashed="yes">
-<attribute name="NAME" x="-160.02" y="57.15" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-160.02" y="54.61" size="1.778" layer="96"/>
-</instance>
 <instance part="R14" gate="R$1" x="-139.7" y="43.18" smashed="yes">
 <attribute name="NAME" x="-137.16" y="43.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-137.16" y="40.64" size="1.778" layer="96"/>
@@ -4378,21 +4371,21 @@ differ from PYBV11 configuration</text>
 <attribute name="NAME" x="-86.36" y="34.29" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-86.36" y="31.75" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="RN1" gate="A" x="60.96" y="-50.8" smashed="yes">
-<attribute name="VALUE" x="63.5" y="-53.848" size="1.778" layer="96"/>
-<attribute name="NAME" x="55.88" y="-53.848" size="1.778" layer="95"/>
+<instance part="RN1" gate="A" x="-162.56" y="57.15" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-159.512" y="59.69" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="-159.512" y="52.07" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="RN1" gate="B" x="60.96" y="-55.88" smashed="yes">
-<attribute name="VALUE" x="63.5" y="-58.928" size="1.778" layer="96"/>
-<attribute name="NAME" x="55.88" y="-58.928" size="1.778" layer="95"/>
+<instance part="RN1" gate="B" x="53.34" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="55.88" y="-38.608" size="1.778" layer="96"/>
+<attribute name="NAME" x="48.26" y="-38.608" size="1.778" layer="95"/>
 </instance>
-<instance part="RN1" gate="C" x="60.96" y="-60.96" smashed="yes">
-<attribute name="VALUE" x="63.5" y="-64.008" size="1.778" layer="96"/>
-<attribute name="NAME" x="55.88" y="-64.008" size="1.778" layer="95"/>
+<instance part="RN1" gate="C" x="53.34" y="-38.1" smashed="yes">
+<attribute name="VALUE" x="55.88" y="-41.148" size="1.778" layer="96"/>
+<attribute name="NAME" x="48.26" y="-41.148" size="1.778" layer="95"/>
 </instance>
-<instance part="RN1" gate="D" x="60.96" y="-66.04" smashed="yes">
-<attribute name="VALUE" x="63.5" y="-69.088" size="1.778" layer="96"/>
-<attribute name="NAME" x="55.88" y="-69.088" size="1.778" layer="95"/>
+<instance part="RN1" gate="D" x="53.34" y="-40.64" smashed="yes">
+<attribute name="VALUE" x="55.88" y="-43.688" size="1.778" layer="96"/>
+<attribute name="NAME" x="48.26" y="-43.688" size="1.778" layer="95"/>
 </instance>
 <instance part="RN2" gate="A" x="241.3" y="67.31" smashed="yes">
 <attribute name="VALUE" x="243.84" y="64.262" size="1.778" layer="96"/>
@@ -4420,6 +4413,10 @@ differ from PYBV11 configuration</text>
 <instance part="U$34" gate="G$1" x="-11.43" y="-53.34" smashed="yes" rot="MR0"/>
 <instance part="GND45" gate="1" x="-5.08" y="-53.34" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="-2.54" y="-53.34" size="1.778" layer="96" rot="MR180" align="center"/>
+</instance>
+<instance part="R5" gate="R$1" x="53.34" y="-43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="53.34" y="-40.64" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="55.88" y="-40.64" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -5641,24 +5638,28 @@ differ from PYBV11 configuration</text>
 <segment>
 <pinref part="D9" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="-35.56" x2="64.77" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="B" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="D8" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="-38.1" x2="64.77" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="C" pin="2"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="D7" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="-40.64" x2="64.77" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="D" pin="2"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="D6" gate="G$1" pin="P$1"/>
 <wire x1="58.42" y1="-43.18" x2="64.77" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="R5" gate="R$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -5838,40 +5839,44 @@ differ from PYBV11 configuration</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="P$2"/>
-<pinref part="R5" gate="R$1" pin="2"/>
 <wire x1="-162.56" y1="63.5" x2="-162.56" y2="62.23" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="A" pin="2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="R5" gate="R$1" pin="1"/>
 <wire x1="-162.56" y1="52.07" x2="-162.56" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="/CHG"/>
 <wire x1="-162.56" y1="50.8" x2="-139.7" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PC7"/>
 <wire x1="48.26" y1="-43.18" x2="45.72" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="R5" gate="R$1" pin="2"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PC6"/>
 <wire x1="48.26" y1="-40.64" x2="45.72" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="D" pin="1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB15"/>
 <wire x1="48.26" y1="-38.1" x2="45.72" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="U$1" gate="STM32F405RGT6_GPIO" pin="PB14"/>
 <wire x1="48.26" y1="-35.56" x2="45.72" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="RN1" gate="B" pin="1"/>
 </segment>
 </net>
 <net name="N$32" class="0">
