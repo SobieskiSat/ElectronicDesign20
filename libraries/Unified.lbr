@@ -478,6 +478,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <package name="PAD_RND">
 <smd name="1" x="0" y="0" dx="2" dy="1.2" layer="1" roundness="75"/>
 </package>
+<package name="PAD_BIG">
+<smd name="P$1" x="0" y="0" dx="2.54" dy="1.524" layer="1" roundness="50"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="R0402" urn="urn:adsk.eagle:package:23547/3" type="model">
@@ -1174,6 +1177,14 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <device name="RND" package="PAD_RND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BIG" package="PAD_BIG">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
