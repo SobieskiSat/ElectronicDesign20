@@ -445,10 +445,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 </package>
-<package name="PAD_REC">
+<package name="PAD_REC" urn="urn:adsk.eagle:footprint:16308407/1">
 <smd name="1" x="0" y="0" dx="2" dy="1.2" layer="1"/>
 </package>
-<package name="PAD_OCT">
+<package name="PAD_OCT" urn="urn:adsk.eagle:footprint:16308408/1">
 <smd name="1" x="0" y="0" dx="1.2" dy="1.2" layer="1"/>
 <polygon width="0" layer="1">
 <vertex x="-0.6" y="0.6"/>
@@ -475,10 +475,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <vertex x="0.7" y="-0.7"/>
 </polygon>
 </package>
-<package name="PAD_RND">
+<package name="PAD_RND" urn="urn:adsk.eagle:footprint:16308409/1">
 <smd name="1" x="0" y="0" dx="2" dy="1.2" layer="1" roundness="75"/>
 </package>
-<package name="PAD_BIG">
+<package name="PAD_BIG" urn="urn:adsk.eagle:footprint:16308410/1">
 <smd name="P$1" x="0" y="0" dx="2.54" dy="1.524" layer="1" roundness="50"/>
 </package>
 </packages>
@@ -577,6 +577,26 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <package3d name="2X1_2.54" urn="urn:adsk.eagle:package:16206924/2" type="model">
 <packageinstances>
 <packageinstance name="2X1_2.54"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD_RND" urn="urn:adsk.eagle:package:16308415/2" type="model">
+<packageinstances>
+<packageinstance name="PAD_RND"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD_REC" urn="urn:adsk.eagle:package:16308413/2" type="model">
+<packageinstances>
+<packageinstance name="PAD_REC"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD_OCT" urn="urn:adsk.eagle:package:16308414/2" type="model">
+<packageinstances>
+<packageinstance name="PAD_OCT"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD_BIG" urn="urn:adsk.eagle:package:16308416/2" type="model">
+<packageinstances>
+<packageinstance name="PAD_BIG"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1162,6 +1182,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16308413/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1170,6 +1193,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16308414/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1178,6 +1204,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16308415/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1186,6 +1215,9 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16308416/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
