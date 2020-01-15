@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -540,9 +540,9 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <wire x1="-6.55" y1="-6.65" x2="-6.55" y2="7.4" width="0.127" layer="21"/>
 <wire x1="6.55" y1="-6.65" x2="-6.55" y2="-6.65" width="0.127" layer="21"/>
 </package>
-<package name="TACTHALF_SMD" urn="urn:adsk.eagle:footprint:16206899/3">
-<smd name="P$1" x="-3.7" y="0" dx="2" dy="1.5" layer="1" rot="R180"/>
-<smd name="P$2" x="3.7" y="0" dx="2" dy="1.5" layer="1" rot="R180"/>
+<package name="TACTHALF_SMD" urn="urn:adsk.eagle:footprint:16206899/3" locally_modified="yes">
+<smd name="P$1" x="-3.7" y="0" dx="2" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="P$2" x="3.7" y="0" dx="2" dy="1.5" layer="1" rot="R180" cream="no"/>
 <wire x1="-3" y1="1.75" x2="3" y2="1.75" width="0.127" layer="21"/>
 <wire x1="3" y1="1.75" x2="3" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="3" y1="-1.75" x2="-3" y2="-1.75" width="0.127" layer="21"/>
@@ -569,22 +569,22 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <wire x1="-6" y1="-7.5" x2="6" y2="-7.5" width="0.127" layer="21"/>
 <wire x1="6" y1="-7.5" x2="6" y2="7.5" width="0.127" layer="21"/>
 <wire x1="6" y1="7.5" x2="-6" y2="7.5" width="0.127" layer="21"/>
-<smd name="1" x="-8" y="7" dx="3" dy="1.5" layer="1"/>
-<smd name="2" x="-8" y="5" dx="3" dy="1.5" layer="1"/>
-<smd name="3" x="-8" y="3" dx="3" dy="1.5" layer="1"/>
-<smd name="4" x="-8" y="1" dx="3" dy="1.5" layer="1"/>
-<smd name="5" x="-8" y="-1" dx="3" dy="1.5" layer="1"/>
-<smd name="6" x="-8" y="-3" dx="3" dy="1.5" layer="1"/>
-<smd name="7" x="-8" y="-5" dx="3" dy="1.5" layer="1"/>
-<smd name="8" x="-8" y="-7" dx="3" dy="1.5" layer="1"/>
-<smd name="9" x="8" y="-7" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="10" x="8" y="-5" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="11" x="8" y="-3" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="12" x="8" y="-1" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="13" x="8" y="1" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="14" x="8" y="3" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="15" x="8" y="5" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="16" x="8" y="7" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="1" x="-8" y="7" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="2" x="-8" y="5" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="3" x="-8" y="3" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="4" x="-8" y="1" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="5" x="-8" y="-1" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="6" x="-8" y="-3" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="7" x="-8" y="-5" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="8" x="-8" y="-7" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="9" x="8" y="-7" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="10" x="8" y="-5" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="11" x="8" y="-3" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="12" x="8" y="-1" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="13" x="8" y="1" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="14" x="8" y="3" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="15" x="8" y="5" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="16" x="8" y="7" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
 <circle x="-4.5" y="6" radius="0.6" width="0.2" layer="21"/>
 </package>
 <package name="BMP280" urn="urn:adsk.eagle:footprint:16206889/1" locally_modified="yes">
@@ -759,26 +759,26 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <text x="0" y="-1.8386" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 <package name="PA6H" urn="urn:adsk.eagle:footprint:16206886/2" locally_modified="yes">
-<smd name="1" x="-8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="2" x="-8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="3" x="-8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="4" x="-8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="5" x="-8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="6" x="-8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="7" x="-8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="8" x="-8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="9" x="-8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="10" x="-8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="20" x="8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="19" x="8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="18" x="8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="17" x="8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="16" x="8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="15" x="8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="14" x="8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="13" x="8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="12" x="8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="11" x="8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="1" x="-8" y="6.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-8" y="5.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="-8" y="3.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-8" y="2.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="-8" y="0.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="-8" y="-0.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="-8" y="-2.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="-8" y="-3.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="9" x="-8" y="-5.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="10" x="-8" y="-6.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="20" x="8" y="6.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="19" x="8" y="5.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="18" x="8" y="3.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="17" x="8" y="2.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="16" x="8" y="0.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="15" x="8" y="-0.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="14" x="8" y="-2.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="13" x="8" y="-3.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="12" x="8" y="-5.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="11" x="8" y="-6.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
 <wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
@@ -4204,7 +4204,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-18.5" y="3.5" size="1.27" layer="51"/>
 <attribute name="VALUE" x="12.615" y="8.345" size="1.27" layer="27"/>
 </element>
-<element name="U$12" library="SobieskiSat2" package="GHI-CONNECTORS_U.FL-R-SMT-1" package3d_urn="urn:adsk.eagle:package:6644349/2" value="50R" x="-0.25" y="27.75" smashed="yes" rot="MR0"/>
+<element name="U$12" library="SobieskiSat2" package="GHI-CONNECTORS_U.FL-R-SMT-1" package3d_urn="urn:adsk.eagle:package:6644349/2" value="50R" x="0.75" y="27.75" smashed="yes" rot="MR90"/>
 <element name="BAT_PACK" library="SobieskiSat2" package="BAT_THT" package3d_urn="urn:adsk.eagle:package:16308158/2" value="" x="24.25" y="2.5" smashed="yes"/>
 <element name="MOTL" library="Unified" package="2X1_2.54" package3d_urn="urn:adsk.eagle:package:16206924/2" value="MOTOR" x="1.25" y="2.5" smashed="yes" rot="R180"/>
 <element name="U$14" library="SobieskiSat2" package="SON50P200X200X80-9T90X160N" package3d_urn="urn:adsk.eagle:package:16076057/1" value="DRV8838" x="1.5" y="5.75" smashed="yes" rot="R90">
@@ -4824,6 +4824,8 @@ design rules under a new name.</description>
 <wire x1="24.7898" y1="8.9048" x2="24.7898" y2="8.64275625" width="0.1524" layer="1"/>
 <wire x1="25.75" y1="7.68255625" x2="25.75" y2="7.5" width="0.1524" layer="1"/>
 <wire x1="24.7898" y1="8.64275625" x2="25.75" y2="7.68255625" width="0.1524" layer="1"/>
+<wire x1="0.75" y1="29.225" x2="-1.1" y2="29.225" width="1" layer="16"/>
+<wire x1="-1.1" y1="29.225" x2="-1.25" y2="29.375" width="1" layer="16"/>
 </signal>
 <signal name="VBACKUP">
 <contactref element="C8" pad="1"/>
@@ -6095,8 +6097,9 @@ design rules under a new name.</description>
 <signal name="24_ANT">
 <contactref element="U$21" pad="9"/>
 <contactref element="U$12" pad="SIG"/>
-<wire x1="-1.5" y1="23.5" x2="-1.5" y2="24.975" width="1" layer="16"/>
-<wire x1="-1.5" y1="24.975" x2="-0.25" y2="26.225" width="1" layer="16"/>
+<wire x1="-0.775" y1="27.75" x2="-0.775" y2="27.5117125" width="1" layer="16"/>
+<wire x1="-0.775" y1="27.5117125" x2="-1.5" y2="26.7867125" width="1" layer="16"/>
+<wire x1="-1.5" y1="26.7867125" x2="-1.5" y2="23.5" width="1" layer="16"/>
 </signal>
 <signal name="24_D1">
 <contactref element="U$21" pad="16"/>

@@ -298,22 +298,22 @@
 <wire x1="-6" y1="-7.5" x2="6" y2="-7.5" width="0.127" layer="21"/>
 <wire x1="6" y1="-7.5" x2="6" y2="7.5" width="0.127" layer="21"/>
 <wire x1="6" y1="7.5" x2="-6" y2="7.5" width="0.127" layer="21"/>
-<smd name="1" x="-8" y="7" dx="3" dy="1.5" layer="1"/>
-<smd name="2" x="-8" y="5" dx="3" dy="1.5" layer="1"/>
-<smd name="3" x="-8" y="3" dx="3" dy="1.5" layer="1"/>
-<smd name="4" x="-8" y="1" dx="3" dy="1.5" layer="1"/>
-<smd name="5" x="-8" y="-1" dx="3" dy="1.5" layer="1"/>
-<smd name="6" x="-8" y="-3" dx="3" dy="1.5" layer="1"/>
-<smd name="7" x="-8" y="-5" dx="3" dy="1.5" layer="1"/>
-<smd name="8" x="-8" y="-7" dx="3" dy="1.5" layer="1"/>
-<smd name="9" x="8" y="-7" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="10" x="8" y="-5" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="11" x="8" y="-3" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="12" x="8" y="-1" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="13" x="8" y="1" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="14" x="8" y="3" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="15" x="8" y="5" dx="3" dy="1.5" layer="1" rot="R180"/>
-<smd name="16" x="8" y="7" dx="3" dy="1.5" layer="1" rot="R180"/>
+<smd name="1" x="-8" y="7" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="2" x="-8" y="5" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="3" x="-8" y="3" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="4" x="-8" y="1" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="5" x="-8" y="-1" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="6" x="-8" y="-3" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="7" x="-8" y="-5" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="8" x="-8" y="-7" dx="3" dy="1.5" layer="1" cream="no"/>
+<smd name="9" x="8" y="-7" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="10" x="8" y="-5" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="11" x="8" y="-3" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="12" x="8" y="-1" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="13" x="8" y="1" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="14" x="8" y="3" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="15" x="8" y="5" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="16" x="8" y="7" dx="3" dy="1.5" layer="1" rot="R180" cream="no"/>
 <circle x="-4.5" y="6" radius="0.6" width="0.2" layer="21"/>
 </package>
 <package name="BMP280" urn="urn:adsk.eagle:footprint:16206889/1" locally_modified="yes">
@@ -593,9 +593,9 @@
 <circle x="-2" y="-2" radius="0.5" width="0.127" layer="21"/>
 <circle x="2" y="-2" radius="0.5" width="0.127" layer="21"/>
 </package>
-<package name="TACTHALF_SMD" urn="urn:adsk.eagle:footprint:16206899/3">
-<smd name="P$1" x="-3.7" y="0" dx="2" dy="1.5" layer="1" rot="R180"/>
-<smd name="P$2" x="3.7" y="0" dx="2" dy="1.5" layer="1" rot="R180"/>
+<package name="TACTHALF_SMD" urn="urn:adsk.eagle:footprint:16206899/3" locally_modified="yes">
+<smd name="P$1" x="-3.7" y="0" dx="2" dy="1.5" layer="1" rot="R180" cream="no"/>
+<smd name="P$2" x="3.7" y="0" dx="2" dy="1.5" layer="1" rot="R180" cream="no"/>
 <wire x1="-3" y1="1.75" x2="3" y2="1.75" width="0.127" layer="21"/>
 <wire x1="3" y1="1.75" x2="3" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="3" y1="-1.75" x2="-3" y2="-1.75" width="0.127" layer="21"/>
@@ -676,26 +676,26 @@
 <text x="-2.59" y="-3.25" size="1.016" layer="27" ratio="12">&gt;VALUE</text>
 </package>
 <package name="PA6H" urn="urn:adsk.eagle:footprint:16206886/2" locally_modified="yes">
-<smd name="1" x="-8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="2" x="-8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="3" x="-8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="4" x="-8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="5" x="-8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="6" x="-8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="7" x="-8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="8" x="-8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="9" x="-8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="10" x="-8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="20" x="8" y="6.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="19" x="8" y="5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="18" x="8" y="3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="17" x="8" y="2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="16" x="8" y="0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="15" x="8" y="-0.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="14" x="8" y="-2.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="13" x="8" y="-3.75" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="12" x="8" y="-5.25" dx="1" dy="2" layer="1" rot="R90"/>
-<smd name="11" x="8" y="-6.75" dx="1" dy="2" layer="1" rot="R90"/>
+<smd name="1" x="-8" y="6.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-8" y="5.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="-8" y="3.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-8" y="2.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="-8" y="0.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="-8" y="-0.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="-8" y="-2.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="-8" y="-3.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="9" x="-8" y="-5.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="10" x="-8" y="-6.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="20" x="8" y="6.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="19" x="8" y="5.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="18" x="8" y="3.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="17" x="8" y="2.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="16" x="8" y="0.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="15" x="8" y="-0.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="14" x="8" y="-2.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="13" x="8" y="-3.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="12" x="8" y="-5.25" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
+<smd name="11" x="8" y="-6.75" dx="1" dy="2" layer="1" rot="R90" cream="no"/>
 <wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="21"/>
