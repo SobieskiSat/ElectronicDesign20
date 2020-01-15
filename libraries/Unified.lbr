@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -227,8 +227,8 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 </package>
 <package name="R0603" urn="urn:adsk.eagle:footprint:23044/1" locally_modified="yes">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="21"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="21"/>
 <wire x1="-1.723" y1="0.97" x2="1.723" y2="0.97" width="0.0508" layer="39"/>
 <wire x1="1.723" y1="0.97" x2="1.723" y2="-0.97" width="0.0508" layer="39"/>
 <wire x1="1.723" y1="-0.97" x2="-1.723" y2="-0.97" width="0.0508" layer="39"/>
@@ -237,9 +237,10 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1" roundness="35"/>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="21"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.1778" layer="21"/>
 </package>
 <package name="C0402K" urn="urn:adsk.eagle:footprint:23186/1">
 <description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0204 reflow solder&lt;/b&gt;&lt;p&gt;
@@ -259,15 +260,16 @@ Metric Code Size 1005</description>
 <wire x1="1.723" y1="0.97" x2="1.723" y2="-0.97" width="0.0508" layer="39"/>
 <wire x1="1.723" y1="-0.97" x2="-1.723" y2="-0.97" width="0.0508" layer="39"/>
 <wire x1="-1.723" y1="-0.97" x2="-1.723" y2="0.97" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="21"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="21"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" roundness="35" rot="R90"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" roundness="35" rot="R90"/>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="21"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<wire x1="0" y1="0.381" x2="0" y2="-0.381" width="0.1778" layer="21"/>
 </package>
 <package name="C0805" urn="urn:adsk.eagle:footprint:23124/1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
