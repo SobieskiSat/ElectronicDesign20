@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
@@ -96,7 +96,7 @@
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -241,6 +241,10 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 <wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.1778" layer="21"/>
+<wire x1="-1.7" y1="1" x2="1.7" y2="1" width="0.1" layer="37"/>
+<wire x1="1.7" y1="1" x2="1.7" y2="-1" width="0.1" layer="37"/>
+<wire x1="1.7" y1="-1" x2="-1.7" y2="-1" width="0.1" layer="37"/>
+<wire x1="-1.7" y1="-1" x2="-1.7" y2="1" width="0.1" layer="37"/>
 </package>
 <package name="C0402K" urn="urn:adsk.eagle:footprint:23186/1">
 <description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0204 reflow solder&lt;/b&gt;&lt;p&gt;
@@ -270,6 +274,10 @@ Metric Code Size 1005</description>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <wire x1="0" y1="0.381" x2="0" y2="-0.381" width="0.1778" layer="21"/>
+<wire x1="-1.7" y1="1" x2="1.7" y2="1" width="0.1" layer="37"/>
+<wire x1="1.7" y1="1" x2="1.7" y2="-1" width="0.1" layer="37"/>
+<wire x1="1.7" y1="-1" x2="-1.7" y2="-1" width="0.1" layer="37"/>
+<wire x1="-1.7" y1="-1" x2="-1.7" y2="1" width="0.1" layer="37"/>
 </package>
 <package name="C0805" urn="urn:adsk.eagle:footprint:23124/1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
@@ -287,7 +295,7 @@ Metric Code Size 1005</description>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
-<package name="C1206" urn="urn:adsk.eagle:footprint:23125/1">
+<package name="C1206" urn="urn:adsk.eagle:footprint:23125/1" locally_modified="yes">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -302,6 +310,10 @@ Metric Code Size 1005</description>
 <rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-2.5" y1="1.1" x2="2.5" y2="1.1" width="0.1" layer="37"/>
+<wire x1="2.5" y1="1.1" x2="2.5" y2="-1.1" width="0.1" layer="37"/>
+<wire x1="2.5" y1="-1.1" x2="-2.5" y2="-1.1" width="0.1" layer="37"/>
+<wire x1="-2.5" y1="-1.1" x2="-2.5" y2="1.1" width="0.1" layer="37"/>
 </package>
 <package name="CHIPLED_0603" urn="urn:adsk.eagle:footprint:15676/1">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
