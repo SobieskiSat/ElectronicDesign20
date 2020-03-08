@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -4215,11 +4215,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="22.25" y="7.5" size="1" layer="37" rot="R90" align="center"/>
 <attribute name="VALUE" x="24.155" y="6.865" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R22" library="Unified" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="NTC/1k" x="31" y="11.75" smashed="yes" rot="R270">
+<element name="R22" library="Unified" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k(NTC)/5k" x="31" y="11.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.925" y="11.775" size="1" layer="37" rot="R270" align="center"/>
 <attribute name="VALUE" x="29.095" y="12.385" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R23" library="Unified" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="NTC/2k" x="29.125" y="14.25" smashed="yes">
+<element name="R23" library="Unified" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="2k(NTC)/5k" x="29.125" y="14.25" smashed="yes">
 <attribute name="NAME" x="29.125" y="14.25" size="1" layer="37" align="center"/>
 <attribute name="VALUE" x="28.49" y="12.345" size="1.27" layer="27"/>
 </element>
@@ -4349,6 +4349,10 @@ design rules under a new name.</description>
 </element>
 <element name="D-" library="Unified" package="TESTPAD" value="PADTEST" x="23" y="11" smashed="yes">
 <attribute name="NAME" x="23" y="11.75" size="0.8" layer="25" font="vector" ratio="20" align="bottom-center"/>
+</element>
+<element name="R7" library="Unified" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R" x="-6.25" y="-11.75" smashed="yes">
+<attribute name="NAME" x="-6.885" y="-11.115" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-6.885" y="-13.655" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -5382,14 +5386,12 @@ design rules under a new name.</description>
 <signal name="N$22">
 <contactref element="R22" pad="1"/>
 <contactref element="R23" pad="2"/>
-<contactref element="U$10" pad="9"/>
 <contactref element="THR" pad="P$1"/>
 <wire x1="31" y1="12.6" x2="29.975" y2="13.625" width="0.2" layer="1"/>
 <wire x1="29.975" y1="13.625" x2="29.975" y2="14.25" width="0.2" layer="1"/>
 <wire x1="34" y1="15.5" x2="34" y2="14.75" width="0.2" layer="1"/>
 <wire x1="31.85" y1="12.6" x2="31" y2="12.6" width="0.2" layer="1"/>
 <wire x1="34" y1="14.75" x2="31.85" y2="12.6" width="0.2" layer="1"/>
-<wire x1="24.3054" y1="7.25" x2="23.75" y2="7.25" width="0.2" layer="1"/>
 <wire x1="23.75" y1="7.25" x2="23.39503125" y2="7.60496875" width="0.2" layer="1"/>
 <wire x1="23.39503125" y1="8.39503125" x2="23.39503125" y2="7.60496875" width="0.2" layer="1"/>
 <wire x1="23.39503125" y1="8.39503125" x2="22.14503125" y2="9.64503125" width="0.2" layer="1"/>
@@ -5399,6 +5401,8 @@ design rules under a new name.</description>
 <wire x1="30.25" y1="11.75" x2="31" y2="12.5" width="0.2" layer="1"/>
 <wire x1="31" y1="12.5" x2="31" y2="12.6" width="0.2" layer="1"/>
 <wire x1="22.14503125" y1="9.64503125" x2="25.70135625" y2="11.75" width="0.2" layer="16"/>
+<contactref element="R7" pad="1"/>
+<wire x1="-7.1" y1="-11.75" x2="23.75" y2="7.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BAT">
 <contactref element="U$10" pad="11"/>
@@ -5923,6 +5927,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPS_1PPS">
 <contactref element="U$3" pad="6"/>
+</signal>
+<signal name="N$17">
+<contactref element="U$10" pad="9"/>
+<contactref element="R7" pad="2"/>
+<wire x1="-5.4" y1="-11.75" x2="24.3054" y2="7.25" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

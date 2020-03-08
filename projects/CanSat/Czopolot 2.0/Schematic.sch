@@ -12843,8 +12843,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="U$10" library="SobieskiSat2" deviceset="BQ24253" device="" package3d_urn="urn:adsk.eagle:package:15841520/1"/>
 <part name="R20" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R21" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="125R"/>
-<part name="R22" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="NTC/1k"/>
-<part name="R23" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="NTC/2k"/>
+<part name="R22" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k(NTC)/5k"/>
+<part name="R23" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="2k(NTC)/5k"/>
 <part name="C21" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33n"/>
 <part name="C24" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22n"/>
 <part name="C22" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u"/>
@@ -12919,6 +12919,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D+" library="Unified" deviceset="PAD" device="TEST"/>
 <part name="D-" library="Unified" deviceset="PAD" device="TEST"/>
+<part name="R7" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -13537,6 +13538,10 @@ differ from PYBV11 configuration</text>
 </instance>
 <instance part="D+" gate="G$1" x="-5.08" y="90.17" smashed="yes" rot="R90"/>
 <instance part="D-" gate="G$1" x="-5.08" y="77.47" smashed="yes" rot="R270"/>
+<instance part="R7" gate="R$1" x="-116.84" y="67.31" smashed="yes" rot="R90">
+<attribute name="NAME" x="-110.49" y="69.85" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-110.49" y="67.31" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14641,13 +14646,13 @@ differ from PYBV11 configuration</text>
 <segment>
 <pinref part="R22" gate="R$1" pin="1"/>
 <pinref part="R23" gate="R$1" pin="2"/>
-<wire x1="-106.68" y1="55.88" x2="-106.68" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="-106.68" y1="67.31" x2="-121.92" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="TS"/>
-<wire x1="-104.14" y1="55.88" x2="-106.68" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-104.14" y="55.88"/>
 <pinref part="THR" gate="R$1" pin="1"/>
 <wire x1="-99.06" y1="55.88" x2="-104.14" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="55.88" x2="-106.68" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="55.88" x2="-106.68" y2="67.31" width="0.1524" layer="91"/>
+<pinref part="R7" gate="R$1" pin="1"/>
+<wire x1="-106.68" y1="67.31" x2="-111.76" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BAT" class="0">
@@ -15138,6 +15143,12 @@ differ from PYBV11 configuration</text>
 <pinref part="U$3" gate="G$1" pin="1PPS"/>
 <wire x1="-132.08" y1="-158.75" x2="-120.65" y2="-158.75" width="0.1524" layer="91"/>
 <label x="-132.08" y="-158.75" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="TS"/>
+<pinref part="R7" gate="R$1" pin="2"/>
 </segment>
 </net>
 </nets>
