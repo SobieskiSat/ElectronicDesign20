@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -494,6 +494,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 </package>
 <package name="PAD_BIG" urn="urn:adsk.eagle:footprint:16308410/1" locally_modified="yes">
 <smd name="P$1" x="0" y="0" dx="2.54" dy="1.524" layer="1" roundness="50" cream="no"/>
+</package>
+<package name="TESTPAD">
+<smd name="PAD" x="0" y="0" dx="0.8" dy="0.8" layer="1" roundness="100"/>
+<circle x="0" y="0" radius="0.6" width="0.127" layer="21"/>
+<text x="0" y="0.75" size="0.8" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -1232,6 +1237,14 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:16308416/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TEST" package="TESTPAD">
+<connects>
+<connect gate="G$1" pin="1" pad="PAD"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
