@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -10604,6 +10604,51 @@ Source: RS Components</description>
 <smd name="11" x="7.75" y="3.31" dx="2.5" dy="1" layer="1"/>
 <smd name="12" x="7.75" y="6.35" dx="2.5" dy="2" layer="1"/>
 </package>
+<package name="2X_JSTSMD_F">
+<wire x1="3.95" y1="3.8" x2="3.95" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="3.95" y1="3.8" x2="2.4" y2="3.8" width="0.127" layer="21"/>
+<wire x1="2.4" y1="3.8" x2="0" y2="3.8" width="0.127" layer="21"/>
+<wire x1="0" y1="3.8" x2="-2.4" y2="3.8" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="3.8" x2="-3.95" y2="3.8" width="0.127" layer="21"/>
+<wire x1="3.95" y1="-3.8" x2="3.1" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-3.8" x2="-3.95" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="-3.95" y1="3.8" x2="-3.95" y2="-3.8" width="0.127" layer="21"/>
+<smd name="SH$1" x="-3.4" y="2.4" dx="1.5" dy="3.4" layer="1"/>
+<smd name="SH$2" x="3.4" y="2.4" dx="1.5" dy="3.4" layer="1"/>
+<smd name="-" x="-1" y="-3.35" dx="1" dy="3.5" layer="1"/>
+<smd name="+" x="1" y="-3.35" dx="1" dy="3.5" layer="1"/>
+<wire x1="-3.1" y1="-2.2" x2="3.1" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-2.2" x2="-3.1" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-2.2" x2="3.1" y2="-3.8" width="0.127" layer="21"/>
+<rectangle x1="0" y1="-2.2" x2="4" y2="3.8" layer="21"/>
+<rectangle x1="3.1" y1="-3.8" x2="3.9" y2="-2.2" layer="21"/>
+<wire x1="2.5" y1="-4" x2="2.5" y2="-5" width="0.4" layer="21"/>
+<wire x1="-2" y1="-4.5" x2="-3" y2="-4.5" width="0.4" layer="21"/>
+<wire x1="3" y1="-4.5" x2="2" y2="-4.5" width="0.4" layer="21"/>
+<wire x1="-2.4" y1="3.8" x2="-2.4" y2="4.6" width="0.1" layer="21"/>
+<wire x1="-2.4" y1="4.6" x2="0" y2="4.6" width="0.1" layer="21"/>
+<wire x1="0" y1="4.6" x2="2.4" y2="4.6" width="0.1" layer="21"/>
+<wire x1="2.4" y1="4.6" x2="2.4" y2="3.8" width="0.1" layer="21"/>
+<rectangle x1="0" y1="3.8" x2="2.4" y2="4.6" layer="21"/>
+</package>
+<package name="SLIDE-SWITCH">
+<wire x1="-3.35" y1="1.3" x2="-2.6" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.3" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.3" x2="3.35" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="-1.3" x2="3.35" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="3.35" y1="1.3" x2="3.35" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="1.3" x2="-3.35" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.3" x2="-2.6" y2="2.8" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="2.8" x2="-1.3" y2="2.8" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="2.8" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
+<smd name="P$1" x="-2.3" y="-2.1" dx="0.9" dy="1.5" layer="1"/>
+<smd name="P$2" x="1.1" y="-2.1" dx="0.9" dy="1.5" layer="1"/>
+<smd name="P$3" x="2.6" y="-2.1" dx="0.9" dy="1.5" layer="1"/>
+<smd name="P$4" x="3.9" y="0.8" dx="0.9" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$5" x="3.9" y="-0.8" dx="0.9" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$6" x="-3.8" y="0.8" dx="0.9" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$7" x="-3.8" y="-0.8" dx="0.9" dy="1.5" layer="1" rot="R90"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P1200X1200X160-64N" urn="urn:adsk.eagle:package:15005550/1" type="model">
@@ -11150,6 +11195,21 @@ Source: RS Components</description>
 <wire x1="-8.89" y1="-7.62" x2="-8.89" y2="7.62" width="0.254" layer="94"/>
 <text x="0" y="8.89" size="1.778" layer="95" align="bottom-center">L86</text>
 </symbol>
+<symbol name="SLIDE-SWITCH">
+<pin name="P$1" x="-2.54" y="-2.54" visible="pad" length="short" rot="R90"/>
+<pin name="P$2" x="0" y="-2.54" visible="pad" length="short" rot="R90"/>
+<pin name="P$3" x="2.54" y="-2.54" visible="pad" length="short" rot="R90"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="4.445" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="3.81" x2="-1.27" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="4.445" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MICROSD_HOLDER">
@@ -11316,6 +11376,15 @@ Source: RS Components</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:16308158/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JST" package="2X_JSTSMD_F">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -11806,6 +11875,23 @@ Source: RS Components</description>
 <connect gate="G$1" pin="TX" pad="2"/>
 <connect gate="G$1" pin="VBCK" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SLIDE-SWITCH">
+<gates>
+<gate name="G$1" symbol="SLIDE-SWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SLIDE-SWITCH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12756,7 +12842,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="F1" library="Unified" deviceset="INDUCTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="C1" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
-<part name="C2" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C3" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C4" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C6" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7u"/>
@@ -12791,8 +12876,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C80" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
 <part name="BTN_DFU" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="DIP" package3d_urn="urn:adsk.eagle:package:16206924/2" value="PUSH-SWITCHDIP"/>
-<part name="BTN_RST" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="TACT_3X6" package3d_urn="urn:adsk.eagle:package:16206922/4" value="PUSH-SWITCHTACT_3X6"/>
-<part name="BTN_USR" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="TACT_3X6" package3d_urn="urn:adsk.eagle:package:16206922/4" value="PUSH-SWITCHTACT_3X6"/>
+<part name="BTN_RST" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" value="PUSH-SWITCH"/>
+<part name="BTN_USR" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" value="PUSH-SWITCH"/>
 <part name="C16" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7u"/>
 <part name="U$8" library="SobieskiSat2" deviceset="BMP280" device="" package3d_urn="urn:adsk.eagle:package:16206910/2"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -12810,8 +12895,8 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="LM3940IMP" library="Unified" deviceset="REGULATOR" device="" package3d_urn="urn:adsk.eagle:package:16207430/1"/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C30" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="470n"/>
-<part name="C31" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="?10u"/>
-<part name="C32" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="?100n"/>
+<part name="C31" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
+<part name="C32" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LEDP" library="Unified" deviceset="LED" device="0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
 <part name="R30" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="560R"/>
@@ -12879,12 +12964,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="R70" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R4" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="P+19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="U$17" library="Unified" deviceset="PAD" device="" package3d_urn="urn:adsk.eagle:package:16308413/2"/>
-<part name="U$18" library="Unified" deviceset="PAD" device="" package3d_urn="urn:adsk.eagle:package:16308413/2"/>
-<part name="U$19" library="Unified" deviceset="PAD" device="RND" package3d_urn="urn:adsk.eagle:package:16308415/2" value="PADRND"/>
-<part name="U$20" library="Unified" deviceset="PAD" device="" package3d_urn="urn:adsk.eagle:package:16308413/2" value="PAD"/>
-<part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="THR" library="SobieskiSat2" deviceset="NTC" device="" package3d_urn="urn:adsk.eagle:package:16308418/2" value="NTC"/>
 <part name="R5" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="560R"/>
 <part name="R72" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
@@ -12919,7 +12998,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D+" library="Unified" deviceset="PAD" device="TEST"/>
 <part name="D-" library="Unified" deviceset="PAD" device="TEST"/>
-<part name="R7" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R"/>
+<part name="R24" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R"/>
+<part name="DIO" library="Unified" deviceset="PAD" device="TEST"/>
+<part name="CLK" library="Unified" deviceset="PAD" device="TEST"/>
+<part name="U$4" library="SobieskiSat2" deviceset="SLIDE-SWITCH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13018,10 +13100,6 @@ differ from PYBV11 configuration</text>
 <instance part="C1" gate="C$1" x="-135.89" y="13.97" smashed="yes">
 <attribute name="NAME" x="-133.35" y="13.97" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-133.35" y="10.16" size="1.778" layer="96"/>
-</instance>
-<instance part="C2" gate="C$1" x="-146.05" y="13.97" smashed="yes">
-<attribute name="NAME" x="-143.51" y="13.97" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-143.51" y="10.16" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="C$1" x="-156.21" y="13.97" smashed="yes">
 <attribute name="NAME" x="-153.67" y="13.97" size="1.778" layer="95"/>
@@ -13422,16 +13500,6 @@ differ from PYBV11 configuration</text>
 <instance part="P+19" gate="VCC" x="73.66" y="-3.81" smashed="yes" rot="R270">
 <attribute name="VALUE" x="76.2" y="-3.81" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="U$17" gate="G$1" x="17.78" y="-38.1" smashed="yes" rot="MR180"/>
-<instance part="U$18" gate="G$1" x="17.78" y="-40.64" smashed="yes" rot="MR180"/>
-<instance part="U$19" gate="G$1" x="20.32" y="-40.64" smashed="yes" rot="R180"/>
-<instance part="U$20" gate="G$1" x="20.32" y="-38.1" smashed="yes" rot="R180"/>
-<instance part="P+22" gate="VCC" x="27.94" y="-40.64" smashed="yes" rot="R270">
-<attribute name="VALUE" x="29.21" y="-43.18" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="GND42" gate="1" x="27.94" y="-38.1" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="30.48" y="-39.37" size="1.778" layer="96" align="center"/>
-</instance>
 <instance part="THR" gate="R$1" x="-99.06" y="50.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="-96.52" y="50.8" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-96.52" y="48.26" size="1.778" layer="96"/>
@@ -13538,10 +13606,13 @@ differ from PYBV11 configuration</text>
 </instance>
 <instance part="D+" gate="G$1" x="-5.08" y="90.17" smashed="yes" rot="R90"/>
 <instance part="D-" gate="G$1" x="-5.08" y="77.47" smashed="yes" rot="R270"/>
-<instance part="R7" gate="R$1" x="-116.84" y="67.31" smashed="yes" rot="R90">
+<instance part="R24" gate="R$1" x="-116.84" y="67.31" smashed="yes" rot="R90">
 <attribute name="NAME" x="-110.49" y="69.85" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-110.49" y="67.31" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="DIO" gate="G$1" x="21.59" y="-33.02" smashed="yes"/>
+<instance part="CLK" gate="G$1" x="21.59" y="-35.56" smashed="yes"/>
+<instance part="U$4" gate="G$1" x="-15.24" y="66.04" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -13568,7 +13639,6 @@ differ from PYBV11 configuration</text>
 <wire x1="-166.37" y1="16.51" x2="-166.37" y2="19.05" width="0.1524" layer="91"/>
 <junction x="-166.37" y="19.05"/>
 <pinref part="C1" gate="C$1" pin="1"/>
-<pinref part="C2" gate="C$1" pin="1"/>
 <pinref part="C3" gate="C$1" pin="1"/>
 <pinref part="C4" gate="C$1" pin="1"/>
 <wire x1="-135.89" y1="19.05" x2="-127" y2="19.05" width="0.1524" layer="91"/>
@@ -13712,11 +13782,6 @@ differ from PYBV11 configuration</text>
 <pinref part="P+19" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$19" gate="G$1" pin="1"/>
-<wire x1="24.13" y1="-40.64" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="P+22" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 <pinref part="U$21" gate="G$1" pin="VCC"/>
 <wire x1="-41.91" y1="-101.6" x2="-27.94" y2="-101.6" width="0.1524" layer="91"/>
@@ -13797,7 +13862,6 @@ differ from PYBV11 configuration</text>
 <wire x1="-156.21" y1="8.89" x2="-156.21" y2="6.35" width="0.1524" layer="91"/>
 <junction x="-156.21" y="6.35"/>
 <wire x1="-146.05" y1="8.89" x2="-146.05" y2="6.35" width="0.1524" layer="91"/>
-<pinref part="C2" gate="C$1" pin="2"/>
 <pinref part="C3" gate="C$1" pin="2"/>
 <pinref part="C4" gate="C$1" pin="2"/>
 <wire x1="-146.05" y1="6.35" x2="-135.89" y2="6.35" width="0.1524" layer="91"/>
@@ -14097,11 +14161,6 @@ differ from PYBV11 configuration</text>
 <segment>
 <pinref part="GND31" gate="1" pin="GND"/>
 <pinref part="R30" gate="R$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="U$20" gate="G$1" pin="1"/>
-<wire x1="24.13" y1="-38.1" x2="25.4" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="GND42" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="CBK" gate="G$1" pin="2"/>
@@ -14651,7 +14710,7 @@ differ from PYBV11 configuration</text>
 <wire x1="-99.06" y1="55.88" x2="-104.14" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="55.88" x2="-106.68" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-106.68" y1="55.88" x2="-106.68" y2="67.31" width="0.1524" layer="91"/>
-<pinref part="R7" gate="R$1" pin="1"/>
+<pinref part="R24" gate="R$1" pin="1"/>
 <wire x1="-106.68" y1="67.31" x2="-111.76" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14887,9 +14946,9 @@ differ from PYBV11 configuration</text>
 <label x="-2.54" y="-1.27" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="U$17" gate="G$1" pin="1"/>
-<wire x1="13.97" y1="-38.1" x2="5.08" y2="-38.1" width="0.1524" layer="91"/>
-<label x="13.97" y="-38.1" size="1.778" layer="95" rot="MR0"/>
+<pinref part="DIO" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="-33.02" x2="10.16" y2="-33.02" width="0.1524" layer="91"/>
+<label x="10.16" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWCLK" class="0">
@@ -14899,9 +14958,9 @@ differ from PYBV11 configuration</text>
 <label x="-2.54" y="-3.81" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
-<pinref part="U$18" gate="G$1" pin="1"/>
-<wire x1="13.97" y1="-40.64" x2="5.08" y2="-40.64" width="0.1524" layer="91"/>
-<label x="13.97" y="-40.64" size="1.778" layer="95" rot="MR0"/>
+<pinref part="CLK" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="-35.56" x2="10.16" y2="-35.56" width="0.1524" layer="91"/>
+<label x="10.16" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="43_MOSI" class="0">
@@ -15148,7 +15207,7 @@ differ from PYBV11 configuration</text>
 <net name="N$17" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="TS"/>
-<pinref part="R7" gate="R$1" pin="2"/>
+<pinref part="R24" gate="R$1" pin="2"/>
 </segment>
 </net>
 </nets>
