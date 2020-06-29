@@ -22816,8 +22816,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C81" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C80" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10u"/>
-<part name="BTN_RST" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" value="PUSH-SWITCH"/>
-<part name="BTN_USR" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" value="PUSH-SWITCH"/>
+<part name="BTN_RST" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" override_package3d_urn="urn:adsk.eagle:package:21280724/2" override_package_urn="urn:adsk.eagle:footprint:21280725/1" value="PUSH-SWITCH"/>
+<part name="BTN_USR" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" override_package3d_urn="urn:adsk.eagle:package:21280593/2" override_package_urn="urn:adsk.eagle:footprint:21280594/1" value="PUSH-SWITCH"/>
 <part name="C16" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7u"/>
 <part name="U$8" library="SobieskiSat2" deviceset="BMP280" device="" package3d_urn="urn:adsk.eagle:package:16206910/2"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -22893,7 +22893,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="U$23" library="SobieskiSat2" deviceset="LOGO" device="SQSM"/>
 <part name="U$22" library="SobieskiSat2" deviceset="LOGO" device="RICK"/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$3" library="SobieskiSat2" deviceset="L86" device=""/>
+<part name="U$3" library="SobieskiSat2" deviceset="L86" device="" override_package3d_urn="urn:adsk.eagle:package:21280947/2" override_package_urn="urn:adsk.eagle:footprint:21280948/1"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R24" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R"/>
 <part name="BTN_DFU" library="SobieskiSat2" deviceset="SLIDE-SWITCH" device=""/>
@@ -22905,9 +22905,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="U$12" library="SobieskiSat2" deviceset="TC78H653FTG" device="" package3d_urn="urn:adsk.eagle:package:18588248/1"/>
 <part name="U$15" library="SobieskiSat2" deviceset="RESISTORARRAY" device="" package3d_urn="urn:adsk.eagle:package:16308440/2"/>
 <part name="U$4" library="SobieskiSat2" deviceset="RESISTORARRAY" device="" package3d_urn="urn:adsk.eagle:package:16308440/2"/>
-<part name="BTN_USR1" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" value="PUSH-SWITCH"/>
+<part name="BTN_USR1" library="SobieskiSat2" deviceset="PUSH-SWITCH" device="" override_package3d_urn="urn:adsk.eagle:package:21280924/2" override_package_urn="urn:adsk.eagle:footprint:21280925/1" value="PUSH-SWITCH"/>
 <part name="U$19" library="Unified" deviceset="CONNECTOR_F_X3" device="_JST_SMD"/>
-<part name="U$20" library="Unified" deviceset="CONNECTOR_F_X3" device="_JST_SMD"/>
+<part name="U$20" library="Unified" deviceset="CONNECTOR_F_X3" device="_JST_SMD" override_package3d_urn="urn:adsk.eagle:package:21280605/2" override_package_urn="urn:adsk.eagle:footprint:21280606/1"/>
 <part name="X1" library="SobieskiSat2" deviceset="FH12-24S-0.5S" device="H" package3d_urn="urn:adsk.eagle:package:7312/1"/>
 <part name="U$26" library="SobieskiSat2" deviceset="RESISTORARRAY" device="" package3d_urn="urn:adsk.eagle:package:16308440/2"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22939,23 +22939,23 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="P+27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C19" library="Unified" deviceset="CAPACITOR" device="1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 <part name="C25" library="Unified" deviceset="CAPACITOR" device="1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
-<part name="U$17" library="SobieskiSat2" deviceset="MOTOR_DUO" device=""/>
+<part name="U$17" library="SobieskiSat2" deviceset="MOTOR_DUO" device="" override_package3d_urn="urn:adsk.eagle:package:21280618/2" override_package_urn="urn:adsk.eagle:footprint:21280619/1"/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$13" library="SobieskiSat2" deviceset="MOTOR_DUO" device=""/>
+<part name="U$13" library="SobieskiSat2" deviceset="MOTOR_DUO" device="" override_package3d_urn="urn:adsk.eagle:package:21280931/2" override_package_urn="urn:adsk.eagle:footprint:21280932/1"/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R9" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R"/>
 <part name="C26" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="50p"/>
 <part name="C27" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="50p"/>
 <part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="153CLV-0405" package3d_urn="urn:adsk.eagle:package:23397/2"/>
-<part name="U$14" library="SobieskiSat2" deviceset="BAT_JST_4(3)" device=""/>
+<part name="U$14" library="SobieskiSat2" deviceset="BAT_JST_4(3)" device="" override_package3d_urn="urn:adsk.eagle:package:21280658/2" override_package_urn="urn:adsk.eagle:footprint:21280659/1"/>
 <part name="R10" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0R"/>
 <part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND56" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND57" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND58" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND59" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23674,9 +23674,6 @@ differ from PYBV11 configuration</text>
 <instance part="GND41" gate="1" x="256.54" y="-144.78" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="254" y="-144.78" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="GND51" gate="1" x="245.11" y="-153.67" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="245.11" y="-156.21" size="1.778" layer="96" rot="R90" align="center"/>
-</instance>
 <instance part="GND56" gate="1" x="278.13" y="-153.67" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="278.13" y="-156.21" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
@@ -23687,6 +23684,9 @@ differ from PYBV11 configuration</text>
 </instance>
 <instance part="GND58" gate="1" x="388.62" y="-137.16" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="386.08" y="-137.16" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="GND59" gate="1" x="255.27" y="-101.6" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="255.27" y="-104.14" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -24353,10 +24353,6 @@ differ from PYBV11 configuration</text>
 <wire x1="259.08" y1="-144.78" x2="271.78" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND51" gate="1" pin="GND"/>
-<pinref part="U$19" gate="G$1" pin="S$1"/>
-</segment>
-<segment>
 <pinref part="GND56" gate="1" pin="GND"/>
 <pinref part="U$20" gate="G$1" pin="S$1"/>
 </segment>
@@ -24367,6 +24363,10 @@ differ from PYBV11 configuration</text>
 <segment>
 <pinref part="GND58" gate="1" pin="GND"/>
 <pinref part="X1" gate="G$2" pin="S$1"/>
+</segment>
+<segment>
+<pinref part="GND59" gate="1" pin="GND"/>
+<pinref part="C28" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="VBACKUP" class="0">
@@ -24938,6 +24938,17 @@ differ from PYBV11 configuration</text>
 <pinref part="R9" gate="R$1" pin="1"/>
 <wire x1="-76.2" y1="86.36" x2="-73.66" y2="86.36" width="0.1524" layer="91"/>
 <label x="-73.66" y="86.36" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C28" gate="G$1" pin="+"/>
+<wire x1="255.27" y1="-91.44" x2="255.27" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="255.27" y1="-88.9" x2="254" y2="-88.9" width="0.1524" layer="91"/>
+<label x="254" y="-88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$19" gate="G$1" pin="S$1"/>
+<wire x1="245.11" y1="-151.13" x2="245.11" y2="-153.67" width="0.1524" layer="91"/>
+<label x="245.11" y="-153.67" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -25635,6 +25646,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
