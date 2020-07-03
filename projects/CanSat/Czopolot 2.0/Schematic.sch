@@ -11345,6 +11345,7 @@ Source: Data sheet</description>
 <wire x1="-2.54" y1="4.445" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-1.905" y1="3.81" x2="-1.27" y2="4.445" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="4.445" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="S$1" x="-3.81" y="0" length="point"/>
 </symbol>
 <symbol name="TC78H653FTG">
 <pin name="PH_A" x="-15.24" y="7.62" length="middle"/>
@@ -12037,6 +12038,7 @@ Source: Data sheet</description>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 <connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="S$1" pad="S$1 S$2 S$3 S$4" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12552,50 +12554,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.35" x2="0.1999" y2="0.35" layer="35"/>
 </package>
-<package name="PAD_REC" urn="urn:adsk.eagle:footprint:16308407/1" locally_modified="yes">
-<smd name="1" x="0" y="0" dx="2" dy="1.2" layer="1" cream="no"/>
-</package>
-<package name="PAD_OCT" urn="urn:adsk.eagle:footprint:16308408/1" locally_modified="yes">
-<smd name="1" x="0" y="0" dx="1.2" dy="1.2" layer="1" cream="no"/>
-<polygon width="0" layer="1">
-<vertex x="-0.6" y="0.6"/>
-<vertex x="-1" y="0.4"/>
-<vertex x="-1" y="-0.4"/>
-<vertex x="-0.6" y="-0.6"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="0.6" y="0.6"/>
-<vertex x="1" y="0.4"/>
-<vertex x="1" y="-0.4"/>
-<vertex x="0.6" y="-0.6"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="-0.7" y="0.7"/>
-<vertex x="-1.2" y="0.5"/>
-<vertex x="-1.2" y="-0.5"/>
-<vertex x="-0.7" y="-0.7"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="0.7" y="0.7"/>
-<vertex x="1.2" y="0.4"/>
-<vertex x="1.2" y="-0.5"/>
-<vertex x="0.7" y="-0.7"/>
-</polygon>
-</package>
-<package name="PAD_RND" urn="urn:adsk.eagle:footprint:16308409/1" locally_modified="yes">
-<smd name="1" x="0" y="0" dx="2" dy="1.2" layer="1" roundness="75" cream="no"/>
-</package>
-<package name="PAD_BIG" urn="urn:adsk.eagle:footprint:16308410/1" locally_modified="yes">
-<smd name="P$1" x="0" y="0" dx="2.54" dy="1.524" layer="1" roundness="50" cream="no"/>
-</package>
-<package name="TESTPAD">
-<smd name="PAD" x="0" y="0" dx="0.8" dy="0.8" layer="1" roundness="100"/>
-<circle x="0" y="0" radius="0.6" width="0.127" layer="21"/>
-<text x="0" y="0.75" size="0.8" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-</package>
-<package name="SMALL_PAD">
-<smd name="P$1" x="0" y="0" dx="0.6" dy="1" layer="1"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="R0201" urn="urn:adsk.eagle:package:26117/2" type="model">
@@ -12680,26 +12638,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 &lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOT230P700X180-4N"/>
-</packageinstances>
-</package3d>
-<package3d name="PAD_REC" urn="urn:adsk.eagle:package:16308413/2" type="model">
-<packageinstances>
-<packageinstance name="PAD_REC"/>
-</packageinstances>
-</package3d>
-<package3d name="PAD_OCT" urn="urn:adsk.eagle:package:16308414/2" type="model">
-<packageinstances>
-<packageinstance name="PAD_OCT"/>
-</packageinstances>
-</package3d>
-<package3d name="PAD_RND" urn="urn:adsk.eagle:package:16308415/2" type="model">
-<packageinstances>
-<packageinstance name="PAD_RND"/>
-</packageinstances>
-</package3d>
-<package3d name="PAD_BIG" urn="urn:adsk.eagle:package:16308416/2" type="model">
-<packageinstances>
-<packageinstance name="PAD_BIG"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -12793,10 +12731,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pin name="P$3" x="-2.54" y="-2.54" visible="off" length="point"/>
 <wire x1="-2.54" y1="-2.54" x2="-0.635" y2="-2.54" width="0.254" layer="94"/>
 <pin name="S$1" x="3.81" y="-3.81" visible="off" length="point"/>
-</symbol>
-<symbol name="PAD">
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-<pin name="1" x="-3.81" y="0" visible="off" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13091,73 +13025,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 <connect gate="G$1" pin="P$3" pad="P$3"/>
 <connect gate="G$1" pin="S$1" pad="S$1 S$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PAD">
-<gates>
-<gate name="G$1" symbol="PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PAD_REC">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16308413/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="OCT" package="PAD_OCT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16308414/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="RND" package="PAD_RND">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16308415/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="BIG" package="PAD_BIG">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16308416/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TEST" package="TESTPAD">
-<connects>
-<connect gate="G$1" pin="1" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMALL" package="SMALL_PAD">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -22989,7 +22856,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="U$1" library="SobieskiSat2" deviceset="STM32F405RGT6" device="" package3d_urn="urn:adsk.eagle:package:15005550/1"/>
 <part name="C11" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C12" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="15p"/>
 <part name="C13" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="15p"/>
@@ -23109,7 +22975,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C17" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C18" library="Unified" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="R8" library="Unified" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
-<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$25" library="SobieskiSat2" deviceset="GPIO_DEBUG" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -23135,7 +23000,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U$18" library="SobieskiSat2" deviceset="LOGO" device="SQSM"/>
-<part name="U$22" library="Unified" deviceset="PAD" device="SMALL" value="PADSMALL"/>
+<part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23292,9 +23159,6 @@ configuration</text>
 </instance>
 <instance part="P+5" gate="VCC" x="-52.07" y="49.53" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-54.61" y="49.53" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="P+6" gate="VCC" x="-53.34" y="66.04" smashed="yes" rot="R90">
-<attribute name="VALUE" x="-55.88" y="66.04" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="GND8" gate="1" x="-52.07" y="59.69" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-54.61" y="59.69" size="1.778" layer="96" align="center"/>
@@ -23709,11 +23573,11 @@ configuration</text>
 <instance part="U$16" gate="G$1" x="67.31" y="90.17" smashed="yes" rot="MR0">
 <attribute name="NAME" x="72.39" y="87.122" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="U$16" gate="G$2" x="-38.1" y="66.04" smashed="yes">
-<attribute name="NAME" x="-43.18" y="62.992" size="1.778" layer="95"/>
+<instance part="U$16" gate="G$2" x="69.85" y="3.81" smashed="yes" rot="MR0">
+<attribute name="NAME" x="74.93" y="0.762" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="U$16" gate="G$3" x="68.58" y="3.81" smashed="yes" rot="MR0">
-<attribute name="NAME" x="73.66" y="0.762" size="1.778" layer="95" rot="MR0"/>
+<instance part="U$16" gate="G$3" x="-34.29" y="66.04" smashed="yes">
+<attribute name="NAME" x="-39.37" y="62.992" size="1.778" layer="95"/>
 </instance>
 <instance part="U$16" gate="G$4" x="67.31" y="1.27" smashed="yes">
 <attribute name="NAME" x="62.23" y="-1.778" size="1.778" layer="95"/>
@@ -23773,9 +23637,6 @@ configuration</text>
 <instance part="R8" gate="R$1" x="-175.26" y="68.58" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-175.26" y="60.96" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-175.26" y="72.39" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND9" gate="1" x="-53.34" y="81.28" smashed="yes">
-<attribute name="VALUE" x="-53.34" y="80.01" size="1.778" layer="96" rot="R180" align="center"/>
 </instance>
 <instance part="U$25" gate="G$1" x="-44.45" y="19.05" smashed="yes"/>
 <instance part="GND52" gate="1" x="-54.61" y="25.4" smashed="yes" rot="R270">
@@ -23850,7 +23711,15 @@ configuration</text>
 <attribute name="VALUE" x="177.8" y="-58.42" size="1.778" layer="96" rot="R270" align="center"/>
 </instance>
 <instance part="U$18" gate="G$1" x="87.63" y="-13.97" smashed="yes"/>
-<instance part="U$22" gate="G$1" x="-59.69" y="73.66" smashed="yes" rot="R180"/>
+<instance part="GND51" gate="1" x="-48.26" y="66.04" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-49.53" y="66.04" size="1.778" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="P+6" gate="VCC" x="-53.34" y="81.28" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-53.34" y="78.74" size="1.778" layer="96" rot="R90" align="center"/>
+</instance>
+<instance part="GND9" gate="1" x="-59.69" y="86.36" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-60.96" y="86.36" size="1.778" layer="96" rot="R90" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23911,11 +23780,6 @@ configuration</text>
 <wire x1="55.372" y1="76.073" x2="58.42" y2="76.073" width="0.1524" layer="91" style="longdash"/>
 <wire x1="58.42" y1="76.073" x2="58.42" y2="74.93" width="0.1524" layer="91" style="longdash"/>
 <junction x="58.42" y="74.93"/>
-</segment>
-<segment>
-<pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="-43.18" y1="66.04" x2="-50.8" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$2" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="VDDIO"/>
@@ -24040,14 +23904,13 @@ configuration</text>
 <wire x1="72.39" y1="90.17" x2="76.2" y2="90.17" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$16" gate="G$3" pin="1"/>
 <pinref part="P+15" gate="VCC" pin="VCC"/>
-<wire x1="73.66" y1="3.81" x2="74.93" y2="3.81" width="0.1524" layer="91"/>
 <wire x1="74.93" y1="3.81" x2="74.93" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="74.93" y1="2.54" x2="74.93" y2="1.27" width="0.1524" layer="91"/>
 <junction x="74.93" y="2.54"/>
 <pinref part="U$16" gate="G$4" pin="2"/>
 <wire x1="72.39" y1="1.27" x2="74.93" y2="1.27" width="0.1524" layer="91"/>
+<pinref part="U$16" gate="G$2" pin="1"/>
 </segment>
 <segment>
 <pinref part="P+23" gate="VCC" pin="VCC"/>
@@ -24073,6 +23936,10 @@ configuration</text>
 <pinref part="P+25" gate="VCC" pin="VCC"/>
 <wire x1="181.61" y1="-58.42" x2="185.42" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-23" pin="1"/>
+</segment>
+<segment>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<pinref part="BTN_DFU" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -24470,10 +24337,6 @@ configuration</text>
 <pinref part="GND34" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND9" gate="1" pin="GND"/>
-<pinref part="BTN_DFU" gate="G$1" pin="P$2"/>
-</segment>
-<segment>
 <wire x1="-48.26" y1="25.4" x2="-52.07" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="GND52" gate="1" pin="GND"/>
 <pinref part="U$25" gate="G$1" pin="P$1"/>
@@ -24521,6 +24384,15 @@ configuration</text>
 <pinref part="GND49" gate="1" pin="GND"/>
 <wire x1="181.61" y1="-60.96" x2="185.42" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-24" pin="1"/>
+</segment>
+<segment>
+<pinref part="GND51" gate="1" pin="GND"/>
+<pinref part="U$16" gate="G$3" pin="1"/>
+<wire x1="-39.37" y1="66.04" x2="-45.72" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="BTN_DFU" gate="G$1" pin="S$1"/>
 </segment>
 </net>
 <net name="VBACKUP" class="0">
@@ -24616,19 +24488,23 @@ configuration</text>
 <wire x1="185.42" y1="-33.02" x2="182.88" y2="-33.02" width="0.1524" layer="91"/>
 <label x="182.88" y="-33.02" size="0.762" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="RST"/>
+<wire x1="255.27" y1="-49.53" x2="245.11" y2="-49.53" width="0.1524" layer="91"/>
+<label x="245.11" y="-49.53" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DFU" class="0">
 <segment>
 <wire x1="-29.21" y1="66.04" x2="-29.21" y2="72.39" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="66.04" x2="-29.21" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="STM32F405RGT6_UTL" pin="BOOT0"/>
 <wire x1="7.62" y1="72.39" x2="-29.21" y2="72.39" width="0.1524" layer="91"/>
 <junction x="-29.21" y="72.39"/>
 <label x="-2.54" y="72.39" size="1.778" layer="95"/>
-<pinref part="U$16" gate="G$2" pin="2"/>
 <pinref part="BTN_DFU" gate="G$1" pin="P$3"/>
 <wire x1="-50.8" y1="83.82" x2="-50.8" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="72.39" x2="-29.21" y2="72.39" width="0.1524" layer="91"/>
+<pinref part="U$16" gate="G$3" pin="2"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-14" pin="1"/>
@@ -25567,13 +25443,6 @@ configuration</text>
 <wire x1="60.96" y1="1.27" x2="62.23" y2="1.27" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="BTN_USR1" gate="G$1" pin="P$1"/>
-<pinref part="U$16" gate="G$3" pin="2"/>
-<wire x1="62.23" y1="3.81" x2="63.5" y2="3.81" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="OUT3"/>
@@ -25718,18 +25587,6 @@ configuration</text>
 <label x="135.89" y="-60.96" size="0.762" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPS_RST" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="RST"/>
-<wire x1="255.27" y1="-49.53" x2="245.11" y2="-49.53" width="0.1524" layer="91"/>
-<label x="245.11" y="-49.53" size="1.778" layer="95"/>
-</segment>
-<segment>
-<label x="-55.88" y="66.04" size="1.778" layer="95" rot="R270" xref="yes"/>
-<wire x1="-55.88" y1="73.66" x2="-55.88" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$22" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="BAT_BQ" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="BAT"/>
@@ -25755,6 +25612,13 @@ configuration</text>
 <pinref part="LEDCH" gate="G$1" pin="P$2"/>
 <pinref part="R8" gate="R$1" pin="2"/>
 <wire x1="-175.26" y1="73.66" x2="-175.26" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="BTN_USR1" gate="G$1" pin="P$1"/>
+<wire x1="62.23" y1="3.81" x2="64.77" y2="3.81" width="0.1524" layer="91"/>
+<pinref part="U$16" gate="G$2" pin="2"/>
 </segment>
 </net>
 </nets>
