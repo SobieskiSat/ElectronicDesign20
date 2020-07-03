@@ -11206,9 +11206,9 @@ Source: RS Components</description>
 <wire x1="-2.75" y1="-1.25" x2="2.75" y2="-1.25" width="0.1524" layer="21"/>
 <wire x1="2.75" y1="1.25" x2="2.75" y2="-1.25" width="0.1524" layer="21"/>
 <wire x1="-2.75" y1="1.25" x2="-2.75" y2="-1.25" width="0.1524" layer="21"/>
-<smd name="P$1" x="-1" y="-1.35" dx="0.6" dy="0.51" layer="1"/>
-<smd name="P$2" x="0" y="-1.335" dx="0.6" dy="0.51" layer="1"/>
-<smd name="P$3" x="1" y="-1.35" dx="0.6" dy="0.51" layer="1"/>
+<smd name="P$1" x="-1" y="-1.55" dx="0.6" dy="1" layer="1"/>
+<smd name="P$2" x="0" y="-1.535" dx="0.6" dy="1" layer="1"/>
+<smd name="P$3" x="1" y="-1.55" dx="0.6" dy="1" layer="1"/>
 <smd name="S$1" x="-3" y="0" dx="0.9" dy="0.7" layer="1"/>
 <smd name="S$2" x="3" y="0" dx="0.9" dy="0.7" layer="1"/>
 <wire x1="-2.75" y1="1.25" x2="0.2" y2="1.25" width="0.1524" layer="21"/>
@@ -11380,10 +11380,10 @@ Source: RS Components</description>
 <wire x1="-4.225" y1="3.1" x2="4.225" y2="3.1" width="0" layer="21"/>
 <wire x1="4.675" y1="-2.62" x2="4.675" y2="2.65" width="0" layer="21"/>
 <wire x1="-4.675" y1="-2.62" x2="-4.675" y2="2.65" width="0" layer="21"/>
-<wire x1="-5.65" y1="2.43" x2="-5.15" y2="2.43" width="0" layer="21" curve="180"/>
-<wire x1="-5.15" y1="4.03" x2="-5.65" y2="4.03" width="0" layer="21" curve="180"/>
-<wire x1="-5.65" y1="4.03" x2="-5.65" y2="2.43" width="0" layer="21"/>
-<wire x1="-5.15" y1="4.03" x2="-5.15" y2="2.43" width="0" layer="21"/>
+<wire x1="-5.65" y1="2.43" x2="-5.15" y2="2.43" width="0" layer="20" curve="180"/>
+<wire x1="-5.15" y1="4.03" x2="-5.65" y2="4.03" width="0" layer="20" curve="180"/>
+<wire x1="-5.65" y1="4.03" x2="-5.65" y2="2.43" width="0" layer="20"/>
+<wire x1="-5.15" y1="4.03" x2="-5.15" y2="2.43" width="0" layer="20"/>
 <wire x1="-5.85" y1="4.03" x2="-4.95" y2="4.03" width="0" layer="21" curve="-180"/>
 <wire x1="-4.95" y1="2.43" x2="-5.85" y2="2.43" width="0" layer="21" curve="-180"/>
 <wire x1="-5.85" y1="4.03" x2="-5.85" y2="2.43" width="0" layer="21"/>
@@ -11392,10 +11392,10 @@ Source: RS Components</description>
 <wire x1="5.65" y1="0.65" x2="5.15" y2="0.65" width="0" layer="21" curve="180"/>
 <wire x1="4.95" y1="0.65" x2="5.85" y2="0.65" width="0" layer="21" curve="-180"/>
 <wire x1="5.85" y1="-0.65" x2="4.95" y2="-0.65" width="0" layer="21" curve="-180"/>
-<wire x1="-5.65" y1="-0.65" x2="-5.15" y2="-0.65" width="0" layer="21" curve="180"/>
-<wire x1="-5.15" y1="0.65" x2="-5.65" y2="0.65" width="0" layer="21" curve="180"/>
-<wire x1="-5.65" y1="0.65" x2="-5.65" y2="-0.65" width="0" layer="21"/>
-<wire x1="-5.15" y1="0.65" x2="-5.15" y2="-0.65" width="0" layer="21"/>
+<wire x1="-5.65" y1="-0.65" x2="-5.15" y2="-0.65" width="0" layer="20" curve="180"/>
+<wire x1="-5.15" y1="0.65" x2="-5.65" y2="0.65" width="0" layer="20" curve="180"/>
+<wire x1="-5.65" y1="0.65" x2="-5.65" y2="-0.65" width="0" layer="20"/>
+<wire x1="-5.15" y1="0.65" x2="-5.15" y2="-0.65" width="0" layer="20"/>
 <wire x1="-5.85" y1="0.65" x2="-4.95" y2="0.65" width="0" layer="21" curve="-180"/>
 <wire x1="-4.95" y1="-0.65" x2="-5.85" y2="-0.65" width="0" layer="21" curve="-180"/>
 <wire x1="-5.85" y1="0.65" x2="-5.85" y2="-0.65" width="0" layer="21"/>
@@ -11416,10 +11416,10 @@ Source: RS Components</description>
 <wire x1="-5.4" y1="0.1" x2="-5.4" y2="-0.1" width="0.05" layer="21"/>
 <smd name="S$1" x="-5.4" y="0" dx="2.3" dy="1" layer="16" roundness="100" rot="R90"/>
 <wire x1="-5.4" y1="0.65" x2="-5.4" y2="-0.65" width="0.5" layer="46"/>
-<wire x1="5.15" y1="-0.65" x2="5.65" y2="-0.65" width="0" layer="21" curve="180"/>
-<wire x1="5.65" y1="0.65" x2="5.15" y2="0.65" width="0" layer="21" curve="180"/>
-<wire x1="5.15" y1="0.65" x2="5.15" y2="-0.65" width="0" layer="21"/>
-<wire x1="5.65" y1="0.65" x2="5.65" y2="-0.65" width="0" layer="21"/>
+<wire x1="5.15" y1="-0.65" x2="5.65" y2="-0.65" width="0" layer="20" curve="180"/>
+<wire x1="5.65" y1="0.65" x2="5.15" y2="0.65" width="0" layer="20" curve="180"/>
+<wire x1="5.15" y1="0.65" x2="5.15" y2="-0.65" width="0" layer="20"/>
+<wire x1="5.65" y1="0.65" x2="5.65" y2="-0.65" width="0" layer="20"/>
 <wire x1="4.95" y1="0.65" x2="5.85" y2="0.65" width="0" layer="21" curve="-180"/>
 <wire x1="5.85" y1="-0.65" x2="4.95" y2="-0.65" width="0" layer="21" curve="-180"/>
 <wire x1="4.95" y1="0.65" x2="4.95" y2="-0.65" width="0" layer="21"/>
@@ -11432,10 +11432,10 @@ Source: RS Components</description>
 <wire x1="-5.4" y1="3.33" x2="-5.4" y2="3.13" width="0.05" layer="21"/>
 <wire x1="-5.4" y1="4.03" x2="-5.4" y2="2.43" width="0.5" layer="46"/>
 <smd name="S$3" x="-5.4" y="3.23" dx="2.55" dy="1" layer="16" roundness="100" rot="R90"/>
-<wire x1="5.15" y1="2.43" x2="5.65" y2="2.43" width="0" layer="21" curve="180"/>
-<wire x1="5.65" y1="4.03" x2="5.15" y2="4.03" width="0" layer="21" curve="180"/>
-<wire x1="5.15" y1="4.03" x2="5.15" y2="2.43" width="0" layer="21"/>
-<wire x1="5.65" y1="4.03" x2="5.65" y2="2.43" width="0" layer="21"/>
+<wire x1="5.15" y1="2.43" x2="5.65" y2="2.43" width="0" layer="20" curve="180"/>
+<wire x1="5.65" y1="4.03" x2="5.15" y2="4.03" width="0" layer="20" curve="180"/>
+<wire x1="5.15" y1="4.03" x2="5.15" y2="2.43" width="0" layer="20"/>
+<wire x1="5.65" y1="4.03" x2="5.65" y2="2.43" width="0" layer="20"/>
 <wire x1="4.95" y1="4.03" x2="5.85" y2="4.03" width="0" layer="21" curve="-180"/>
 <wire x1="5.85" y1="2.43" x2="4.95" y2="2.43" width="0" layer="21" curve="-180"/>
 <wire x1="4.95" y1="4.03" x2="4.95" y2="2.43" width="0" layer="21"/>
@@ -11680,6 +11680,26 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 </package>
 <package name="THT_PAD_SQ">
 <pad name="P$1" x="0" y="0" drill="1.1176" diameter="1.6764" shape="square"/>
+</package>
+<package name="SLIDE-SWITCH-2">
+<wire x1="-3.35" y1="-1.3" x2="3.35" y2="-1.3" width="0.1524" layer="21"/>
+<wire x1="3.35" y1="1.3" x2="3.35" y2="-1.3" width="0.1524" layer="21"/>
+<wire x1="-3.35" y1="1.3" x2="-3.35" y2="-1.3" width="0.1524" layer="21"/>
+<smd name="P$1" x="-2.25" y="-1.75" dx="0.7" dy="1.5" layer="1"/>
+<smd name="P$2" x="-0.75" y="-1.75" dx="0.7" dy="1.5" layer="1"/>
+<smd name="P$3" x="2.25" y="-1.75" dx="0.7" dy="1.5" layer="1"/>
+<smd name="S$1" x="-3.65" y="1.05" dx="1" dy="0.8" layer="1"/>
+<smd name="S$2" x="3.65" y="1.05" dx="1" dy="0.8" layer="1"/>
+<wire x1="-3.35" y1="1.3" x2="0.2" y2="1.3" width="0.1524" layer="21"/>
+<wire x1="0.2" y1="1.3" x2="1.5" y2="1.3" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="1.3" x2="3.35" y2="1.3" width="0.1524" layer="21"/>
+<wire x1="0.2" y1="2.8" x2="1.5" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="0.2" y1="2.8" x2="0.2" y2="1.3" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="2.8" x2="1.5" y2="1.3" width="0.1524" layer="21"/>
+<smd name="S$3" x="-3.65" y="-1.05" dx="1" dy="0.8" layer="1"/>
+<smd name="S$4" x="3.65" y="-1.05" dx="1" dy="0.8" layer="1"/>
+<hole x="-1.5" y="0" drill="0.9"/>
+<hole x="1.5" y="0" drill="0.9"/>
 </package>
 </packages>
 <packages3d>
@@ -14032,6 +14052,16 @@ Source: Data sheet</description>
 </gates>
 <devices>
 <device name="" package="SLIDE-SWITCH">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2" package="SLIDE-SWITCH-2">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>

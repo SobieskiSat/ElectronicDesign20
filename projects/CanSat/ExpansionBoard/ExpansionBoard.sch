@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -10784,8 +10784,8 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <instance part="U$20" gate="G$1" x="15.24" y="-17.78" smashed="yes" rot="R180"/>
 <instance part="U$21" gate="G$1" x="15.24" y="-20.32" smashed="yes" rot="R180"/>
 <instance part="U$22" gate="G$1" x="15.24" y="-22.86" smashed="yes" rot="R180"/>
-<instance part="U$23" gate="G$1" x="15.24" y="-25.4" smashed="yes" rot="R180"/>
-<instance part="U$24" gate="G$1" x="15.24" y="-27.94" smashed="yes" rot="R180"/>
+<instance part="U$23" gate="G$1" x="15.24" y="-27.94" smashed="yes" rot="R180"/>
+<instance part="U$24" gate="G$1" x="15.24" y="-25.4" smashed="yes" rot="R180"/>
 <instance part="X1" gate="G$2" x="38.1" y="-33.02" smashed="yes"/>
 <instance part="U$28" gate="G$1" x="-20.32" y="5.08" smashed="yes"/>
 <instance part="U$29" gate="G$1" x="-20.32" y="-10.16" smashed="yes"/>
@@ -10843,17 +10843,6 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <label x="20.32" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-17" pin="1"/>
-<wire x1="19.05" y1="-10.16" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
-<label x="20.32" y="-10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-23" pin="1"/>
-<pinref part="U$23" gate="G$1" pin="1"/>
-<wire x1="19.05" y1="-25.4" x2="35.56" y2="-25.4" width="0.1524" layer="91"/>
-<label x="20.32" y="-25.4" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-17.78" y1="22.86" x2="-19.05" y2="22.86" width="0.1524" layer="91"/>
 <label x="-19.05" y="22.86" size="0.762" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="GND"/>
@@ -10891,6 +10880,17 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="35.56" y1="-33.02" x2="30.48" y2="-33.02" width="0.1524" layer="91"/>
 <label x="30.48" y="-33.02" size="0.762" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="19.05" y1="-12.7" x2="35.56" y2="-12.7" width="0.1524" layer="91"/>
+<label x="20.32" y="-12.7" size="1.778" layer="95"/>
+<pinref part="X1" gate="-18" pin="1"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-24" pin="1"/>
+<pinref part="U$23" gate="G$1" pin="1"/>
+<wire x1="19.05" y1="-27.94" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
+<label x="20.32" y="-27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -10903,17 +10903,6 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <pinref part="X1" gate="-8" pin="1"/>
 <wire x1="19.05" y1="12.7" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <label x="20.32" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-18" pin="1"/>
-<wire x1="19.05" y1="-12.7" x2="35.56" y2="-12.7" width="0.1524" layer="91"/>
-<label x="20.32" y="-12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-24" pin="1"/>
-<pinref part="U$24" gate="G$1" pin="1"/>
-<wire x1="19.05" y1="-27.94" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
-<label x="20.32" y="-27.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C2" gate="C$1" pin="1"/>
@@ -10954,6 +10943,17 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <wire x1="-71.12" y1="-22.86" x2="-73.66" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="-71.12" y="-20.32"/>
 <label x="-71.12" y="-15.24" size="0.762" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="19.05" y1="-10.16" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
+<label x="20.32" y="-10.16" size="1.778" layer="95"/>
+<pinref part="X1" gate="-17" pin="1"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-23" pin="1"/>
+<pinref part="U$24" gate="G$1" pin="1"/>
+<wire x1="19.05" y1="-25.4" x2="35.56" y2="-25.4" width="0.1524" layer="91"/>
+<label x="20.32" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART4_TX" class="0">
